@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/ejb-jar_3_0.xsd" metadata-complete="false">
+	<assembly-descriptor>
+		<interceptor-binding>
+			<ejb-name>TuxedoServiceV2</ejb-name>
+			<interceptor-class>gov.va.vba.framework.auditing.EJBAuditInterceptor</interceptor-class>
+		</interceptor-binding>
+		<interceptor-binding>
+			<ejb-name>TuxedoServiceV3</ejb-name>
+			<interceptor-class>gov.va.vba.framework.auditing.EJBAuditInterceptor</interceptor-class>
+		</interceptor-binding>
+		<interceptor-binding>
+			<ejb-name>VbaCorrespondenceServiceV2</ejb-name>
+			<interceptor-class>gov.va.vba.framework.auditing.EJBAuditInterceptor</interceptor-class>
+		</interceptor-binding>
+		<interceptor-binding>
+			<ejb-name>ROProfileSessionEJBV2</ejb-name>
+			<interceptor-class>gov.va.vba.framework.auditing.EJBAuditInterceptor</interceptor-class>
+		</interceptor-binding>
+		<interceptor-binding>
+			<ejb-name>SecurityServiceV2</ejb-name>
+			<interceptor-class>gov.va.vba.framework.auditing.EJBAuditInterceptor</interceptor-class>
+		</interceptor-binding>
+		<interceptor-binding>
+			<ejb-name>SecurityServiceV3</ejb-name>
+			<interceptor-class>gov.va.vba.framework.auditing.EJBAuditInterceptor</interceptor-class>
+		</interceptor-binding>
+		<interceptor-binding>
+			<ejb-name>VadirSessionEJBV2</ejb-name>
+			<interceptor-class>gov.va.vba.framework.auditing.EJBAuditInterceptor</interceptor-class>
+		</interceptor-binding>
+		<interceptor-binding>
+			<ejb-name>VeteranSessionEJBV2</ejb-name>
+			<interceptor-class>gov.va.vba.framework.auditing.EJBAuditInterceptor</interceptor-class>
+		</interceptor-binding>
+		<interceptor-binding>
+			<ejb-name>VbaEmailServiceV2</ejb-name>
+			<interceptor-class>gov.va.vba.framework.auditing.EJBAuditInterceptor</interceptor-class>
+		</interceptor-binding>
+	</assembly-descriptor>
+</ejb-jar>

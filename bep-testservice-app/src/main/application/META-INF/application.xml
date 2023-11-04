@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE application PUBLIC
+	"-//Sun Microsystems, Inc.//DTD J2EE Application 1.3//EN"
+	"http://java.sun.com/dtd/application_1_3.dtd">
+<application>
+  <display-name>bep-testservice-app</display-name>
+  <description>BEP Test Service or use with the Siteminder Emulator</description>
+  <module>
+    <web>
+      <web-uri>bep-testservice-web-6.0.0-0</web-uri>
+      <context-root>testservice</context-root>
+    </web>
+  </module>
+</application>

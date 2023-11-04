@@ -1,0 +1,2976 @@
+#%PCMS_HEADER_SUBSTITUTION_START%
+# $Id: %PM%,v %PR%, %PRT%  %AUTHOR% Exp $
+# Comments    : %PL%
+#%PCMS_HEADER_SUBSTITUTION_END%
+#Name                   number  type    flags   comments
+#Created: 05/17/2012 11:04:39 AM
+########################################
+#
+#  AR_ENV_VALUES       BUILD: 34 VERS: 34
+*base 900
+AR_ENV_VALUES                  0 	string	-  Entity Name
+900.0.ROW_CNT                  1 	long  	-  Architecture Field
+900.ROW_ID                     2 	long  	-  Architecture Field
+900.CALL_ID                    3 	long  	-  Architecture Field
+900.PARENT_NAME                4 	string  	-  Architecture Field
+900.PARENT_ID                  5 	long  	-  Architecture Field
+900.JRN_DT                     6 	string	-  JRN_DT
+900.JRN_LCTN_ID                7 	string	-  JRN_LCTN_ID
+900.JRN_USER_ID                8 	string	-  JRN_USER_ID
+900.JRN_STT_TC                 9 	string	-  JRN_STATUS_TYPE_CD
+900.JRN_OBJ_ID                 10 	string	-  JRN_OBJ_ID
+900.PROPERTY                   11 	string	-  PROPERTY
+900.VALUE                      12 	string	-  VALUE
+900.MNEMONIC                   13 	string	-  MNEMONIC
+#
+#  AR_PROPERTIES       BUILD: 34 VERS: 34
+*base 920
+AR_PROPERTIES                  0 	string	-  Entity Name
+920.0.ROW_CNT                  1 	long  	-  Architecture Field
+920.ROW_ID                     2 	long  	-  Architecture Field
+920.CALL_ID                    3 	long  	-  Architecture Field
+920.PARENT_NAME                4 	string  	-  Architecture Field
+920.PARENT_ID                  5 	long  	-  Architecture Field
+920.JRN_DT                     6 	string	-  JRN_DT
+920.JRN_LCTN_ID                7 	string	-  JRN_LCTN_ID
+920.JRN_USER_ID                8 	string	-  JRN_USER_ID
+920.JRN_STT_TC                 9 	string	-  JRN_STATUS_TYPE_CD
+920.JRN_OBJ_ID                 10 	string	-  JRN_OBJ_ID
+920.TABLE_NAME                 11 	string	-  TABLE_NAME
+920.FIELD_NAME                 12 	string	-  FIELD_NAME
+920.PROP_NAME                  13 	string	-  PROP_NAME
+920.PROP_VALUE                 14 	string	-  PROP_VALUE
+#
+#  AR_SERVICES       BUILD: 34 VERS: 34
+*base 940
+AR_SERVICES                    0 	string	-  Entity Name
+940.0.ROW_CNT                  1 	long  	-  Architecture Field
+940.ROW_ID                     2 	long  	-  Architecture Field
+940.CALL_ID                    3 	long  	-  Architecture Field
+940.PARENT_NAME                4 	string  	-  Architecture Field
+940.PARENT_ID                  5 	long  	-  Architecture Field
+940.JRN_DT                     6 	string	-  JRN_DT
+940.JRN_LCTN_ID                7 	string	-  JRN_LCTN_ID
+940.JRN_USER_ID                8 	string	-  JRN_USER_ID
+940.JRN_STT_TC                 9 	string	-  JRN_STATUS_TYPE_CD
+940.JRN_OBJ_ID                 10 	string	-  JRN_OBJ_ID
+940.PROJ_PFX                   11 	string	-  PROJ_PFX
+940.SVC_ROOT                   12 	string	-  SVC_ROOT
+940.SVC_NAME                   13 	string	-  SVC_NAME
+940.DESCRIPTION                14 	string	-  DESCRIPTION
+940.SVC_ID                     15 	long  	-  SVC_ID
+#
+#  AR_SVC_CALLS       BUILD: 34 VERS: 34
+*base 960
+AR_SVC_CALLS                   0 	string	-  Entity Name
+960.0.ROW_CNT                  1 	long  	-  Architecture Field
+960.ROW_ID                     2 	long  	-  Architecture Field
+960.CALL_ID                    3 	long  	-  Architecture Field
+960.PARENT_NAME                4 	string  	-  Architecture Field
+960.PARENT_ID                  5 	long  	-  Architecture Field
+960.JRN_DT                     6 	string	-  JRN_DT
+960.JRN_LCTN_ID                7 	string	-  JRN_LCTN_ID
+960.JRN_USER_ID                8 	string	-  JRN_USER_ID
+960.JRN_STT_TC                 9 	string	-  JRN_STATUS_TYPE_CD
+960.JRN_OBJ_ID                 10 	string	-  JRN_OBJ_ID
+960.SERVICE                    11 	string	-  SERVICE
+960.VERS                       12 	long  	-  VERS
+960.SVC_ID                     13 	long  	-  SVC_ID
+960.ATMI_FUNC                  14 	string	-  ATMI_FUNC
+960.CALL_FLAGS                 15 	long  	-  CALL_FLAGS
+960.DESCRIPTION                16 	string	-  DESCRIPTION
+#
+#  AR_SVC_TABLES       BUILD: 34 VERS: 34
+*base 980
+AR_SVC_TABLES                  0 	string	-  Entity Name
+980.0.ROW_CNT                  1 	long  	-  Architecture Field
+980.ROW_ID                     2 	long  	-  Architecture Field
+980.CALL_ID                    3 	long  	-  Architecture Field
+980.PARENT_NAME                4 	string  	-  Architecture Field
+980.PARENT_ID                  5 	long  	-  Architecture Field
+980.JRN_DT                     6 	string	-  JRN_DT
+980.JRN_LCTN_ID                7 	string	-  JRN_LCTN_ID
+980.JRN_USER_ID                8 	string	-  JRN_USER_ID
+980.JRN_STT_TC                 9 	string	-  JRN_STATUS_TYPE_CD
+980.JRN_OBJ_ID                 10 	string	-  JRN_OBJ_ID
+980.SVC_ID                     11 	long  	-  SVC_ID
+980.TABLE_NAME                 12 	string	-  TABLE_NAME
+980.TABLE_TYPE                 13 	string	-  TABLE_TYPE
+#
+#  VN_ENTITY_IND       BUILD: 34 VERS: 34
+*base 2335
+VN_ENTITY_IND                  0 	string	-  Entity Name
+2335.0.ROW_CNT                 1 	long  	-  Architecture Field
+2335.ROW_ID                    2 	long  	-  Architecture Field
+2335.CALL_ID                   3 	long  	-  Architecture Field
+2335.PARENT_NAME               4 	string  	-  Architecture Field
+2335.PARENT_ID                 5 	long  	-  Architecture Field
+2335.JRN_DT                    6 	string	-  JRN_DT
+2335.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+2335.JRN_USER_ID               8 	string	-  JRN_USER_ID
+2335.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+2335.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+2335.FIELD                     11 	string	-  FIELD
+2335.IND                       12 	string	-  IND
+#
+#  VN_SVC_QUEUES       BUILD: 34 VERS: 34
+*base 2395
+VN_SVC_QUEUES                  0 	string	-  Entity Name
+2395.0.ROW_CNT                 1 	long  	-  Architecture Field
+2395.ROW_ID                    2 	long  	-  Architecture Field
+2395.CALL_ID                   3 	long  	-  Architecture Field
+2395.PARENT_NAME               4 	string  	-  Architecture Field
+2395.PARENT_ID                 5 	long  	-  Architecture Field
+2395.JRN_DT                    6 	string	-  JRN_DT
+2395.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+2395.JRN_USER_ID               8 	string	-  JRN_USER_ID
+2395.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+2395.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+2395.CORR_ID                   11 	string	-  CORR_ID
+2395.MSG_ID                    12 	string	-  MSG_ID
+2395.STATUS_CD                 13 	long  	-  STATUS_CD
+2395.QSPACE                    14 	string	-  QSPACE
+2395.QNAME                     15 	string	-  QNAME
+2395.SESSION_ID                16 	string	-  SESSION_ID
+2395.LOGON_DT                  17 	string	-  LOGON_DT
+2395.DQUEUE_RQST               18 	string	-  DQUEUE_RQST
+2395.SESSION_DT                19 	string	-  SESSION_DT
+#
+#  VN_WHERE       BUILD: 34 VERS: 34
+*base 2465
+VN_WHERE                       0 	string	-  Entity Name
+2465.0.ROW_CNT                 1 	long  	-  Architecture Field
+2465.ROW_ID                    2 	long  	-  Architecture Field
+2465.CALL_ID                   3 	long  	-  Architecture Field
+2465.PARENT_NAME               4 	string  	-  Architecture Field
+2465.PARENT_ID                 5 	long  	-  Architecture Field
+2465.JRN_DT                    6 	string	-  JRN_DT
+2465.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+2465.JRN_USER_ID               8 	string	-  JRN_USER_ID
+2465.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+2465.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+2465.WHERE_CLAUSE              11 	string	-  WHERE_CLAUSE
+#
+#  VN_FAMILY_RLNSHP       BUILD: 34 VERS: 34
+*base 2510
+VN_FAMILY_RLNSHP               0 	string	-  Entity Name
+2510.0.ROW_CNT                 1 	long  	-  Architecture Field
+2510.ROW_ID                    2 	long  	-  Architecture Field
+2510.CALL_ID                   3 	long  	-  Architecture Field
+2510.PARENT_NAME               4 	string  	-  Architecture Field
+2510.PARENT_ID                 5 	long  	-  Architecture Field
+2510.JRN_DT                    6 	string	-  JRN_DT
+2510.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+2510.JRN_USER_ID               8 	string	-  JRN_USER_ID
+2510.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+2510.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+2510.PTCPNT_ID                 11 	string	-  PTCPNT_ID
+2510.PTCPNT_TN                 12 	string	-  PTCPNT_TYPE_NM
+2510.TAX_ID_NO                 13 	string	-  TAX_IDFCTN_NBR
+2510.PTCPNT_ID_A               14 	string	-  PTCPNT_ID_A
+2510.PTCPNT_RSHP_TN            15 	string	-  PTCPNT_RLNSHP_TYPE_NM
+2510.EFCTV_DT                  16 	string	-  EFCTV_DT
+2510.END_DT                    17 	string	-  END_DT
+2510.LAST_NM                   18 	string	-  LAST_NM
+2510.FIRST_NM                  19 	string	-  FIRST_NM
+2510.MIDDLE_NM                 20 	string	-  MIDDLE_NM
+2510.SLTTN_TN                  21 	string	-  SLTTN_TYPE_NM
+2510.SFX_NM                    22 	string	-  SUFFIX_NM
+2510.SSN_NO                    23 	string	-  SSN_NBR
+2510.FILE_NO                   24 	string	-  FILE_NBR
+2510.BRTHDY_DT                 25 	string	-  BRTHDY_DT
+2510.GENDER_CD                 26 	string	-  GENDER_CD
+2510.DEATH_DT                  27 	string	-  DEATH_DT
+2510.VET_IND                   28 	string	-  VET_IND
+2510.STT_TC                    29 	string	-  STATUS_TYPE_CD
+2510.NO_SSN_RSN_TC             30 	string	-  NO_SSN_REASON_TYPE_CD
+2510.NO_SSN_RSN_TN             31 	string	-  NO_SSN_REASON_TYPE_NM
+#
+#  VN_FINCL_ORG       BUILD: 34 VERS: 34
+*base 2545
+VN_FINCL_ORG                   0 	string	-  Entity Name
+2545.0.ROW_CNT                 1 	long  	-  Architecture Field
+2545.ROW_ID                    2 	long  	-  Architecture Field
+2545.CALL_ID                   3 	long  	-  Architecture Field
+2545.PARENT_NAME               4 	string  	-  Architecture Field
+2545.PARENT_ID                 5 	long  	-  Architecture Field
+2545.JRN_DT                    6 	string	-  JRN_DT
+2545.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+2545.JRN_USER_ID               8 	string	-  JRN_USER_ID
+2545.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+2545.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+2545.PTCPNT_ID                 11 	string	-  PTCPNT_ID
+2545.PTCPNT_TN                 12 	string	-  PTCPNT_TYPE_NM
+2545.TAX_ID_NO                 13 	string	-  TAX_IDFCTN_NBR
+2545.NM                        14 	string	-  NM
+2545.ORG_TYPE_NM               15 	string	-  ORG_TYPE_NM
+2545.FIN_INSTN_TN              16 	string	-  FINCL_INSTN_TYPE_NM
+2545.RTNG_TNST_NO              17 	string	-  ROUTNG_TRNSIT_NBR
+#
+#  VN_MLTY_PRSN_DCR       BUILD: 34 VERS: 34
+*base 2565
+VN_MLTY_PRSN_DCR               0 	string	-  Entity Name
+2565.0.ROW_CNT                 1 	long  	-  Architecture Field
+2565.ROW_ID                    2 	long  	-  Architecture Field
+2565.CALL_ID                   3 	long  	-  Architecture Field
+2565.PARENT_NAME               4 	string  	-  Architecture Field
+2565.PARENT_ID                 5 	long  	-  Architecture Field
+2565.JRN_DT                    6 	string	-  JRN_DT
+2565.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+2565.JRN_USER_ID               8 	string	-  JRN_USER_ID
+2565.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+2565.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+2565.PTCPNT_ID                 11 	string	-  PTCPNT_ID
+2565.M_PER_DCORTN_TN           12 	string	-  MLTY_PERSON_DCORTN_TYPE_NM
+#
+#  VN_MLTY_PRSN_POW       BUILD: 34 VERS: 34
+*base 2585
+VN_MLTY_PRSN_POW               0 	string	-  Entity Name
+2585.0.ROW_CNT                 1 	long  	-  Architecture Field
+2585.ROW_ID                    2 	long  	-  Architecture Field
+2585.CALL_ID                   3 	long  	-  Architecture Field
+2585.PARENT_NAME               4 	string  	-  Architecture Field
+2585.PARENT_ID                 5 	long  	-  Architecture Field
+2585.JRN_DT                    6 	string	-  JRN_DT
+2585.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+2585.JRN_USER_ID               8 	string	-  JRN_USER_ID
+2585.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+2585.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+2585.PTCPNT_ID                 11 	string	-  PTCPNT_ID
+2585.POW_SEQ_NO                12 	long  	-  POW_SEQ_NBR
+2585.M_THEATR_TN               13 	string	-  MLTY_THEATR_TYPE_NM
+2585.UND_THIRTY_DYS            14 	string	-  UNDER_THIRTY_DAYS_IND
+2585.CAPTR_DT                  15 	string	-  CAPTR_DT
+2585.RLSE_DT                   16 	string	-  RLSE_DT
+2585.DAYS_QTY                  17 	long  	-  DAYS_QTY
+#
+#  VN_MLTY_PRSN_TR       BUILD: 34 VERS: 34
+*base 2610
+VN_MLTY_PRSN_TR                0 	string	-  Entity Name
+2610.0.ROW_CNT                 1 	long  	-  Architecture Field
+2610.ROW_ID                    2 	long  	-  Architecture Field
+2610.CALL_ID                   3 	long  	-  Architecture Field
+2610.PARENT_NAME               4 	string  	-  Architecture Field
+2610.PARENT_ID                 5 	long  	-  Architecture Field
+2610.JRN_DT                    6 	string	-  JRN_DT
+2610.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+2610.JRN_USER_ID               8 	string	-  JRN_USER_ID
+2610.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+2610.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+2610.PTCPNT_ID                 11 	string	-  PTCPNT_ID
+2610.M_TR_SEQ_NO               12 	string	-  MLTY_TOUR_SEQ_NBR
+2610.EOD_DT                    13 	string	-  EOD_DT
+2610.RAD_DT                    14 	string	-  RAD_DT
+2610.LOST_TME_DYS_NO           15 	long  	-  LOST_TIME_DAYS_NBR
+2610.TRVL_TME_DYS_NO           16 	long  	-  TRAVEL_TIME_DAYS_NBR
+2610.DYS_ACTIVE_QTY            17 	long  	-  DAYS_ACTIVE_QTY
+2610.M_BRNCH_IND               18 	string	-  MLTY_BRANCH_IND
+2610.BRNCH_TN                  19 	string	-  MLTY_SVC_BRANCH_TYPE_NM
+2610.OTH_BRNCH_TN              20 	string	-  MLTY_SVC_OTHER_BRANCH_TYPE_NM
+2610.SVC_NO                    21 	string	-  SVC_NBR
+2610.M_TR_SVC_STT_TN           22 	string	-  MLTY_TOUR_SVC_STATUS_TYPE_NM
+2610.MP_DCHG_CHAR_TN           23 	string	-  MP_DSCHRG_CHAR_TYPE_NM
+2610.PAY_GRADE_TN              24 	string	-  PAY_GRADE_TYPE_NM
+2610.M_SEP_RSN_TN              25 	string	-  MLTY_SEPRTN_REASON_TYPE_NM
+2610.VAR_IND                   26 	string	-  VAR_IND
+2610.WAR_SVC_CTRY_NM           27 	string	-  WAR_TIME_SVC_CNTRY_NM
+2610.WAR_TME_SVC_IND           28 	string	-  WAR_TIME_SVC_IND
+#
+#  VN_MLTY_THEATR       BUILD: 34 VERS: 34
+*base 2645
+VN_MLTY_THEATR                 0 	string	-  Entity Name
+2645.0.ROW_CNT                 1 	long  	-  Architecture Field
+2645.ROW_ID                    2 	long  	-  Architecture Field
+2645.CALL_ID                   3 	long  	-  Architecture Field
+2645.PARENT_NAME               4 	string  	-  Architecture Field
+2645.PARENT_ID                 5 	long  	-  Architecture Field
+2645.JRN_DT                    6 	string	-  JRN_DT
+2645.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+2645.JRN_USER_ID               8 	string	-  JRN_USER_ID
+2645.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+2645.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+2645.PTCPNT_ID                 11 	string	-  PTCPNT_ID
+2645.M_TR_SEQ_NO               12 	string	-  MLTY_TOUR_SEQ_NBR
+2645.M_THEATR_TN               13 	string	-  MLTY_THEATR_TYPE_NM
+2645.EFCTV_DT                  14 	string	-  EFCTV_DT
+2645.END_DT                    15 	string	-  END_DT
+2645.DYS_QTY                   16 	long  	-  DAYS_QTY
+2645.VERIFD_IND                17 	string	-  VERIFD_IND
+2645.MLTY_THEATR_ID            18 	string	-  MLTY_THEATR_ID
+2645.M_THEATR_TC               19 	string	-  MLTY_THEATR_TYPE_CD
+#
+#  VN_PER_SPCL_STAT       BUILD: 34 VERS: 34
+*base 2670
+VN_PER_SPCL_STAT               0 	string	-  Entity Name
+2670.0.ROW_CNT                 1 	long  	-  Architecture Field
+2670.ROW_ID                    2 	long  	-  Architecture Field
+2670.CALL_ID                   3 	long  	-  Architecture Field
+2670.PARENT_NAME               4 	string  	-  Architecture Field
+2670.PARENT_ID                 5 	long  	-  Architecture Field
+2670.JRN_DT                    6 	string	-  JRN_DT
+2670.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+2670.JRN_USER_ID               8 	string	-  JRN_USER_ID
+2670.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+2670.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+2670.PTCPNT_ID                 11 	string	-  PTCPNT_ID
+2670.PER_SPCL_STT_TN           12 	string	-  PERSON_SPECL_STATUS_TYPE_NM
+#
+#  VN_PTCPNT_ALIAS       BUILD: 34 VERS: 34
+*base 2730
+VN_PTCPNT_ALIAS                0 	string	-  Entity Name
+2730.0.ROW_CNT                 1 	long  	-  Architecture Field
+2730.ROW_ID                    2 	long  	-  Architecture Field
+2730.CALL_ID                   3 	long  	-  Architecture Field
+2730.PARENT_NAME               4 	string  	-  Architecture Field
+2730.PARENT_ID                 5 	long  	-  Architecture Field
+2730.JRN_DT                    6 	string	-  JRN_DT
+2730.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+2730.JRN_USER_ID               8 	string	-  JRN_USER_ID
+2730.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+2730.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+2730.PTCPNT_ID                 11 	string	-  PTCPNT_ID
+2730.EFCTV_DT                  12 	string	-  EFCTV_DT
+2730.PTCPNT_ALIAS_TN           13 	string	-  PTCPNT_ALIAS_TYPE_NM
+2730.FIRST_NM                  14 	string	-  FIRST_NM
+2730.MIDDLE_NM                 15 	string	-  MIDDLE_NM
+2730.LAST_NM                   16 	string	-  LAST_NM
+2730.SLTTN_TN                  17 	string	-  SLTTN_TYPE_NM
+2730.SFX_NM                    18 	string	-  SUFFIX_NM
+2730.ORG_NM                    19 	string	-  ORG_NM
+2730.END_DT                    20 	string	-  END_DT
+2730.SSN_NO                    21 	string	-  SSN_NBR
+2730.TAX_ID_NO                 22 	string	-  TAX_IDFCTN_NBR
+#
+#  VN_PTCPNT_PHONE       BUILD: 34 VERS: 34
+*base 2760
+VN_PTCPNT_PHONE                0 	string	-  Entity Name
+2760.0.ROW_CNT                 1 	long  	-  Architecture Field
+2760.ROW_ID                    2 	long  	-  Architecture Field
+2760.CALL_ID                   3 	long  	-  Architecture Field
+2760.PARENT_NAME               4 	string  	-  Architecture Field
+2760.PARENT_ID                 5 	long  	-  Architecture Field
+2760.JRN_DT                    6 	string	-  JRN_DT
+2760.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+2760.JRN_USER_ID               8 	string	-  JRN_USER_ID
+2760.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+2760.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+2760.PTCPNT_ID                 11 	string	-  PTCPNT_ID
+2760.PHONE_TN                  12 	string	-  PHONE_TYPE_NM
+2760.AREA_NO                   13 	string	-  AREA_NBR
+2760.PHONE_NO                  14 	string	-  PHONE_NBR
+2760.EXTNSN_NO                 15 	string	-  EXTNSN_NBR
+2760.CNTRY_NO                  16 	string	-  CNTRY_NBR
+2760.EFCTV_DT                  17 	string	-  EFCTV_DT
+2760.END_DT                    18 	string	-  END_DT
+2760.FRGN_PHONE_TXT            19 	string	-  FRGN_PHONE_TXT
+#
+#  VN_VET_PROF       BUILD: 34 VERS: 34
+*base 2785
+VN_VET_PROF                    0 	string	-  Entity Name
+2785.0.ROW_CNT                 1 	long  	-  Architecture Field
+2785.ROW_ID                    2 	long  	-  Architecture Field
+2785.CALL_ID                   3 	long  	-  Architecture Field
+2785.PARENT_NAME               4 	string  	-  Architecture Field
+2785.PARENT_ID                 5 	long  	-  Architecture Field
+2785.JRN_DT                    6 	string	-  JRN_DT
+2785.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+2785.JRN_USER_ID               8 	string	-  JRN_USER_ID
+2785.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+2785.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+2785.PTCPNT_ID                 11 	string	-  PTCPNT_ID
+2785.TAX_ID_NO                 12 	string	-  TAX_IDFCTN_NBR
+2785.LAST_NM                   13 	string	-  LAST_NM
+2785.FIRST_NM                  14 	string	-  FIRST_NM
+2785.MIDDLE_NM                 15 	string	-  MIDDLE_NM
+2785.SLTTN_TN                  16 	string	-  SLTTN_TYPE_NM
+2785.SFX_NM                    17 	string	-  SUFFIX_NM
+2785.SSN_NO                    18 	string	-  SSN_NBR
+2785.FILE_NO                   19 	string	-  FILE_NBR
+2785.BRTHDY_DT                 20 	string	-  BRTHDY_DT
+2785.GENDER_CD                 21 	string	-  GENDER_CD
+2785.DEATH_DT                  22 	string	-  DEATH_DT
+2785.PER_DTH_CSE_TN            23 	string	-  PERSON_DEATH_CAUSE_TYPE_NM
+2785.RACE_TN                   24 	string	-  RACE_TYPE_NM
+2785.INS_FILE_NO               25 	string	-  INS_FILE_NBR
+2785.DEATH_IN_SVC              26 	string	-  DEATH_IN_SVC_IND
+2785.SVC_CNECTD_DTH            27 	string	-  SVC_CNECTD_DEATH_IND
+2785.VERIFD_IND                28 	string	-  VERIFD_IND
+2785.VADS_IND                  29 	string	-  VADS_IND
+#
+#  VN_VT_SRCH_RSLT       BUILD: 34 VERS: 34
+*base 2820
+VN_VT_SRCH_RSLT                0 	string	-  Entity Name
+2820.0.ROW_CNT                 1 	long  	-  Architecture Field
+2820.ROW_ID                    2 	long  	-  Architecture Field
+2820.CALL_ID                   3 	long  	-  Architecture Field
+2820.PARENT_NAME               4 	string  	-  Architecture Field
+2820.PARENT_ID                 5 	long  	-  Architecture Field
+2820.JRN_DT                    6 	string	-  JRN_DT
+2820.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+2820.JRN_USER_ID               8 	string	-  JRN_USER_ID
+2820.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+2820.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+2820.SEQ_NO                    11 	long  	-  SEQ_NBR
+2820.LEVEL_NO                  12 	long  	-  LEVEL_NBR
+2820.LEVEL_NM                  13 	string	-  LEVEL_NM
+2820.PTCPNT_ID                 14 	string	-  PTCPNT_ID
+2820.FIRST_NM                  15 	string	-  FIRST_NM
+2820.LAST_NM                   16 	string	-  LAST_NM
+2820.MIDDLE_NM                 17 	string	-  MIDDLE_NM
+2820.SLTTN_TN                  18 	string	-  SLTTN_TYPE_NM
+2820.SFX_NM                    19 	string	-  SUFFIX_NM
+2820.SSN_NO                    20 	string	-  SSN_NBR
+2820.BRTHDY_DT                 21 	string	-  BRTHDY_DT
+2820.DEATH_DT                  22 	string	-  DEATH_DT
+2820.FILE_NO                   23 	string	-  FILE_NBR
+2820.FCLTY_TC                  24 	string	-  FCLTY_TYPE_CD
+2820.STN_CD                    25 	string	-  STN_CD
+2820.STN_NM                    26 	string	-  STN_NM
+2820.FOLDER_TN                 27 	string	-  FOLDER_TYPE_NM
+2820.LCTN_ID                   28 	string	-  LCTN_ID
+2820.PTCPNT_RSHP_TN            29 	string	-  PTCPNT_RLNSHP_TYPE_NM
+2820.CLM_ID                    30 	string	-  CLAIM_ID
+2820.CLM_TN                    31 	string	-  CLAIM_TYPE_NM
+2820.CLM_LC_STT_TN             32 	string	-  CLAIM_LC_STATUS_TYPE_NM
+2820.CITY_NM                   33 	string	-  CITY_NM
+2820.POSTAL_CD                 34 	string	-  POSTAL_CD
+2820.ZIP_PREFIX_NO             35 	string	-  ZIP_PREFIX_NBR
+2820.ZIP_1ST_SFX_NO            36 	string	-  ZIP_FIRST_SUFFIX_NBR
+2820.ZIP_2ND_SFX_NO            37 	string	-  ZIP_SECOND_SUFFIX_NBR
+2820.COUNTY_NM                 38 	string	-  COUNTY_NM
+2820.INS_FILE_NO               39 	string	-  INS_FILE_NBR
+2820.M_TR_SEQ_NO               40 	long  	-  MLTY_TOUR_SEQ_NBR
+2820.EOD_DT                    41 	string	-  EOD_DT
+2820.RAD_DT                    42 	string	-  RAD_DT
+2820.M_SVC_BRNCH_TN            43 	string	-  MLTY_SVC_BRANCH_TYPE_NM
+2820.SVC_NO                    44 	string	-  SVC_NBR
+2820.POA_NM                    45 	string	-  POA_NM
+#
+#  VN_BIRLS       BUILD: 34 VERS: 34
+*base 2875
+VN_BIRLS                       0 	string	-  Entity Name
+2875.0.ROW_CNT                 1 	long  	-  Architecture Field
+2875.ROW_ID                    2 	long  	-  Architecture Field
+2875.CALL_ID                   3 	long  	-  Architecture Field
+2875.PARENT_NAME               4 	string  	-  Architecture Field
+2875.PARENT_ID                 5 	long  	-  Architecture Field
+2875.JRN_DT                    6 	string	-  JRN_DT
+2875.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+2875.JRN_USER_ID               8 	string	-  JRN_USER_ID
+2875.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+2875.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+2875.FILE_NO                   11 	string	-  FILE_NBR
+2875.SSN_NO                    12 	string	-  SSN_NBR
+2875.INS_FILE_NO               13 	string	-  INS_FILE_NBR
+2875.SHORT_SER_NO              14 	string	-  SHORT_SER_NBR
+2875.LAST_NM                   15 	string	-  LAST_NM
+2875.FIRST_NM                  16 	string	-  FIRST_NM
+2875.MIDDLE_NM                 17 	string	-  MIDDLE_NM
+2875.SFX_NM                    18 	string	-  SFX_NM
+2875.PAYEE                     19 	string	-  PAYEE
+2875.BRANCH                    20 	string	-  BRANCH
+2875.DOB                       21 	string	-  DOB
+2875.DOD                       22 	string	-  DOD
+2875.EOD                       23 	string	-  EOD
+2875.RAD                       24 	string	-  RAD
+2875.LOC                       25 	string	-  LOC
+#
+#  VN_B_SRCH_RSLT       BUILD: 34 VERS: 34
+*base 3235
+VN_B_SRCH_RSLT                 0 	string	-  Entity Name
+3235.0.ROW_CNT                 1 	long  	-  Architecture Field
+3235.ROW_ID                    2 	long  	-  Architecture Field
+3235.CALL_ID                   3 	long  	-  Architecture Field
+3235.PARENT_NAME               4 	string  	-  Architecture Field
+3235.PARENT_ID                 5 	long  	-  Architecture Field
+3235.JRN_DT                    6 	string	-  JRN_DT
+3235.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+3235.JRN_USER_ID               8 	string	-  JRN_USER_ID
+3235.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+3235.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+3235.LAST_NM                   11 	string	-  LAST_NM
+3235.FIRST_NM                  12 	string	-  FIRST_NM
+3235.MIDDLE_NM                 13 	string	-  MIDDLE_NM
+3235.SFX_NM                    14 	string	-  SFX_NM
+3235.FILE_NO                   15 	string	-  FILE_NO
+3235.PAYEE                     16 	string	-  PAYEE
+3235.MISC_TXT                  17 	string	-  MISC_TXT
+3235.RO_NO                     18 	string	-  RO_NO
+#
+#  VN_PTCPNT_EMAIL       BUILD: 34 VERS: 34
+*base 3260
+VN_PTCPNT_EMAIL                0 	string	-  Entity Name
+3260.0.ROW_CNT                 1 	long  	-  Architecture Field
+3260.ROW_ID                    2 	long  	-  Architecture Field
+3260.CALL_ID                   3 	long  	-  Architecture Field
+3260.PARENT_NAME               4 	string  	-  Architecture Field
+3260.PARENT_ID                 5 	long  	-  Architecture Field
+3260.JRN_DT                    6 	string	-  JRN_DT
+3260.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+3260.JRN_USER_ID               8 	string	-  JRN_USER_ID
+3260.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+3260.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+3260.PTCPNT_ID                 11 	string	-  PTCPNT_ID
+3260.PTCPNT_ADR_TN             12 	string	-  PTCPNT_ADDRS_TYPE_NM
+3260.EFCTV_DT                  13 	string	-  EFCTV_DT
+3260.EMAIL_ADR_TXT             14 	string	-  EMAIL_ADDRS_TXT
+3260.END_DT                    15 	string	-  END_DT
+#
+#  VN_SRCH_RSLT       BUILD: 34 VERS: 34
+*base 3315
+VN_SRCH_RSLT                   0 	string	-  Entity Name
+3315.0.ROW_CNT                 1 	long  	-  Architecture Field
+3315.ROW_ID                    2 	long  	-  Architecture Field
+3315.CALL_ID                   3 	long  	-  Architecture Field
+3315.PARENT_NAME               4 	string  	-  Architecture Field
+3315.PARENT_ID                 5 	long  	-  Architecture Field
+3315.JRN_DT                    6 	string	-  JRN_DT
+3315.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+3315.JRN_USER_ID               8 	string	-  JRN_USER_ID
+3315.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+3315.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+3315.SEQ_NO                    11 	long  	-  SEQ_NBR
+3315.LEVEL_NO                  12 	long  	-  LEVEL_NBR
+3315.LEVEL_NM                  13 	string	-  LEVEL_NM
+3315.PTCPNT_ID                 14 	string	-  PTCPNT_ID
+3315.FIRST_NM                  15 	string	-  FIRST_NM
+3315.MIDDLE_NM                 16 	string	-  MIDDLE_NM
+3315.LAST_NM                   17 	string	-  LAST_NM
+3315.SLTTN_TN                  18 	string	-  SLTTN_TYPE_NM
+3315.SFX_NM                    19 	string	-  SUFFIX_NM
+3315.SSN_NO                    20 	string	-  SSN_NBR
+3315.FILE_NO                   21 	string	-  FILE_NBR
+3315.TAX_ID_NO                 22 	string	-  TAX_IDFCTN_NBR
+3315.LCTN_ID                   23 	string	-  LCTN_ID
+3315.FOLDER_TN                 24 	string	-  FOLDER_TYPE_NM
+3315.RO_NO                     25 	string	-  RO_NBR
+3315.STN_NM                    26 	string	-  STN_NM
+3315.PTCPNT_RLN_ID_A           27 	string	-  PTCPNT_RLNSHP_ID_A
+3315.PTCPNT_RLN_ID_B           28 	string	-  PTCPNT_RLSNHP_ID_B
+3315.PTCPNT_RSHP_TN            29 	string	-  PTCPNT_RLNSHP_TYPE_NM
+3315.CLM_ID                    30 	string	-  CLAIM_ID
+3315.CLM_PTCPNT_TN             31 	string	-  CLAIM_PTCPNT_TYPE_NM
+3315.CLM_PTCPNT_ID_A           32 	string	-  CLAIM_PTCPNT_ID_A
+3315.CLM_PTCPNT_ID_B           33 	string	-  CLAIM_PTCPNT_ID_B
+3315.CLM_TN                    34 	string	-  CLAIM_TYPE_NM
+3315.CLM_LC_STT_TN             35 	string	-  CLAIM_LC_STATUS_TYPE_NM
+3315.POA_NM                    36 	string	-  POA_NM
+#
+#  VN_SRCH_CRTRIA       BUILD: 34 VERS: 34
+*base 3525
+VN_SRCH_CRTRIA                 0 	string	-  Entity Name
+3525.0.ROW_CNT                 1 	long  	-  Architecture Field
+3525.ROW_ID                    2 	long  	-  Architecture Field
+3525.CALL_ID                   3 	long  	-  Architecture Field
+3525.PARENT_NAME               4 	string  	-  Architecture Field
+3525.PARENT_ID                 5 	long  	-  Architecture Field
+3525.JRN_DT                    6 	string	-  JRN_DT
+3525.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+3525.JRN_USER_ID               8 	string	-  JRN_USER_ID
+3525.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+3525.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+3525.SEARCH_NO                 11 	string	-  SEARCH_NBR
+3525.FIRST_NM                  12 	string	-  FIRST_NM
+3525.MIDDLE_NM                 13 	string	-  MIDDLE_NM
+3525.LAST_NM                   14 	string	-  LAST_NM
+3525.SFX_NM                    15 	string	-  SUFFIX_NM
+3525.BRTHDY_DT                 16 	string	-  BRTHDY_DT
+3525.DEATH_DT                  17 	string	-  DEATH_DT
+3525.RO_NO                     18 	string	-  RO_NBR
+3525.BIRLS_BRNCH_NM            19 	string	-  BIRLS_BRANCH_NM
+3525.EOD_DT                    20 	string	-  EOD_DT
+3525.RAD_DT                    21 	string	-  RAD_DT
+3525.INS_FILE_NO               22 	string	-  INS_FILE_NBR
+3525.SVC_NO                    23 	string	-  SVC_NBR
+#
+#  VN_VET       BUILD: 34 VERS: 34
+*base 3555
+VN_VET                         0 	string	-  Entity Name
+3555.0.ROW_CNT                 1 	long  	-  Architecture Field
+3555.ROW_ID                    2 	long  	-  Architecture Field
+3555.CALL_ID                   3 	long  	-  Architecture Field
+3555.PARENT_NAME               4 	string  	-  Architecture Field
+3555.PARENT_ID                 5 	long  	-  Architecture Field
+3555.JRN_DT                    6 	string	-  JRN_DT
+3555.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+3555.JRN_USER_ID               8 	string	-  JRN_USER_ID
+3555.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+3555.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+3555.FILE_NO                   11 	string	-  FILE_NO
+3555.SSN_NO                    12 	string	-  SSN_NO
+3555.INS_NO                    13 	string	-  INS_NO
+3555.INS_POLICIES              14 	string	-  INS_POLICIES
+3555.SVC_NOS                   15 	string	-  SVC_NOS
+3555.LAST_NM                   16 	string	-  LAST_NM
+3555.FIRST_NM                  17 	string	-  FIRST_NM
+3555.MIDDLE_NM                 18 	string	-  MIDDLE_NM
+3555.SFX_NM                    19 	string	-  SFX_NM
+3555.ALT_NAMES                 20 	string	-  ALT_NAMES
+3555.DOB_STR                   21 	string	-  DOB_STR
+3555.DOD_STR                   22 	string	-  DOD_STR
+3555.PER_OF_SERS               23 	string	-  PER_OF_SERS
+3555.POW_DYS                   24 	string	-  POW_DYS
+3555.TAS                       25 	string	-  TAS
+3555.DIS_SV_PAY                26 	string	-  DIS_SV_PAY
+3555.LUMP_SUM                  27 	string	-  LUMP_SUM
+3555.SEP_PAY                   28 	string	-  SEP_PAY
+3555.ISO_FOLDER_INFO           29 	carray	-  ISO_FOLDER_INFO
+3555.IND_INFO                  30 	string	-  IND_INFO
+3555.COD                       31 	string	-  COD
+3555.DTH_IN_SVC_IND            32 	string	-  DTH_IN_SVC_IND
+3555.POA_NO                    33 	string	-  POA_NO
+3555.FLASH_DATA                34 	string	-  FLASH_DATA
+3555.ICP_INFO                  35 	string	-  ICP_INFO
+3555.EMP_NO                    36 	string	-  EMP_NO
+3555.STN_NO                    37 	string	-  STN_NO
+3555.LAST_UPDT_D               38 	string	-  LAST_UPDT_D
+3555.PRVCY_INFO                39 	string	-  PRVCY_INFO
+3555.INS_INFO                  40 	string	-  INS_INFO
+3555.CH30_DMDC_INFO            41 	string	-  CH30_DMDC_INFO
+3555.DMA_INFO                  42 	string	-  DMA_INFO
+#
+#  VN_VET_MISC       BUILD: 34 VERS: 34
+*base 3605
+VN_VET_MISC                    0 	string	-  Entity Name
+3605.0.ROW_CNT                 1 	long  	-  Architecture Field
+3605.ROW_ID                    2 	long  	-  Architecture Field
+3605.CALL_ID                   3 	long  	-  Architecture Field
+3605.PARENT_NAME               4 	string  	-  Architecture Field
+3605.PARENT_ID                 5 	long  	-  Architecture Field
+3605.JRN_DT                    6 	string	-  JRN_DT
+3605.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+3605.JRN_USER_ID               8 	string	-  JRN_USER_ID
+3605.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+3605.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+3605.POW_DYS                   11 	string	-  POW_DAYS
+3605.TOT_ACTIVE_SVC            12 	string	-  TOTAL_ACTIVE_SVC
+3605.POA_CD                    13 	string	-  POA_CD
+#
+#  VN_VET_FOLDER       BUILD: 34 VERS: 34
+*base 3625
+VN_VET_FOLDER                  0 	string	-  Entity Name
+3625.0.ROW_CNT                 1 	long  	-  Architecture Field
+3625.ROW_ID                    2 	long  	-  Architecture Field
+3625.CALL_ID                   3 	long  	-  Architecture Field
+3625.PARENT_NAME               4 	string  	-  Architecture Field
+3625.PARENT_ID                 5 	long  	-  Architecture Field
+3625.JRN_DT                    6 	string	-  JRN_DT
+3625.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+3625.JRN_USER_ID               8 	string	-  JRN_USER_ID
+3625.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+3625.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+3625.FOLDER_TN                 11 	string	-  FOLDER_TYPE_NM
+3625.CURNT_LCTN                12 	string	-  CURNT_LCTN
+3625.TRNSFR_DT                 13 	string	-  TRNSFR_DT
+3625.PRIOR_LCTN                14 	string	-  PRIOR_LCTN
+3625.IN_TNST_STN               15 	string	-  IN_TRNSIT_STN
+3625.IN_TNST_DT                16 	string	-  IN_TRNSIT_DT
+#
+#  VN_FID_PROF       BUILD: 34 VERS: 34
+*base 3695
+VN_FID_PROF                    0 	string	-  Entity Name
+3695.0.ROW_CNT                 1 	long  	-  Architecture Field
+3695.ROW_ID                    2 	long  	-  Architecture Field
+3695.CALL_ID                   3 	long  	-  Architecture Field
+3695.PARENT_NAME               4 	string  	-  Architecture Field
+3695.PARENT_ID                 5 	long  	-  Architecture Field
+3695.JRN_DT                    6 	string	-  JRN_DT
+3695.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+3695.JRN_USER_ID               8 	string	-  JRN_USER_ID
+3695.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+3695.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+3695.PTCPNT_ID                 11 	string	-  PTCPNT_ID
+3695.FID_PTCPNT_ID             12 	string	-  FID_PTCPNT_ID
+3695.PTCPNT_RSHP_TN            13 	string	-  PTCPNT_RLNSHP_TYPE_NM
+3695.FID_ATTNTN_TXT            14 	string	-  FID_ATTNTN_TXT
+3695.EFCTV_DT                  15 	string	-  EFCTV_DT
+3695.END_DT                    16 	string	-  END_DT
+3695.PTCPNT_TN                 17 	string	-  PTCPNT_TYPE_NM
+3695.TAX_ID_NO                 18 	string	-  TAX_IDFCTN_NBR
+3695.ORG_TN                    19 	string	-  ORG_TYPE_NM
+3695.ORG_NM                    20 	string	-  ORG_NM
+3695.SSN_NO                    21 	string	-  SSN_NBR
+3695.FIRST_NM                  22 	string	-  FIRST_NM
+3695.MIDDLE_NM                 23 	string	-  MIDDLE_NM
+3695.LAST_NM                   24 	string	-  LAST_NM
+3695.SLTTN_TN                  25 	string	-  SLTTN_TYPE_NM
+3695.SFX_NM                    26 	string	-  SUFFIX_NM
+3695.RO_NO                     27 	string	-  RO_NBR
+3695.STT_TC                    28 	string	-  STATUS_TYPE_CD
+3695.PRPTNL_PHRASE_TN          29 	string	-  PRPTNL_PHRASE_TYPE_NM
+3695.BRTHDY_DT                 30 	string	-  BRTHDY_DT
+3695.DEATH_DT                  31 	string	-  DEATH_DT
+3695.CNSLDT_PAYEE_CD           32 	string	-  CNSLDT_PAYEE_CD
+3695.RO_NM                     33 	string	-  RO_NM
+#
+#  VN_POA       BUILD: 34 VERS: 34
+*base 3755
+VN_POA                         0 	string	-  Entity Name
+3755.0.ROW_CNT                 1 	long  	-  Architecture Field
+3755.ROW_ID                    2 	long  	-  Architecture Field
+3755.CALL_ID                   3 	long  	-  Architecture Field
+3755.PARENT_NAME               4 	string  	-  Architecture Field
+3755.PARENT_ID                 5 	long  	-  Architecture Field
+3755.JRN_DT                    6 	string	-  JRN_DT
+3755.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+3755.JRN_USER_ID               8 	string	-  JRN_USER_ID
+3755.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+3755.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+3755.PTCPNT_ID                 11 	string	-  PTCPNT_ID
+3755.ORG_TN                    12 	string	-  ORG_TYPE_NM
+3755.NM                        13 	string	-  NM
+3755.TAX_ID_NO                 14 	string	-  TAX_IDFCTN_NBR
+#
+#  VN_POA_PROF       BUILD: 34 VERS: 34
+*base 3800
+VN_POA_PROF                    0 	string	-  Entity Name
+3800.0.ROW_CNT                 1 	long  	-  Architecture Field
+3800.ROW_ID                    2 	long  	-  Architecture Field
+3800.CALL_ID                   3 	long  	-  Architecture Field
+3800.PARENT_NAME               4 	string  	-  Architecture Field
+3800.PARENT_ID                 5 	long  	-  Architecture Field
+3800.JRN_DT                    6 	string	-  JRN_DT
+3800.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+3800.JRN_USER_ID               8 	string	-  JRN_USER_ID
+3800.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+3800.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+3800.PTCPNT_ID_A               11 	string	-  PTCPNT_ID_A
+3800.PTCPNT_ID_B               12 	string	-  PTCPNT_ID_B
+3800.PTCPNT_RSHP_TN            13 	string	-  PTCPNT_RLNSHP_TYPE_NM
+3800.EFCTV_DT                  14 	string	-  EFCTV_DT
+3800.END_DT                    15 	string	-  END_DT
+3800.TAX_ID_NO                 16 	string	-  TAX_IDFCTN_NBR
+3800.ORG_TN                    17 	string	-  ORG_TYPE_NM
+3800.ORG_NM                    18 	string	-  ORG_NM
+3800.FULL_NM                   19 	string	-  FULL_NM
+3800.STT_TC                    20 	string	-  STATUS_TYPE_CD
+3800.BRTHDY_DT                 21 	string	-  BRTHDY_DT
+3800.DEATH_DT                  22 	string	-  DEATH_DT
+3800.FIRST_NM                  23 	string	-  FIRST_NM
+3800.MIDDLE_NM                 24 	string	-  MIDDLE_NM
+3800.LAST_NM                   25 	string	-  LAST_NM
+3800.SFX_NM                    26 	string	-  SUFFIX_NM
+3800.SSN_NO                    27 	string	-  SSN_NBR
+#
+#  VN_FOLDER       BUILD: 34 VERS: 34
+*base 4460
+VN_FOLDER                      0 	string	-  Entity Name
+4460.0.ROW_CNT                 1 	long  	-  Architecture Field
+4460.ROW_ID                    2 	long  	-  Architecture Field
+4460.CALL_ID                   3 	long  	-  Architecture Field
+4460.PARENT_NAME               4 	string  	-  Architecture Field
+4460.PARENT_ID                 5 	long  	-  Architecture Field
+4460.JRN_DT                    6 	string	-  JRN_DT
+4460.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+4460.JRN_USER_ID               8 	string	-  JRN_USER_ID
+4460.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+4460.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+4460.PTCPNT_ID                 11 	string	-  PTCPNT_ID
+4460.LCTN_ID                   12 	string	-  LCTN_ID
+4460.FOLDER_TN                 13 	string	-  FOLDER_TYPE_NM
+#
+#  VN_ORG       BUILD: 34 VERS: 34
+*base 4480
+VN_ORG                         0 	string	-  Entity Name
+4480.0.ROW_CNT                 1 	long  	-  Architecture Field
+4480.ROW_ID                    2 	long  	-  Architecture Field
+4480.CALL_ID                   3 	long  	-  Architecture Field
+4480.PARENT_NAME               4 	string  	-  Architecture Field
+4480.PARENT_ID                 5 	long  	-  Architecture Field
+4480.JRN_DT                    6 	string	-  JRN_DT
+4480.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+4480.JRN_USER_ID               8 	string	-  JRN_USER_ID
+4480.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+4480.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+4480.PTCPNT_ID                 11 	string	-  PTCPNT_ID
+4480.ORG_TN                    12 	string	-  ORG_TYPE_NM
+4480.NM                        13 	string	-  NM
+4480.TAX_ID_NO                 14 	string	-  TAX_IDFCTN_NBR
+4480.EXTNL_ID                  15 	string	-  EXTNL_ID
+#
+#  VN_PERSON       BUILD: 34 VERS: 34
+*base 4500
+VN_PERSON                      0 	string	-  Entity Name
+4500.0.ROW_CNT                 1 	long  	-  Architecture Field
+4500.ROW_ID                    2 	long  	-  Architecture Field
+4500.CALL_ID                   3 	long  	-  Architecture Field
+4500.PARENT_NAME               4 	string  	-  Architecture Field
+4500.PARENT_ID                 5 	long  	-  Architecture Field
+4500.JRN_DT                    6 	string	-  JRN_DT
+4500.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+4500.JRN_USER_ID               8 	string	-  JRN_USER_ID
+4500.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+4500.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+4500.PTCPNT_ID                 11 	string	-  PTCPNT_ID
+4500.PER_TN                    12 	string	-  PERSON_TYPE_NM
+4500.VET_IND                   13 	string	-  VET_IND
+4500.VET_TN                    14 	string	-  VET_TYPE_NM
+4500.FIRST_NM                  15 	string	-  FIRST_NM
+4500.LAST_NM                   16 	string	-  LAST_NM
+4500.MIDDLE_NM                 17 	string	-  MIDDLE_NM
+4500.SLTTN_TN                  18 	string	-  SLTTN_TYPE_NM
+4500.SFX_NM                    19 	string	-  SUFFIX_NM
+4500.SSN_NO                    20 	string	-  SSN_NBR
+4500.BRTHDY_DT                 21 	string	-  BRTHDY_DT
+4500.GENDER_CD                 22 	string	-  GENDER_CD
+4500.DEATH_DT                  23 	string	-  DEATH_DT
+4500.RACE_TN                   24 	string	-  RACE_TYPE_NM
+4500.FILE_NO                   25 	string	-  FILE_NBR
+4500.DTH_CSE_TN                26 	string	-  DEATH_CAUSE_TYPE_NM
+4500.EMP_IND                   27 	string	-  EMP_IND
+4500.M_PER_IND                 28 	string	-  MLTY_PERSON_IND
+4500.MO_PRE_EMP_NO             29 	long  	-  MONTHS_PRESNT_EMPLYR_NBR
+4500.OCPTN_TXT                 30 	string	-  OCPTN_TXT
+4500.POT_DNGRS_IND             31 	string	-  POTNTL_DNGRS_IND
+4500.YRS_PRE_EMP_NO            32 	long  	-  YEARS_PRESNT_EMPLYR_NBR
+4500.ENTLMT_TC                 33 	string	-  ENTLMT_TYPE_CD
+4500.LGY_ENTLMT_TC             34 	string	-  LGY_ENTLMT_TYPE_CD
+4500.NET_WORTH_AMT             35 	long  	-  NET_WORTH_AMT
+4500.FRGN_SVC_NBR              36 	long  	-  FRGN_SVC_NBR
+4500.SRSEMP_HDCP_IND           37 	string	-  SEROUS_EMPLMT_HNDCAP_IND
+4500.SPNA_BIFIDA_IND           38 	string	-  SPINA_BIFIDA_IND
+4500.DEP_NBR                   39 	long  	-  DEP_NBR
+4500.SBSTNC_AMT                40 	string	-  SBSTNC_AMT
+4500.TERM_DIG_NBR              41 	string	-  TERMNL_DIGIT_NBR
+4500.BIRTH_CITY_NM             42 	string	-  BIRTH_CITY_NM
+4500.BIRTH_STATE_CD            43 	string	-  BIRTH_STATE_CD
+4500.SSNVRFCN_STT_TC           44 	string	-  SSN_VRFCN_STT_TC
+4500.TAX_IDFCTN_NBR            45 	string	-  TAX_IDFCTN_NBR
+4500.CMPTNY_DECN_TC            46 	string	-  CMPTNY_DECN_TYPE_CD
+4500.NO_SSN_RSN_TC             47 	string	-  NO_SSN_REASON_TYPE_CD
+4500.FID_DECN_CATEGY_TC        48 	string	-  FID_DECN_CATEGY_TC
+4500.TAX_ABTMNT_CD             49 	string	-  TAX_ABTMNT_CD
+#
+#  VN_TYPE_CATEGZ       BUILD: 34 VERS: 34
+*base 5935
+VN_TYPE_CATEGZ                 0 	string	-  Entity Name
+5935.0.ROW_CNT                 1 	long  	-  Architecture Field
+5935.ROW_ID                    2 	long  	-  Architecture Field
+5935.CALL_ID                   3 	long  	-  Architecture Field
+5935.PARENT_NAME               4 	string  	-  Architecture Field
+5935.PARENT_ID                 5 	long  	-  Architecture Field
+5935.JRN_DT                    6 	string	-  JRN_DT
+5935.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+5935.JRN_USER_ID               8 	string	-  JRN_USER_ID
+5935.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+5935.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+5935.GROUP_TN                  11 	string	-  GROUP_TYPE_NM
+5935.NM                        12 	string	-  NM
+5935.CD                        13 	string	-  CD
+5935.PGM_TC                    14 	string	-  PGM_TYPE_CD
+5935.USAGE_NO                  15 	long  	-  USAGE_NBR
+5935.SORT_ORDER_NO             16 	long  	-  SORT_ORDER_NBR
+#
+#  VN_TYPE_RLNSHP       BUILD: 34 VERS: 34
+*base 5960
+VN_TYPE_RLNSHP                 0 	string	-  Entity Name
+5960.0.ROW_CNT                 1 	long  	-  Architecture Field
+5960.ROW_ID                    2 	long  	-  Architecture Field
+5960.CALL_ID                   3 	long  	-  Architecture Field
+5960.PARENT_NAME               4 	string  	-  Architecture Field
+5960.PARENT_ID                 5 	long  	-  Architecture Field
+5960.JRN_DT                    6 	string	-  JRN_DT
+5960.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+5960.JRN_USER_ID               8 	string	-  JRN_USER_ID
+5960.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+5960.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+5960.GROUP_TN                  11 	string	-  GROUP_TYPE_NM
+5960.NM                        12 	string	-  NM
+5960.CD                        13 	string	-  CD
+5960.RSHP_GROUP_TN             14 	string	-  RLNSHP_GROUP_TYPE_NM
+5960.RSHP_NM                   15 	string	-  RLNSHP_NM
+5960.RSHP_CD                   16 	string	-  RLNSHP_CD
+5960.PGM_TC                    17 	string	-  PGM_TYPE_CD
+5960.SORT_ORDER_NO             18 	long  	-  SORT_ORDER_NBR
+#
+#  VN_PERSON_FIN       BUILD: 34 VERS: 34
+*base 8175
+VN_PERSON_FIN                  0 	string	-  Entity Name
+8175.0.ROW_CNT                 1 	long  	-  Architecture Field
+8175.ROW_ID                    2 	long  	-  Architecture Field
+8175.CALL_ID                   3 	long  	-  Architecture Field
+8175.PARENT_NAME               4 	string  	-  Architecture Field
+8175.PARENT_ID                 5 	long  	-  Architecture Field
+8175.JRN_DT                    6 	string	-  JRN_DT
+8175.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+8175.JRN_USER_ID               8 	string	-  JRN_USER_ID
+8175.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+8175.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+8175.PTCPNT_ID                 11 	string	-  PTCPNT_ID
+8175.RET_FROM_DT               12 	string	-  RETIRD_FROM_DT
+8175.RET_AMT                   13 	string	-  RETIRD_AMT
+#
+#  VN_TYPE       BUILD: 34 VERS: 34
+*base 8195
+VN_TYPE                        0 	string	-  Entity Name
+8195.0.ROW_CNT                 1 	long  	-  Architecture Field
+8195.ROW_ID                    2 	long  	-  Architecture Field
+8195.CALL_ID                   3 	long  	-  Architecture Field
+8195.PARENT_NAME               4 	string  	-  Architecture Field
+8195.PARENT_ID                 5 	long  	-  Architecture Field
+8195.JRN_DT                    6 	string	-  JRN_DT
+8195.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+8195.JRN_USER_ID               8 	string	-  JRN_USER_ID
+8195.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+8195.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+8195.GROUP_TN                  11 	string	-  GROUP_TYPE_NM
+8195.NM                        12 	string	-  NM
+8195.CD                        13 	string	-  CD
+8195.DESCP_TXT                 14 	string	-  DESCP_TXT
+8195.DACTVT_DT                 15 	string	-  DACTVT_DT
+#
+#  AR_SERVICES2       BUILD: 34 VERS: 34
+*base 8215
+AR_SERVICES2                   0 	string	-  Entity Name
+8215.0.ROW_CNT                 1 	long  	-  Architecture Field
+8215.ROW_ID                    2 	long  	-  Architecture Field
+8215.CALL_ID                   3 	long  	-  Architecture Field
+8215.PARENT_NAME               4 	string  	-  Architecture Field
+8215.PARENT_ID                 5 	long  	-  Architecture Field
+8215.JRN_DT                    6 	string	-  JRN_DT
+8215.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+8215.JRN_USER_ID               8 	string	-  JRN_USER_ID
+8215.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+8215.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+8215.PROJ_PFX                  11 	string	-  PROJ_PFX
+8215.SVC_ROOT                  12 	string	-  SVC_ROOT
+8215.SVC_NAME                  13 	string	-  SVC_NAME
+8215.DESCRIPTION               14 	string	-  DESCRIPTION
+8215.SVC_ID                    15 	long  	-  SVC_ID
+8215.PRJ_ID                    16 	string	-  PRJ_ID
+8215.BUILD_NO                  17 	long  	-  BUILD_NBR
+#
+#  AR_PROPERTIES2       BUILD: 34 VERS: 34
+*base 8235
+AR_PROPERTIES2                 0 	string	-  Entity Name
+8235.0.ROW_CNT                 1 	long  	-  Architecture Field
+8235.ROW_ID                    2 	long  	-  Architecture Field
+8235.CALL_ID                   3 	long  	-  Architecture Field
+8235.PARENT_NAME               4 	string  	-  Architecture Field
+8235.PARENT_ID                 5 	long  	-  Architecture Field
+8235.JRN_DT                    6 	string	-  JRN_DT
+8235.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+8235.JRN_USER_ID               8 	string	-  JRN_USER_ID
+8235.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+8235.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+8235.TABLE_NAME                11 	string	-  TABLE_NAME
+8235.FIELD_NAME                12 	string	-  FIELD_NAME
+8235.PROP_NAME                 13 	string	-  PROP_NAME
+8235.PROP_VALUE                14 	string	-  PROP_VALUE
+8235.PRJ_NM                    15 	string	-  PRJ_NM
+8235.BUILD_NO                  16 	long  	-  BUILD_NBR
+#
+#  VN_ENTITY_DEFS2       BUILD: 34 VERS: 34
+*base 8255
+VN_ENTITY_DEFS2                0 	string	-  Entity Name
+8255.0.ROW_CNT                 1 	long  	-  Architecture Field
+8255.ROW_ID                    2 	long  	-  Architecture Field
+8255.CALL_ID                   3 	long  	-  Architecture Field
+8255.PARENT_NAME               4 	string  	-  Architecture Field
+8255.PARENT_ID                 5 	long  	-  Architecture Field
+8255.JRN_DT                    6 	string	-  JRN_DT
+8255.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+8255.JRN_USER_ID               8 	string	-  JRN_USER_ID
+8255.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+8255.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+8255.ID                        11 	long  	-  ID
+8255.NM                        12 	string	-  NM
+8255.UNIVERSAL_NM              13 	string	-  UNIVERSAL_NM
+8255.VN_BUILD                  14 	long  	-  VN_BUILD
+8255.VN_VERSION                15 	long  	-  VN_VERSION
+8255.BLD_DT                    16 	string	-  BLD_DT
+8255.ORACLE_NM                 17 	string	-  ORACLE_NM
+8255.PRJ_NM                    18 	string	-  PRJ_NM
+8255.READ_VW_IND               19 	string	-  READ_VIEW_IND
+8255.FML_BASE                  20 	long  	-  FML_BASE
+8255.TIER_TC                   21 	string	-  TIER_TYPE_CD
+8255.OP_TYPE                   22 	string	-  OP_TYPE
+8255.PRJ_ID                    23 	string	-  PRJ_ID
+8255.ENTITY_PFX                24 	string	-  ENTITY_PFX
+#
+#  VN_SET_DEF2       BUILD: 34 VERS: 34
+*base 8300
+VN_SET_DEF2                    0 	string	-  Entity Name
+8300.0.ROW_CNT                 1 	long  	-  Architecture Field
+8300.ROW_ID                    2 	long  	-  Architecture Field
+8300.CALL_ID                   3 	long  	-  Architecture Field
+8300.PARENT_NAME               4 	string  	-  Architecture Field
+8300.PARENT_ID                 5 	long  	-  Architecture Field
+8300.JRN_DT                    6 	string	-  JRN_DT
+8300.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+8300.JRN_USER_ID               8 	string	-  JRN_USER_ID
+8300.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+8300.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+8300.ID                        11 	long  	-  ID
+8300.NM                        12 	string	-  NM
+8300.ALTERNATE_NM              13 	string	-  ALTERNATE_NM
+8300.OPERATION_TYPE            14 	string	-  OPERATION_TYPE
+8300.SET_ORDER                 15 	long  	-  SET_ORDER
+8300.CM_BUS_TRAN_ID            16 	string	-  CM_BUS_TRAN_ID
+8300.FML_NM                    17 	string	-  FML_NM
+8300.ORACLE_NM                 18 	string	-  ORACLE_NM
+8300.RECORD_TYPE               19 	string	-  RECORD_TYPE
+8300.PRJ_NM                    20 	string	-  PRJ_NM
+8300.PRJ_ID                    21 	string	-  PRJ_ID
+8300.BUILD_NO                  22 	long  	-  BUILD_NBR
+#
+#  VN_FIELD_DEFS2       BUILD: 34 VERS: 34
+*base 8325
+VN_FIELD_DEFS2                 0 	string	-  Entity Name
+8325.0.ROW_CNT                 1 	long  	-  Architecture Field
+8325.ROW_ID                    2 	long  	-  Architecture Field
+8325.CALL_ID                   3 	long  	-  Architecture Field
+8325.PARENT_NAME               4 	string  	-  Architecture Field
+8325.PARENT_ID                 5 	long  	-  Architecture Field
+8325.JRN_DT                    6 	string	-  JRN_DT
+8325.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+8325.JRN_USER_ID               8 	string	-  JRN_USER_ID
+8325.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+8325.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+8325.ATTRIBUTE_ID              11 	long  	-  ATTRIBUTE_ID
+8325.BASE_SIZE                 12 	long  	-  BASE_SIZE
+8325.DECIMAL_PLACES            13 	long  	-  DECIMAL_PLACES
+8325.ENTDEF_ID                 14 	long  	-  ENTDEF_ID
+8325.FML_NM                    15 	string	-  FML_NM
+8325.SECURITY                  16 	long  	-  SECURITY
+8325.TOOLTIPTXT                17 	string	-  TOOLTIPTXT
+8325.BUSINESS_NM               18 	string	-  BUSINESS_NM
+8325.CAPTION                   19 	string	-  CAPTION
+8325.FORMAT                    20 	string	-  FORMAT
+8325.FML_IND                   21 	string	-  FML_IND
+8325.INDX_TYPE_ID              22 	long  	-  INDX_TYPE_ID
+8325.FML_POS                   23 	long  	-  FML_POS
+8325.GUI_SIZE                  24 	long  	-  GUI_SIZE
+8325.GUI_TYPE                  25 	string	-  GUI_TYPE
+8325.ORA_TABLE_COL             26 	string	-  ORA_TABLE_COL
+8325.ORA_TABLE                 27 	string	-  ORA_TABLE
+8325.ORA_GEN_ON                28 	string	-  ORA_GEN_ON
+8325.ORA_GEN_MAX_BAS           29 	string	-  ORA_GEN_MAX_BASE
+8325.ORA_GEN_IND               30 	string	-  ORA_GEN_IND
+8325.ORA_VALIDATION            31 	string	-  ORA_VALIDATION
+8325.ORA_COL_WIDTH             32 	long  	-  ORA_COL_WIDTH
+8325.ORA_VAL_IND               33 	string	-  ORA_VAL_IND
+8325.ORA_COL_VW_IND            34 	string	-  ORA_COL_VW_IND
+8325.ORA_COL_ORDER             35 	long  	-  ORA_COL_ORDER
+8325.ORA_SIZE                  36 	long  	-  ORA_SIZE
+8325.ORA_DEFLT_VAL             37 	string	-  ORA_DEFLT_VAL
+8325.VIEW_COL_NM               38 	string	-  VIEW_COL_NM
+8325.VNREQUIRED_IND            39 	string	-  VNREQUIRED_IND
+8325.VNUPDATABLE_IND           40 	string	-  VNUPDATABLE_IND
+8325.VNFILL_IND                41 	string	-  VNFILL_IND
+8325.HEADER_FLD_IND            42 	string	-  HEADER_FLD_IND
+8325.BASE_TYPE_ID              43 	long  	-  BASE_TYPE_ID
+8325.ORA_DATA_TYPE             44 	string	-  ORA_DATA_TYPE
+8325.PRJ_NM                    45 	string	-  PRJ_NM
+8325.BUILD_NO                  46 	long  	-  BUILD_NBR
+#
+#  AR_SVC_TABLES2       BUILD: 34 VERS: 34
+*base 8375
+AR_SVC_TABLES2                 0 	string	-  Entity Name
+8375.0.ROW_CNT                 1 	long  	-  Architecture Field
+8375.ROW_ID                    2 	long  	-  Architecture Field
+8375.CALL_ID                   3 	long  	-  Architecture Field
+8375.PARENT_NAME               4 	string  	-  Architecture Field
+8375.PARENT_ID                 5 	long  	-  Architecture Field
+8375.JRN_DT                    6 	string	-  JRN_DT
+8375.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+8375.JRN_USER_ID               8 	string	-  JRN_USER_ID
+8375.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+8375.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+8375.SVC_ID                    11 	long  	-  SVC_ID
+8375.TABLE_NAME                12 	string	-  TABLE_NAME
+8375.TABLE_TYPE                13 	string	-  TABLE_TYPE
+8375.PRJ_NM                    14 	string	-  PRJ_NM
+8375.BUILD_NO                  15 	long  	-  BUILD_NBR
+#
+#  VN_COPY_BUILD       BUILD: 34 VERS: 34
+*base 8395
+VN_COPY_BUILD                  0 	string	-  Entity Name
+8395.0.ROW_CNT                 1 	long  	-  Architecture Field
+8395.ROW_ID                    2 	long  	-  Architecture Field
+8395.CALL_ID                   3 	long  	-  Architecture Field
+8395.PARENT_NAME               4 	string  	-  Architecture Field
+8395.PARENT_ID                 5 	long  	-  Architecture Field
+8395.JRN_DT                    6 	string	-  JRN_DT
+8395.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+8395.JRN_USER_ID               8 	string	-  JRN_USER_ID
+8395.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+8395.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+8395.PRJ_NM                    11 	string	-  PRJ_NM
+8395.SRC_BUILD_NO              12 	long  	-  SRC_BUILD_NBR
+#
+#  VN_PRJ       BUILD: 34 VERS: 34
+*base 8410
+VN_PRJ                         0 	string	-  Entity Name
+8410.0.ROW_CNT                 1 	long  	-  Architecture Field
+8410.ROW_ID                    2 	long  	-  Architecture Field
+8410.CALL_ID                   3 	long  	-  Architecture Field
+8410.PARENT_NAME               4 	string  	-  Architecture Field
+8410.PARENT_ID                 5 	long  	-  Architecture Field
+8410.JRN_DT                    6 	string	-  JRN_DT
+8410.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+8410.JRN_USER_ID               8 	string	-  JRN_USER_ID
+8410.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+8410.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+8410.ARCHTR_PROJ_ID            11 	string	-  ARCHTR_PROJ_ID
+8410.PRJ_NM                    12 	string	-  PROJ_NM
+8410.ORACLE_USER_NM            13 	string	-  ORACLE_USER_NM
+8410.TUXEDO_USER_NM            14 	string	-  TUXEDO_USER_NM
+8410.PRJ_DESCP                 15 	string	-  PROJ_DESCP
+8410.CLIENT_PRJ_TXT            16 	string	-  CLIENT_PROJ_TXT
+8410.MAX_BUILD_NBR             17 	long  	-  MAX_BUILD_NBR
+8410.ENV_TXT                   18 	string	-  ENVRMT_NM
+8410.BUILD_NO                  19 	long  	-  BUILD_NBR
+8410.LOCKED_IND                20 	string	-  LOCKED_IND
+8410.AR_PRJBLD_ST_ID           21 	string	-  ARC_PRJ_BLD_STT_ID
+#
+#  VN_STN       BUILD: 34 VERS: 34
+*base 9830
+VN_STN                         0 	string	-  Entity Name
+9830.0.ROW_CNT                 1 	long  	-  Architecture Field
+9830.ROW_ID                    2 	long  	-  Architecture Field
+9830.CALL_ID                   3 	long  	-  Architecture Field
+9830.PARENT_NAME               4 	string  	-  Architecture Field
+9830.PARENT_ID                 5 	long  	-  Architecture Field
+9830.JRN_DT                    6 	string	-  JRN_DT
+9830.JRN_LCTN_ID               7 	string	-  JRN_LCTN_ID
+9830.JRN_USER_ID               8 	string	-  JRN_USER_ID
+9830.JRN_STT_TC                9 	string	-  JRN_STATUS_TYPE_CD
+9830.JRN_OBJ_ID                10 	string	-  JRN_OBJ_ID
+9830.LCTN_ID                   11 	string	-  LCTN_ID
+9830.NM                        12 	string	-  NM
+9830.FCLTY_TC                  13 	string	-  FCLTY_TYPE_CD
+9830.CD                        14 	string	-  CD
+9830.ADJ_RSN_VAL_IND           15 	string	-  ADJUST_RSNBL_VALUE_IND
+9830.EST_RSN_VAL_IND           16 	string	-  ESTAB_RSNBL_VALUE_IND
+9830.DESCP_TXT                 17 	string	-  DESCP_TXT
+9830.PTCPNT_ID                 18 	string	-  PTCPNT_ID
+#
+#  VN_SEND       BUILD: 34 VERS: 34
+*base 10770
+VN_SEND                        0 	string	-  Entity Name
+10770.0.ROW_CNT                1 	long  	-  Architecture Field
+10770.ROW_ID                   2 	long  	-  Architecture Field
+10770.CALL_ID                  3 	long  	-  Architecture Field
+10770.PARENT_NAME              4 	string  	-  Architecture Field
+10770.PARENT_ID                5 	long  	-  Architecture Field
+10770.JRN_DT                   6 	string	-  JRN_DT
+10770.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+10770.JRN_USER_ID              8 	string	-  JRN_USER_ID
+10770.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+10770.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+10770.VN_STRING                11 	string	-  VN_STRING
+10770.VN_LONG                  12 	long  	-  VN_LONG
+10770.VN_DATE                  13 	string	-  VN_DATE
+#
+#  VN_CNTRY_TYPE       BUILD: 34 VERS: 34
+*base 11259
+VN_CNTRY_TYPE                  0 	string	-  Entity Name
+11259.0.ROW_CNT                1 	long  	-  Architecture Field
+11259.ROW_ID                   2 	long  	-  Architecture Field
+11259.CALL_ID                  3 	long  	-  Architecture Field
+11259.PARENT_NAME              4 	string  	-  Architecture Field
+11259.PARENT_ID                5 	long  	-  Architecture Field
+11259.JRN_DT                   6 	string	-  JRN_DT
+11259.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+11259.JRN_USER_ID              8 	string	-  JRN_USER_ID
+11259.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+11259.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+11259.CNTRY_NM                 11 	string	-  CNTRY_NM
+11259.CNTRY_CD                 12 	string	-  CNTRY_CD
+11259.FRGN_CNTRY_CD            13 	string	-  FRGN_CNTRY_CD
+11259.EFT_CNTRY_CD             14 	string	-  EFT_CNTRY_CD
+11259.EFT_CNTRY_NM             15 	string	-  EFT_CNTRY_NM
+11259.DESCP_TXT                16 	string	-  DESCP_TXT
+#
+#  VN_POSTAL_TYPE       BUILD: 34 VERS: 34
+*base 11281
+VN_POSTAL_TYPE                 0 	string	-  Entity Name
+11281.0.ROW_CNT                1 	long  	-  Architecture Field
+11281.ROW_ID                   2 	long  	-  Architecture Field
+11281.CALL_ID                  3 	long  	-  Architecture Field
+11281.PARENT_NAME              4 	string  	-  Architecture Field
+11281.PARENT_ID                5 	long  	-  Architecture Field
+11281.JRN_DT                   6 	string	-  JRN_DT
+11281.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+11281.JRN_USER_ID              8 	string	-  JRN_USER_ID
+11281.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+11281.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+11281.POSTAL_CD                11 	string	-  POSTAL_CD
+11281.NM                       12 	string	-  NM
+11281.CMN_LAW_ST_IND           13 	string	-  CMN_LAW_ST_IND
+11281.DESCP_TXT                14 	string	-  DESCP_TXT
+11281.LGY_FIPS_ST_CD           15 	string	-  LGY_FIPS_ST_CD
+11281.STATE_IND                16 	string	-  STATE_IND
+#
+#  VN_TABLE_DEFS       BUILD: 34 VERS: 34
+*base 11433
+VN_TABLE_DEFS                  0 	string	-  Entity Name
+11433.0.ROW_CNT                1 	long  	-  Architecture Field
+11433.ROW_ID                   2 	long  	-  Architecture Field
+11433.CALL_ID                  3 	long  	-  Architecture Field
+11433.PARENT_NAME              4 	string  	-  Architecture Field
+11433.PARENT_ID                5 	long  	-  Architecture Field
+11433.JRN_DT                   6 	string	-  JRN_DT
+11433.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+11433.JRN_USER_ID              8 	string	-  JRN_USER_ID
+11433.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+11433.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+11433.ARCH_ENTITY_ID           11 	string	-  ARCH_ENTITY_ID
+11433.NM                       12 	string	-  NM
+11433.TABLE_ORDER_NO           13 	long  	-  TABLE_ORDER_NBR
+11433.OPERTN_TXT               14 	string	-  OPERTN_TXT
+11433.PRJ_NM                   15 	string	-  PRJ_NM
+11433.BUILD_NO                 16 	long  	-  BUILD_NBR
+11433.GEN_OPERN_TXT            17 	string	-  GEN_OPERN_TXT
+11433.ARCHTR_TABLE_ID          18 	string	-  ARCHTR_TABLE_ID
+#
+#  VN_ENTITY_DEFS       BUILD: 34 VERS: 34
+*base 12285
+VN_ENTITY_DEFS                 0 	string	-  Entity Name
+12285.0.ROW_CNT                1 	long  	-  Architecture Field
+12285.ROW_ID                   2 	long  	-  Architecture Field
+12285.CALL_ID                  3 	long  	-  Architecture Field
+12285.PARENT_NAME              4 	string  	-  Architecture Field
+12285.PARENT_ID                5 	long  	-  Architecture Field
+12285.JRN_DT                   6 	string	-  JRN_DT
+12285.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+12285.JRN_USER_ID              8 	string	-  JRN_USER_ID
+12285.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+12285.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+12285.ID                       11 	long  	-  ID
+12285.NM                       12 	string	-  NM
+12285.UNIVERSAL_NM             13 	string	-  UNIVERSAL_NM
+12285.VN_BUILD                 14 	long  	-  VN_BUILD
+12285.VN_VERSION               15 	long  	-  VN_VERSION
+12285.BLD_DT                   16 	string	-  BLD_DT
+12285.ORACLE_NM                17 	string	-  ORACLE_NM
+12285.PRJ_NM                   18 	string	-  PRJ_NM
+12285.READ_VW_IND              19 	string	-  READ_VIEW_IND
+12285.FML_BASE                 20 	long  	-  FML_BASE
+12285.TIER_TC                  21 	string	-  TIER_TYPE_CD
+12285.OP_TYPE                  22 	string	-  OP_TYPE
+#
+#  VN_FIELD_DEFS       BUILD: 34 VERS: 34
+*base 12310
+VN_FIELD_DEFS                  0 	string	-  Entity Name
+12310.0.ROW_CNT                1 	long  	-  Architecture Field
+12310.ROW_ID                   2 	long  	-  Architecture Field
+12310.CALL_ID                  3 	long  	-  Architecture Field
+12310.PARENT_NAME              4 	string  	-  Architecture Field
+12310.PARENT_ID                5 	long  	-  Architecture Field
+12310.JRN_DT                   6 	string	-  JRN_DT
+12310.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+12310.JRN_USER_ID              8 	string	-  JRN_USER_ID
+12310.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+12310.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+12310.ATTRIBUTE_ID             11 	long  	-  ATTRIBUTE_ID
+12310.BASE_SIZE                12 	long  	-  BASE_SIZE
+12310.DECIMAL_PLACES           13 	long  	-  DECIMAL_PLACES
+12310.ENTDEF_ID                14 	long  	-  ENTDEF_ID
+12310.FML_NM                   15 	string	-  FML_NM
+12310.SECURITY                 16 	long  	-  SECURITY
+12310.TOOLTIPTXT               17 	string	-  TOOLTIPTXT
+12310.BUSINESS_NM              18 	string	-  BUSINESS_NM
+12310.CAPTION                  19 	string	-  CAPTION
+12310.FORMAT                   20 	string	-  FORMAT
+12310.FML_IND                  21 	string	-  FML_IND
+12310.INDX_TYPE_ID             22 	long  	-  INDX_TYPE_ID
+12310.FML_POS                  23 	long  	-  FML_POS
+12310.GUI_SIZE                 24 	long  	-  GUI_SIZE
+12310.GUI_TYPE                 25 	string	-  GUI_TYPE
+12310.ORA_TABLE_COL            26 	string	-  ORA_TABLE_COL
+12310.ORA_TABLE                27 	string	-  ORA_TABLE
+12310.ORA_GEN_ON               28 	string	-  ORA_GEN_ON
+12310.ORA_GEN_MAX_BAS          29 	string	-  ORA_GEN_MAX_BASE
+12310.ORA_GEN_IND              30 	string	-  ORA_GEN_IND
+12310.ORA_VALIDATION           31 	string	-  ORA_VALIDATION
+12310.ORA_COL_WIDTH            32 	long  	-  ORA_COL_WIDTH
+12310.ORA_VAL_IND              33 	string	-  ORA_VAL_IND
+12310.ORA_COL_VW_IND           34 	string	-  ORA_COL_VW_IND
+12310.ORA_COL_ORDER            35 	long  	-  ORA_COL_ORDER
+12310.ORA_SIZE                 36 	long  	-  ORA_SIZE
+12310.ORA_DEFLT_VAL            37 	string	-  ORA_DEFLT_VAL
+12310.VIEW_COL_NM              38 	string	-  VIEW_COL_NM
+12310.VNREQUIRED_IND           39 	string	-  VNREQUIRED_IND
+12310.VNUPDATABLE_IND          40 	string	-  VNUPDATABLE_IND
+12310.VNFILL_IND               41 	string	-  VNFILL_IND
+12310.HEADER_FLD_IND           42 	string	-  HEADER_FLD_IND
+12310.BASE_TYPE_ID             43 	long  	-  BASE_TYPE_ID
+12310.ORA_DATA_TYPE            44 	string	-  ORA_DATA_TYPE
+12310.PRJ_NM                   45 	string	-  PRJ_NM
+#
+#  VN_SET_FLDS       BUILD: 34 VERS: 34
+*base 12360
+VN_SET_FLDS                    0 	string	-  Entity Name
+12360.0.ROW_CNT                1 	long  	-  Architecture Field
+12360.ROW_ID                   2 	long  	-  Architecture Field
+12360.CALL_ID                  3 	long  	-  Architecture Field
+12360.PARENT_NAME              4 	string  	-  Architecture Field
+12360.PARENT_ID                5 	long  	-  Architecture Field
+12360.JRN_DT                   6 	string	-  JRN_DT
+12360.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+12360.JRN_USER_ID              8 	string	-  JRN_USER_ID
+12360.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+12360.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+12360.ID                       11 	long  	-  ID
+12360.NM                       12 	string	-  NM
+12360.DESCRIPTION              13 	string	-  DESCRIPTION
+12360.SETDEF_ID                14 	long  	-  SETDEF_ID
+12360.FLDDEF_ID                15 	long  	-  FLDDEF_ID
+12360.BT_ID                    16 	long  	-  BT_ID
+12360.MAX_LENGTH               17 	long  	-  MAX_LENGTH
+12360.SET_FLDS_ORDER           18 	long  	-  SET_FLDS_ORDER
+12360.VN_BUILD                 19 	long  	-  VN_BUILD
+12360.VN_VERSION               20 	long  	-  VN_VERSION
+12360.ENTDEF_ID                21 	long  	-  ENTDEF_ID
+12360.PRJ_NM                   23 	string	-  PRJ_NM
+#
+#  VN_SET_DEF       BUILD: 34 VERS: 34
+*base 12384
+VN_SET_DEF                     0 	string	-  Entity Name
+12384.0.ROW_CNT                1 	long  	-  Architecture Field
+12384.ROW_ID                   2 	long  	-  Architecture Field
+12384.CALL_ID                  3 	long  	-  Architecture Field
+12384.PARENT_NAME              4 	string  	-  Architecture Field
+12384.PARENT_ID                5 	long  	-  Architecture Field
+12384.JRN_DT                   6 	string	-  JRN_DT
+12384.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+12384.JRN_USER_ID              8 	string	-  JRN_USER_ID
+12384.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+12384.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+12384.ID                       11 	long  	-  ID
+12384.NM                       12 	string	-  NM
+12384.ALTERNATE_NM             13 	string	-  ALTERNATE_NM
+12384.OPERATION_TYPE           14 	string	-  OPERATION_TYPE
+12384.SET_ORDER                15 	long  	-  SET_ORDER
+12384.CM_BUS_TRAN_ID           16 	double	-  CM_BUS_TRAN_ID
+12384.FML_NM                   17 	string	-  FML_NM
+12384.ORACLE_NM                18 	string	-  ORACLE_NM
+12384.RECORD_TYPE              19 	string	-  RECORD_TYPE
+12384.PRJ_NM                   20 	string	-  PRJ_NM
+12384.PRJ_ID                   21 	string	-  PRJ_ID
+12384.BUILD_NO                 22 	long  	-  BUILD_NBR
+#
+#  VN_VSRS       BUILD: 34 VERS: 34
+*base 12410
+VN_VSRS                        0 	string	-  Entity Name
+12410.0.ROW_CNT                1 	long  	-  Architecture Field
+12410.ROW_ID                   2 	long  	-  Architecture Field
+12410.CALL_ID                  3 	long  	-  Architecture Field
+12410.PARENT_NAME              4 	string  	-  Architecture Field
+12410.PARENT_ID                5 	long  	-  Architecture Field
+12410.JRN_DT                   6 	string	-  JRN_DT
+12410.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+12410.JRN_USER_ID              8 	string	-  JRN_USER_ID
+12410.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+12410.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+12410.ADTNL_WHERE              11 	string	-  ADDITIONAL_WHERE
+12410.PROCEDURE_NAME           12 	string	-  PROCEDURE_NAME
+12410.ENTDEF_ID                13 	long  	-  ENTDEF_ID
+12410.DEFLT_IND                14 	string	-  DEFAULT_IND
+12410.VSR_ID                   15 	long  	-  VSR_ID
+12410.SETDEF_ID                16 	long  	-  SETDEF_ID
+12410.OPERATION_TYPE           17 	string	-  OPERATION_TYPE
+12410.PRJ_NM                   18 	string	-  PRJ_NM
+#
+#  VN_BAS_TYPES       BUILD: 34 VERS: 34
+*base 12430
+VN_BAS_TYPES                   0 	string	-  Entity Name
+12430.0.ROW_CNT                1 	long  	-  Architecture Field
+12430.ROW_ID                   2 	long  	-  Architecture Field
+12430.CALL_ID                  3 	long  	-  Architecture Field
+12430.PARENT_NAME              4 	string  	-  Architecture Field
+12430.PARENT_ID                5 	long  	-  Architecture Field
+12430.JRN_DT                   6 	string	-  JRN_DT
+12430.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+12430.JRN_USER_ID              8 	string	-  JRN_USER_ID
+12430.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+12430.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+12430.BASE_SIZE                11 	long  	-  BASE_SIZE
+12430.BASE_TYPE                12 	string	-  BASE_TYPE
+12430.DAO_SIZE                 13 	long  	-  DAO_SIZE
+12430.DAO_TYPE                 14 	string	-  DAO_TYPE
+12430.DAO_TC                   15 	long  	-  DAO_TYPE_CD
+12430.FML_FORMAT               16 	string	-  FML_FORMAT
+12430.FML_SIZE                 17 	long  	-  FML_SIZE
+12430.FML_TYPE                 18 	string	-  FML_TYPE
+12430.ID                       19 	long  	-  ID
+12430.ORA_FORMAT               20 	string	-  ORA_FORMAT
+12430.ORA_SIZE                 21 	long  	-  ORA_SIZE
+12430.ORA_TYPE                 22 	string	-  ORA_TYPE
+12430.PLSQL_FORMAT             23 	string	-  PLSQL_FORMAT
+12430.PLSQL_SIZE               24 	long  	-  PLSQL_SIZE
+12430.PLSQL_TYPE               25 	string	-  PLSQL_TYPE
+12430.SUPER_TYPE               26 	string	-  SUPER_TYPE
+12430.BASE_FORMAT              27 	string	-  BASE_FORMAT
+#
+#  VN_VHAFAC       BUILD: 34 VERS: 34
+*base 12460
+VN_VHAFAC                      0 	string	-  Entity Name
+12460.0.ROW_CNT                1 	long  	-  Architecture Field
+12460.ROW_ID                   2 	long  	-  Architecture Field
+12460.CALL_ID                  3 	long  	-  Architecture Field
+12460.PARENT_NAME              4 	string  	-  Architecture Field
+12460.PARENT_ID                5 	long  	-  Architecture Field
+12460.JRN_DT                   6 	string	-  JRN_DT
+12460.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+12460.JRN_USER_ID              8 	string	-  JRN_USER_ID
+12460.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+12460.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+12460.ORG_ID                   11 	string	-  ORG_ID
+12460.ORG_NM                   12 	string	-  ORG_NM
+12460.ORG_TN                   13 	string	-  ORG_TYPE_NM
+12460.CITY_NM                  14 	string	-  CITY_NM
+12460.POSTAL_CD                15 	string	-  POSTAL_CD
+#
+#  VN_CLM_DVL_CNTCT       BUILD: 34 VERS: 34
+*base 13671
+VN_CLM_DVL_CNTCT               0 	string	-  Entity Name
+13671.0.ROW_CNT                1 	long  	-  Architecture Field
+13671.ROW_ID                   2 	long  	-  Architecture Field
+13671.CALL_ID                  3 	long  	-  Architecture Field
+13671.PARENT_NAME              4 	string  	-  Architecture Field
+13671.PARENT_ID                5 	long  	-  Architecture Field
+13671.JRN_DT                   6 	string	-  JRN_DT
+13671.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+13671.JRN_USER_ID              8 	string	-  JRN_USER_ID
+13671.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+13671.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+13671.PTCPNT_ID                11 	string	-  PTCPNT_ID
+13671.TAX_ID_NO                12 	string	-  TAX_IDFCTN_NBR
+13671.LEGACY_POA_CD            13 	string	-  LEGACY_POA_CD
+13671.FIRST_NM                 14 	string	-  FIRST_NM
+13671.LAST_NM                  15 	string	-  LAST_NM
+13671.MIDDLE_NM                16 	string	-  MIDDLE_NM
+13671.ORG_NM                   17 	string	-  ORG_NM
+13671.DVLPMT_CONTCT_SUBTYP_CD  18 	string	-  DVLPMT_CONTCT_SUBTYP_CD
+13671.SUFFIX_NM                19 	string	-  SUFFIX_NM
+13671.SLTTN_NM                 20 	string	-  SLTTN_NM
+#
+#  VN_CNTY_FIPS       BUILD: 34 VERS: 34
+*base 13860
+VN_CNTY_FIPS                   0 	string	-  Entity Name
+13860.0.ROW_CNT                1 	long  	-  Architecture Field
+13860.ROW_ID                   2 	long  	-  Architecture Field
+13860.CALL_ID                  3 	long  	-  Architecture Field
+13860.PARENT_NAME              4 	string  	-  Architecture Field
+13860.PARENT_ID                5 	long  	-  Architecture Field
+13860.JRN_DT                   6 	string	-  JRN_DT
+13860.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+13860.JRN_USER_ID              8 	string	-  JRN_USER_ID
+13860.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+13860.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+13860.POSTAL_CD                11 	string	-  POSTAL_CD
+13860.NM                       12 	string	-  NM
+13860.LGCYFIPS_CNTY_CD         13 	string	-  LEGACY_FIPS_CNTY_CD
+13860.LCTN_ID                  14 	string	-  LCTN_ID
+#
+#  VN_SRCH_PTCPNT       BUILD: 34 VERS: 34
+*base 14000
+VN_SRCH_PTCPNT                 0 	string	-  Entity Name
+14000.0.ROW_CNT                1 	long  	-  Architecture Field
+14000.ROW_ID                   2 	long  	-  Architecture Field
+14000.CALL_ID                  3 	long  	-  Architecture Field
+14000.PARENT_NAME              4 	string  	-  Architecture Field
+14000.PARENT_ID                5 	long  	-  Architecture Field
+14000.JRN_DT                   6 	string	-  JRN_DT
+14000.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+14000.JRN_USER_ID              8 	string	-  JRN_USER_ID
+14000.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+14000.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+14000.SEARCH_NOBER             11 	string	-  SEARCH_NUMBER
+14000.FIRST_NM                 12 	string	-  FIRST_NM
+14000.MIDDLE_NM                13 	string	-  MIDDLE_NM
+14000.LAST_NM                  14 	string	-  LAST_NM
+14000.FILE_NO                  15 	string	-  FILE_NBR
+14000.SSN_NO                   16 	string	-  SSN_NBR
+14000.CITY_NM                  17 	string	-  CITY_NM
+14000.ST_NM                    18 	string	-  ST_NM
+14000.ZIP_PREFIX_NO            19 	string	-  ZIP_PREFIX_NBR
+14000.BIRTH_CITY               20 	string	-  BIRTH_CITY
+14000.BIRTH_STATE              21 	string	-  BIRTH_STATE
+14000.BRTHDY_DT                22 	string	-  BRTHDY_DT
+14000.TAX_ID_NO                23 	string	-  TAX_IDFCTN_NBR
+14000.PHONE_NO                 24 	string	-  PHONE_NBR
+14000.AREA_NO                  25 	string	-  AREA_NBR
+14000.INS_FILE_NO              26 	string	-  INS_FILE_NBR
+14000.SVC_NO                   27 	string	-  SVC_NBR
+14000.EOD                      28 	string	-  EOD
+14000.RAD                      29 	string	-  RAD
+14000.BRNCH                    30 	string	-  BRANCH
+14000.ORG_NM                   31 	string	-  ORG_NM
+14000.ORG_TN                   32 	string	-  ORG_TYPE_NM
+14000.FRGN_POSTAL_CD           33 	string	-  FRGN_POSTAL_CD
+14000.PTCPNT_ID                34 	string	-  PTCPNT_ID
+14000.SOURCE                   35 	string	-  SOURCE
+14000.FID_PROF_IND             36 	string	-  FID_PROF_IND
+14000.VET_IND                  37 	string	-  VET_IND
+14000.DEATH_DT                 38 	string	-  DEATH_DT
+14000.POA_ID                   39 	string	-  POA_ID
+14000.POA_NM                   40 	string	-  POA_NM
+#
+#  VN_POW       BUILD: 34 VERS: 34
+*base 15005
+VN_POW                         0 	string	-  Entity Name
+15005.0.ROW_CNT                1 	long  	-  Architecture Field
+15005.ROW_ID                   2 	long  	-  Architecture Field
+15005.CALL_ID                  3 	long  	-  Architecture Field
+15005.PARENT_NAME              4 	string  	-  Architecture Field
+15005.PARENT_ID                5 	long  	-  Architecture Field
+15005.JRN_DT                   6 	string	-  JRN_DT
+15005.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+15005.JRN_USER_ID              8 	string	-  JRN_USER_ID
+15005.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+15005.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+15005.PTCPNT_ID                11 	string	-  PTCPNT_ID
+15005.M_THEATR_TN              12 	string	-  MLTY_THEATR_TYPE_NM
+15005.CAPTR_DT                 13 	string	-  CAPTR_DT
+15005.RLSE_DT                  14 	string	-  RLSE_DT
+15005.UND_THIRTY_DYS           15 	string	-  UNDER_THIRTY_DAYS_IND
+15005.POW_SEQ_NO               16 	string	-  MLTY_PERSON_POW_SEQ_NBR
+15005.DAYS_QTY                 17 	long  	-  DAYS_QTY
+15005.COUNTRY_TC               18 	string	-  POW_CNTRY_TYPE_CD
+15005.COUNTRY_TN               19 	string	-  COUNTRY_TYPE_NM
+15005.CAPTOR_TXT               20 	string	-  CAPTOR_TXT
+15005.CAMP_TXT                 21 	string	-  CAMP_SECTOR_TXT
+15005.POW_VFD_IND              22 	string	-  VERIFD_IND
+#
+#  VN_SVC_PERIOD       BUILD: 34 VERS: 34
+*base 15030
+VN_SVC_PERIOD                  0 	string	-  Entity Name
+15030.0.ROW_CNT                1 	long  	-  Architecture Field
+15030.ROW_ID                   2 	long  	-  Architecture Field
+15030.CALL_ID                  3 	long  	-  Architecture Field
+15030.PARENT_NAME              4 	string  	-  Architecture Field
+15030.PARENT_ID                5 	long  	-  Architecture Field
+15030.JRN_DT                   6 	string	-  JRN_DT
+15030.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+15030.JRN_USER_ID              8 	string	-  JRN_USER_ID
+15030.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+15030.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+15030.M_TR_SEQ_NO              11 	string	-  MLTY_PERSON_TOUR_NBR
+15030.PTCPNT_ID                12 	string	-  PTCPNT_ID
+15030.VAR_IND                  13 	string	-  VAR_IND
+15030.M_BRNCH_IND              14 	string	-  MLTY_BRANCH_IND
+15030.EOD_DT                   15 	string	-  EOD_DT
+15030.BRNCH_TN                 16 	string	-  MLTY_SVC_BRANCH_TYPE_NM
+15030.OTH_BRNCH_TN             17 	string	-  MLTY_SVC_OTHER_BRANCH_TYPE_NM
+15030.MP_DCHG_CHAR_TN          18 	string	-  MP_DSCHRG_CHAR_TYPE_NM
+15030.M_TR_SVC_STT_TN          19 	string	-  MLTY_TOUR_SVC_STATUS_TYPE_NM
+15030.PAY_GRADE_TN             20 	string	-  PAY_GRADE_TYPE_NM
+15030.M_SEP_RSN_TN             21 	string	-  MLTY_SEPRTN_REASON_TYPE_NM
+15030.RAD_DT                   22 	string	-  RAD_DT
+15030.SVC_NO                   23 	string	-  SVC_NBR
+15030.DYS_ACTIVE_QTY           24 	long  	-  DAYS_ACTIVE_QTY
+15030.LOST_TME_DYS_NO          25 	long  	-  LOST_TIME_DAYS_NBR
+15030.TRVL_TME_DYS_NO          26 	string	-  TRAVEL_TIME_DAYS_NBR
+15030.WAR_SVC_CTRY_NM          27 	string	-  WAR_TIME_SVC_CNTRY_NM
+15030.WAR_TME_SVC_IND          28 	string	-  WAR_TIME_SVC_IND
+15030.SEP_NARRATIVE_TN         29 	string	-  SEP_NARRATIVE_TYPE_NM
+15030.SEP_NARRATIVE_TC         30 	string	-  SEP_NARRATIVE_TYPE_CD
+15030.DUTY_VA_PURP_TN          31 	string	-  DUTY_VA_PURP_TYPE_NM
+15030.DUTY_VA_PURP_TC          32 	string	-  MLTY_DUTY_VA_PURPOS_TYPE_CD
+15030.TRAVEL_DYS_VFD_IND       33 	string	-  TRAVEL_TIME_VERIFD_IND
+15030.RSRV_OBL_TERM_DT         34 	string	-  RESRV_OBLGTN_TRMNTN_DT
+15030.SIX_YEAR_OBLGTN_DT       35 	string	-  SIX_YEAR_OBLGTN_DT
+15030.DSCHRG_PAY_GRADE_NM      36 	string	-  DSCHRG_PAY_GRADE_NM
+15030.VERIFD_IND               37 	string	-  VERIFD_IND
+15030.MP_DSCHRG_AUTHTY_TN      38 	string	-  MP_DSCHRG_AUTHTY_TYPE_NM
+15030.BRANCH_TC                39 	string	-  MLTY_SVC_BRANCH_TYPE_CD
+15030.OTH_BRANCH_TC            40 	string	-  MLTY_SVC_OTHER_BRANCH_TYPE_CD
+15030.VADS_CD                  41 	string	-  VADS_CD
+#
+#  VN_MLTY_PERSON       BUILD: 34 VERS: 34
+*base 15190
+VN_MLTY_PERSON                 0 	string	-  Entity Name
+15190.0.ROW_CNT                1 	long  	-  Architecture Field
+15190.ROW_ID                   2 	long  	-  Architecture Field
+15190.CALL_ID                  3 	long  	-  Architecture Field
+15190.PARENT_NAME              4 	string  	-  Architecture Field
+15190.PARENT_ID                5 	long  	-  Architecture Field
+15190.JRN_DT                   6 	string	-  JRN_DT
+15190.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+15190.JRN_USER_ID              8 	string	-  JRN_USER_ID
+15190.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+15190.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+15190.PTCPNT_ID                11 	string	-  PTCPNT_ID
+15190.INS_FILE_NO              12 	string	-  INS_FILE_NBR
+15190.ACTV_DUTY_ST_IND         13 	string	-  ACTIVE_DUTY_STATUS_IND
+15190.LGY_ENTLMT_AMT           14 	long  	-  LGY_ENTLMT_AMT
+15190.RESRV_IND                15 	string	-  RESRV_IND
+15190.GW_RGSTRY_IND            16 	string	-  GULF_WAR_RGSTRY_IND
+15190.VADS_IND                 17 	string	-  VADS_IND
+15190.INS_POLICY_NO            18 	string	-  INS_POLICY_NBR
+15190.VERIFD_IND               19 	string	-  VERIFD_IND
+15190.DEATH_IN_SVC_IND         20 	string	-  DEATH_IN_SVC_IND
+15190.TOT_ACT_SVC_YRS_NO       21 	long  	-  TOTAL_ACTIVE_SVC_YEARS_NBR
+15190.TOT_ACT_SVC_MO_NO        22 	long  	-  TOTAL_ACTIVE_SVC_MONTHS_NBR
+15190.TOT_ACT_SVC_DYS_NO       23 	long  	-  TOTAL_ACTIVE_SVC_DAYS_NBR
+15190.DSBLTY_SVC_IND           24 	string	-  DSBLTY_SVC_IND
+15190.INCMPT_IND               25 	string	-  INCMPT_IND
+#
+#  VN_DCORTN_TYPE       BUILD: 34 VERS: 34
+*base 15245
+VN_DCORTN_TYPE                 0 	string	-  Entity Name
+15245.0.ROW_CNT                1 	long  	-  Architecture Field
+15245.ROW_ID                   2 	long  	-  Architecture Field
+15245.CALL_ID                  3 	long  	-  Architecture Field
+15245.PARENT_NAME              4 	string  	-  Architecture Field
+15245.PARENT_ID                5 	long  	-  Architecture Field
+15245.JRN_DT                   6 	string	-  JRN_DT
+15245.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+15245.JRN_USER_ID              8 	string	-  JRN_USER_ID
+15245.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+15245.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+15245.MD_ID                    11 	string	-  MLTY_DCORTN_ID
+15245.NM                       12 	string	-  MLTY_DCORTN_NM
+15245.CD                       13 	string	-  MLTY_DCORTN_CD
+15245.DESCP_TXT                14 	string	-  DESCP_TXT
+15245.DACTVT_DT                15 	string	-  DACTVT_DT
+15245.STRSOR_IND               16 	string	-  STRSOR_IND
+#
+#  VN_STN_ADDRS       BUILD: 34 VERS: 34
+*base 15530
+VN_STN_ADDRS                   0 	string	-  Entity Name
+15530.0.ROW_CNT                1 	long  	-  Architecture Field
+15530.ROW_ID                   2 	long  	-  Architecture Field
+15530.CALL_ID                  3 	long  	-  Architecture Field
+15530.PARENT_NAME              4 	string  	-  Architecture Field
+15530.PARENT_ID                5 	long  	-  Architecture Field
+15530.JRN_DT                   6 	string	-  JRN_DT
+15530.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+15530.JRN_USER_ID              8 	string	-  JRN_USER_ID
+15530.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+15530.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+15530.LCTN_ID                  11 	string	-  LCTN_ID
+15530.NM                       12 	string	-  NM
+15530.RO_NO                    13 	string	-  RO_NBR
+15530.ADR_ONE_TXT              14 	string	-  ADDRS_ONE_TXT
+15530.ADR_TWO_TXT              15 	string	-  ADDRS_TWO_TXT
+15530.ADR_THREE_TXT            16 	string	-  ADDRS_THREE_TXT
+15530.CITY_NM                  17 	string	-  CITY_NM
+15530.COUNTY_NM                18 	string	-  COUNTY_NM
+15530.ZIP_PREFIX_NO            19 	string	-  ZIP_PREFIX_NBR
+15530.ZIP_1ST_SFX_NO           20 	string	-  ZIP_FIRST_SUFFIX_NBR
+15530.ZIP_SEC_SFX_NO           21 	string	-  ZIP_SECOND_SUFFIX_NBR
+15530.EFCTV_DT                 22 	string	-  EFCTV_DT
+15530.UPDT_DT                  23 	string	-  UPDATE_DT
+15530.END_DT                   24 	string	-  END_DT
+15530.DRCTN_TXT                25 	string	-  DRCTN_TXT
+15530.MAP_CD_TXT               26 	string	-  MAP_CODE_TXT
+15530.MAP_GRID_NO              27 	string	-  MAP_GRID_NBR
+15530.POSTAL_CD                28 	string	-  POSTAL_CD
+15530.CNTRY_TN                 29 	string	-  CNTRY_TYPE_NM
+15530.STN_AREA_NO              30 	long  	-  STN_AREA_NBR
+15530.STN_PHONE_NO             31 	double	-  STN_PHONE_NBR
+15530.STN_EXTNSN_NO            32 	long  	-  STN_EXTNSN_NBR
+15530.LTTR_SIG                 33 	string	-  LETTER_SIGNTR
+15530.LTTR_SIG_TTL             34 	string	-  LETTER_SIGNTR_TITLE
+15530.LTTR_STN_EMAIL           35 	string	-  LETTER_STN_EMAIL
+#
+#  VN_FID_HIST       BUILD: 34 VERS: 34
+*base 16122
+VN_FID_HIST                    0 	string	-  Entity Name
+16122.0.ROW_CNT                1 	long  	-  Architecture Field
+16122.ROW_ID                   2 	long  	-  Architecture Field
+16122.CALL_ID                  3 	long  	-  Architecture Field
+16122.PARENT_NAME              4 	string  	-  Architecture Field
+16122.PARENT_ID                5 	long  	-  Architecture Field
+16122.JRN_DT                   6 	string	-  JRN_DT
+16122.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+16122.JRN_USER_ID              8 	string	-  JRN_USER_ID
+16122.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+16122.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+16122.PTCPNT_ID                11 	string	-  PTCPNT_ID
+16122.FID_PTCPNT_ID            12 	string	-  FID_PTCPNT_ID
+16122.PTCPNT_RSHP_TN           13 	string	-  PTCPNT_RLNSHP_TYPE_NM
+16122.FID_ATTNTN_TXT           14 	string	-  FID_ATTNTN_TXT
+16122.EFCTV_DT                 15 	string	-  EFCTV_DT
+16122.END_DT                   16 	string	-  END_DT
+16122.PTCPNT_TN                17 	string	-  PTCPNT_TYPE_NM
+16122.TAX_ID_NO                18 	string	-  TAX_IDFCTN_NBR
+16122.ORG_TN                   19 	string	-  ORG_TYPE_NM
+16122.ORG_NM                   20 	string	-  ORG_NM
+16122.SSN_NO                   21 	string	-  SSN_NBR
+16122.FIRST_NM                 22 	string	-  FIRST_NM
+16122.MIDDLE_NM                23 	string	-  MIDDLE_NM
+16122.LAST_NM                  24 	string	-  LAST_NM
+16122.SLTTN_TN                 25 	string	-  SLTTN_TYPE_NM
+16122.SFX_NM                   26 	string	-  SUFFIX_NM
+16122.RO_NO                    27 	string	-  RO_NBR
+16122.STT_TC                   28 	string	-  STATUS_TYPE_CD
+16122.PRPTNL_PHRASE_TN         29 	string	-  PRPTNL_PHRASE_TYPE_NM
+16122.BRTHDY_DT                30 	string	-  BRTHDY_DT
+16122.DEATH_DT                 31 	string	-  DEATH_DT
+16122.PT_RLN_HISTID            32 	string	-  PTCPNT_RLNSHP_HIST_ID
+#
+#  VN_MLTY_DCORTN       BUILD: 34 VERS: 34
+*base 16278
+VN_MLTY_DCORTN                 0 	string	-  Entity Name
+16278.0.ROW_CNT                1 	long  	-  Architecture Field
+16278.ROW_ID                   2 	long  	-  Architecture Field
+16278.CALL_ID                  3 	long  	-  Architecture Field
+16278.PARENT_NAME              4 	string  	-  Architecture Field
+16278.PARENT_ID                5 	long  	-  Architecture Field
+16278.JRN_DT                   6 	string	-  JRN_DT
+16278.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+16278.JRN_USER_ID              8 	string	-  JRN_USER_ID
+16278.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+16278.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+16278.M_DCORTN_ID              11 	string	-  MLTY_DCORTN_ID
+16278.M_DCORTN_NM              12 	string	-  MLTY_DCORTN_NM
+16278.M_DCORTN_CD              13 	string	-  MLTY_DCORTN_CD
+16278.DACTVT_DT                14 	string	-  DACTVT_DT
+16278.DESCP_TXT                15 	string	-  DESCP_TXT
+16278.STRSOR_IND               16 	string	-  STRSOR_IND
+#
+#  VN_FOOTNOTE       BUILD: 34 VERS: 34
+*base 16400
+VN_FOOTNOTE                    0 	string	-  Entity Name
+16400.0.ROW_CNT                1 	long  	-  Architecture Field
+16400.ROW_ID                   2 	long  	-  Architecture Field
+16400.CALL_ID                  3 	long  	-  Architecture Field
+16400.PARENT_NAME              4 	string  	-  Architecture Field
+16400.PARENT_ID                5 	long  	-  Architecture Field
+16400.JRN_DT                   6 	string	-  JRN_DT
+16400.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+16400.JRN_USER_ID              8 	string	-  JRN_USER_ID
+16400.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+16400.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+16400.FOOTNOTE_ID              11 	long  	-  FOOTNOTE_ID
+16400.ENTDEF_ID                12 	long  	-  ENTDEF_ID
+16400.FLDDEF_ID                13 	long  	-  FLDDEF_ID
+16400.BUS_TRAN_TXT             14 	string	-  BUSNS_TRAN_TXT
+16400.FOOTNOTE_ORDER           15 	long  	-  FOOTNOTE_ORDER
+16400.FOOTNOTE_TXT             16 	string	-  FOOTNOTE_TXT
+16400.PRJ_NM                   17 	string	-  PRJ_NM
+16400.FLD_FML_NM               18 	string	-  FLD_FML_NM
+16400.BUILD_NO                 19 	long  	-  BUILD_NBR
+#
+#  VN_EMP       BUILD: 34 VERS: 34
+*base 16424
+VN_EMP                         0 	string	-  Entity Name
+16424.0.ROW_CNT                1 	long  	-  Architecture Field
+16424.ROW_ID                   2 	long  	-  Architecture Field
+16424.CALL_ID                  3 	long  	-  Architecture Field
+16424.PARENT_NAME              4 	string  	-  Architecture Field
+16424.PARENT_ID                5 	long  	-  Architecture Field
+16424.JRN_DT                   6 	string	-  JRN_DT
+16424.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+16424.JRN_USER_ID              8 	string	-  JRN_USER_ID
+16424.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+16424.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+16424.PTCPNT_ID                11 	string	-  PTCPNT_ID
+16424.PTCPNT_SUPVSR_ID         12 	string	-  PTCPNT_SUPVSR_ID
+16424.JOB_TITLE_TN             13 	string	-  JOB_TITLE_TYPE_NM
+16424.DIVSN_TXT                14 	string	-  DIVSN_TXT
+16424.OFFICE_ADR_TXT           15 	string	-  OFFICE_ADDRS_TXT
+16424.GRADE_TN                 16 	string	-  GRADE_TYPE_NM
+16424.RANGE_ID                 17 	string	-  RANGE_ID
+16424.EMP_VETS_PRFRNC_TN       18 	string	-  EMP_VETS_PRFRNC_TYPE_NM
+#
+#  VN_FOOTNOTE2       BUILD: 34 VERS: 34
+*base 16672
+VN_FOOTNOTE2                   0 	string	-  Entity Name
+16672.0.ROW_CNT                1 	long  	-  Architecture Field
+16672.ROW_ID                   2 	long  	-  Architecture Field
+16672.CALL_ID                  3 	long  	-  Architecture Field
+16672.PARENT_NAME              4 	string  	-  Architecture Field
+16672.PARENT_ID                5 	long  	-  Architecture Field
+16672.JRN_DT                   6 	string	-  JRN_DT
+16672.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+16672.JRN_USER_ID              8 	string	-  JRN_USER_ID
+16672.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+16672.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+16672.FOOTNOTE_ID              11 	long  	-  FOOTNOTE_ID
+16672.ENTDEF_ID                12 	long  	-  ENTDEF_ID
+16672.FLDDEF_ID                13 	long  	-  FLDDEF_ID
+16672.BUS_TRAN_TXT             14 	string	-  BUSNS_TRAN_TXT
+16672.FOOTNOTE_ORDER           15 	long  	-  FOOTNOTE_ORDER
+16672.FOOTNOTE_TXT             16 	string	-  FOOTNOTE_TXT
+16672.PRJ_NM                   17 	string	-  PRJ_NM
+16672.FLD_FML_NM               18 	string	-  FLD_FML_NM
+16672.BUILD_NO                 19 	long  	-  BUILD_NBR
+#
+#  VN_TABLE_DEFS2       BUILD: 34 VERS: 34
+*base 16697
+VN_TABLE_DEFS2                 0 	string	-  Entity Name
+16697.0.ROW_CNT                1 	long  	-  Architecture Field
+16697.ROW_ID                   2 	long  	-  Architecture Field
+16697.CALL_ID                  3 	long  	-  Architecture Field
+16697.PARENT_NAME              4 	string  	-  Architecture Field
+16697.PARENT_ID                5 	long  	-  Architecture Field
+16697.JRN_DT                   6 	string	-  JRN_DT
+16697.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+16697.JRN_USER_ID              8 	string	-  JRN_USER_ID
+16697.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+16697.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+16697.ARCH_ENTITY_ID           11 	string	-  ARCH_ENTITY_ID
+16697.NM                       12 	string	-  NM
+16697.TABLE_ORDER_NO           13 	long  	-  TABLE_ORDER_NBR
+16697.OPERTN_TXT               14 	string	-  OPERTN_TXT
+16697.PRJ_NM                   15 	string	-  PRJ_NM
+16697.BUILD_NO                 16 	long  	-  BUILD_NBR
+16697.GEN_OPERN_TXT            17 	string	-  GEN_OPERN_TXT
+16697.ARCHTR_TABLE_ID          18 	string	-  ARCHTR_TABLE_ID
+16697.ARCHTR_ENTITY_TABLE_ID   19 	string	-  ARCHTR_ENTITY_TABLE_ID
+16697.ARCHTR_PROJ_ID           20 	string	-  ARCHTR_PROJ_ID
+#
+#  VN_SVCPER_EX       BUILD: 34 VERS: 34
+*base 16718
+VN_SVCPER_EX                   0 	string	-  Entity Name
+16718.0.ROW_CNT                1 	long  	-  Architecture Field
+16718.ROW_ID                   2 	long  	-  Architecture Field
+16718.CALL_ID                  3 	long  	-  Architecture Field
+16718.PARENT_NAME              4 	string  	-  Architecture Field
+16718.PARENT_ID                5 	long  	-  Architecture Field
+16718.JRN_DT                   6 	string	-  JRN_DT
+16718.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+16718.JRN_USER_ID              8 	string	-  JRN_USER_ID
+16718.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+16718.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+16718.MLTY_SVC_PER_CD          11 	string	-  MLTY_SVC_PER_CD
+16718.EXCPTN_RULE_NM           12 	string	-  EXCPTN_RULE_NM
+16718.BEGIN_DT                 13 	string	-  BEGIN_DT
+16718.END_DT                   14 	string	-  END_DT
+16718.MLTY_THEATR_TC           15 	string	-  MLTY_THEATR_TYPE_CD
+16718.MLTY_THEATR_TN           16 	string	-  MLTY_THEATR_TYPE_NM
+#
+#  VN_SET_FLDS2       BUILD: 34 VERS: 34
+*base 16740
+VN_SET_FLDS2                   0 	string	-  Entity Name
+16740.0.ROW_CNT                1 	long  	-  Architecture Field
+16740.ROW_ID                   2 	long  	-  Architecture Field
+16740.CALL_ID                  3 	long  	-  Architecture Field
+16740.PARENT_NAME              4 	string  	-  Architecture Field
+16740.PARENT_ID                5 	long  	-  Architecture Field
+16740.JRN_DT                   6 	string	-  JRN_DT
+16740.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+16740.JRN_USER_ID              8 	string	-  JRN_USER_ID
+16740.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+16740.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+16740.ID                       11 	long  	-  ID
+16740.NM                       12 	string	-  NM
+16740.DESCRIPTION              13 	string	-  DESCRIPTION
+16740.SETDEF_ID                14 	long  	-  SETDEF_ID
+16740.FLDDEF_ID                15 	long  	-  FLDDEF_ID
+16740.BT_ID                    16 	long  	-  BT_ID
+16740.MAX_LENGTH               17 	long  	-  MAX_LENGTH
+16740.SET_FLDS_ORDER           18 	long  	-  SET_FLDS_ORDER
+16740.VN_BUILD                 19 	long  	-  VN_BUILD
+16740.VN_VERSION               20 	long  	-  VN_VERSION
+16740.ENTDEF_ID                21 	long  	-  ENTDEF_ID
+16740.SET_TMPLAT_ID            22 	string	-  SET_TMPLAT_ID
+16740.PRJ_NM                   23 	string	-  PRJ_NM
+#
+#  VN_SET_TMPLAT       BUILD: 34 VERS: 34
+*base 16782
+VN_SET_TMPLAT                  0 	string	-  Entity Name
+16782.0.ROW_CNT                1 	long  	-  Architecture Field
+16782.ROW_ID                   2 	long  	-  Architecture Field
+16782.CALL_ID                  3 	long  	-  Architecture Field
+16782.PARENT_NAME              4 	string  	-  Architecture Field
+16782.PARENT_ID                5 	long  	-  Architecture Field
+16782.JRN_DT                   6 	string	-  JRN_DT
+16782.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+16782.JRN_USER_ID              8 	string	-  JRN_USER_ID
+16782.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+16782.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+16782.SET_TMPLAT_ID            11 	string	-  SET_TMPLAT_ID
+16782.SETDEF_ID                12 	string	-  SETDEF_ID
+16782.NM                       13 	string	-  NM
+16782.BT_ID                    14 	long  	-  BT_ID
+16782.MAX_LENGTH               15 	long  	-  MAX_LENGTH
+16782.SET_FLDS_ORDER           16 	long  	-  SET_FLDS_ORDER
+16782.BUILD_NO                 17 	long  	-  BUILD_NBR
+16782.PRJ_NM                   18 	string	-  PRJ_NM
+#
+#  VN_SETFLDS       BUILD: 34 VERS: 34
+*base 16806
+VN_SETFLDS                     0 	string	-  Entity Name
+16806.0.ROW_CNT                1 	long  	-  Architecture Field
+16806.ROW_ID                   2 	long  	-  Architecture Field
+16806.CALL_ID                  3 	long  	-  Architecture Field
+16806.PARENT_NAME              4 	string  	-  Architecture Field
+16806.PARENT_ID                5 	long  	-  Architecture Field
+16806.JRN_DT                   6 	string	-  JRN_DT
+16806.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+16806.JRN_USER_ID              8 	string	-  JRN_USER_ID
+16806.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+16806.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+16806.SET_FLD_ID               11 	string	-  SET_FLD_ID
+16806.SET_TMPLAT_ID            12 	string	-  SET_TMPLAT_ID
+16806.FLDDEF_ID                13 	string	-  FLDDEF_ID
+16806.ENTDEF_ID                14 	string	-  ENTDEF_ID
+16806.BUILD_NO                 15 	long  	-  BUILD_NBR
+16806.PRJ_NM                   16 	string	-  PRJ_NM
+#
+#  VN_MLTYSVCPER       BUILD: 34 VERS: 34
+*base 16919
+VN_MLTYSVCPER                  0 	string	-  Entity Name
+16919.0.ROW_CNT                1 	long  	-  Architecture Field
+16919.ROW_ID                   2 	long  	-  Architecture Field
+16919.CALL_ID                  3 	long  	-  Architecture Field
+16919.PARENT_NAME              4 	string  	-  Architecture Field
+16919.PARENT_ID                5 	long  	-  Architecture Field
+16919.JRN_DT                   6 	string	-  JRN_DT
+16919.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+16919.JRN_USER_ID              8 	string	-  JRN_USER_ID
+16919.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+16919.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+16919.PTCPNT_ID_A              11 	string	-  PTCPNT_ID_A
+16919.BEGIN_DT                 12 	string	-  BEGIN_DT
+16919.SVC_PER_TN               13 	string	-  SVC_PERIOD_TYPE_NM
+16919.LATEST_IND               14 	string	-  LATEST_IND
+16919.SVC_PER_TC               15 	string	-  SVC_PERIOD_TYPE_CD
+16919.DEATH_IND                16 	string	-  DEATH_IND
+16919.EARLIEST_IND             17 	string	-  EARLIEST_IND
+#
+#  VN_WARPERIODS       BUILD: 34 VERS: 34
+*base 16942
+VN_WARPERIODS                  0 	string	-  Entity Name
+16942.0.ROW_CNT                1 	long  	-  Architecture Field
+16942.ROW_ID                   2 	long  	-  Architecture Field
+16942.CALL_ID                  3 	long  	-  Architecture Field
+16942.PARENT_NAME              4 	string  	-  Architecture Field
+16942.PARENT_ID                5 	long  	-  Architecture Field
+16942.JRN_DT                   6 	string	-  JRN_DT
+16942.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+16942.JRN_USER_ID              8 	string	-  JRN_USER_ID
+16942.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+16942.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+16942.SVC_PER_TC               11 	string	-  SVC_PERIOD_TYPE_CD
+16942.BEGIN_DT                 12 	string	-  BEGIN_DT
+16942.END_DT                   13 	string	-  END_DT
+16942.SVC_PER_TN               14 	string	-  SVC_PERIOD_TYPE_NM
+#
+#  VN_CNTRL_SSN       BUILD: 34 VERS: 34
+*base 17269
+VN_CNTRL_SSN                   0 	string	-  Entity Name
+17269.0.ROW_CNT                1 	long  	-  Architecture Field
+17269.ROW_ID                   2 	long  	-  Architecture Field
+17269.CALL_ID                  3 	long  	-  Architecture Field
+17269.PARENT_NAME              4 	string  	-  Architecture Field
+17269.PARENT_ID                5 	long  	-  Architecture Field
+17269.JRN_DT                   6 	string	-  JRN_DT
+17269.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+17269.JRN_USER_ID              8 	string	-  JRN_USER_ID
+17269.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+17269.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+17269.TRAN_NO                  11 	string	-  TRAN_NBR
+17269.CREATE_DT                12 	string	-  CREATE_DT
+17269.EXC_STT_IND              13 	string	-  EXC_STATUS_IND
+17269.SSN_REJECT_TC            14 	string	-  SSN_REJECT_TYPE_CD
+17269.EXC_DT                   15 	string	-  EXC_DT
+17269.SSN_NO                   16 	string	-  SSN_NBR
+17269.SSN_VRFCTN_IND           17 	string	-  SSN_VRFCTN_IND
+#
+#  VN_ORG_INFO       BUILD: 34 VERS: 34
+*base 17447
+VN_ORG_INFO                    0 	string	-  Entity Name
+17447.0.ROW_CNT                1 	long  	-  Architecture Field
+17447.ROW_ID                   2 	long  	-  Architecture Field
+17447.CALL_ID                  3 	long  	-  Architecture Field
+17447.PARENT_NAME              4 	string  	-  Architecture Field
+17447.PARENT_ID                5 	long  	-  Architecture Field
+17447.JRN_DT                   6 	string	-  JRN_DT
+17447.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+17447.JRN_USER_ID              8 	string	-  JRN_USER_ID
+17447.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+17447.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+17447.PTCPNT_ID                11 	string	-  PTCPNT_ID
+17447.ORG_TN                   12 	string	-  ORG_TYPE_NM
+17447.NM                       13 	string	-  NM
+17447.TAX_ID_NO                14 	string	-  TAX_IDFCTN_NBR
+17447.TIN_WAVR_RSN_TN          15 	string	-  TIN_WAVR_RSN_TN
+17447.TIN_WAVR_RSN_TC          16 	string	-  TIN_WAVR_RSN_TC
+17447.PHONE_NO                 17 	string	-  PHONE_NBR
+17447.ZIP_PREFIX_NO            18 	string	-  ZIP_PREFIX_NBR
+17447.CITY_NM                  19 	string	-  CITY_NM
+17447.STATE_NM                 20 	string	-  STATE_NM
+17447.ORG_TYPE_CD              21 	string	-  ORG_TYPE_CD
+#
+#  VN_CNTRL_LTR       BUILD: 34 VERS: 34
+*base 17509
+VN_CNTRL_LTR                   0 	string	-  Entity Name
+17509.0.ROW_CNT                1 	long  	-  Architecture Field
+17509.ROW_ID                   2 	long  	-  Architecture Field
+17509.CALL_ID                  3 	long  	-  Architecture Field
+17509.PARENT_NAME              4 	string  	-  Architecture Field
+17509.PARENT_ID                5 	long  	-  Architecture Field
+17509.JRN_DT                   6 	string	-  JRN_DT
+17509.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+17509.JRN_USER_ID              8 	string	-  JRN_USER_ID
+17509.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+17509.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+17509.TRAN_NO                  11 	string	-  TRAN_NBR
+17509.BATCH_LTTR_TC            12 	string	-  BATCH_LETTER_TYPE_CD
+17509.CREATE_DT                13 	string	-  CREATE_DT
+17509.EXC_STT_TC               14 	string	-  EXC_STATUS_TYPE_CD
+17509.PTCPNT_VET_ID            15 	string	-  PTCPNT_VET_ID
+17509.PTCPNT_BENE_ID           16 	string	-  PTCPNT_BENE_ID
+17509.PTCPNT_CHILD_ID          17 	string	-  PTCPNT_CHILD_ID
+17509.PTCPNT_RECIP_ID          18 	string	-  PTCPNT_RECIP_ID
+17509.BATCH_REJECT_TC          19 	string	-  BATCH_REJECT_TYPE_CD
+17509.EXC_DT                   20 	string	-  EXC_DT
+17509.DESCPV_TXT               21 	string	-  DESCPV_TXT
+17509.ADDRS_ONE_TXT            22 	string	-  ADDRS_ONE_TXT
+17509.ADDRS_TWO_TXT            23 	string	-  ADDRS_TWO_TXT
+17509.ADDRS_THREE_TXT          24 	string	-  ADDRS_THREE_TXT
+17509.ADDRS_FOUR_TXT           25 	string	-  ADDRS_FOUR_TXT
+17509.CITY_NM                  26 	string	-  CITY_NM
+17509.ZIP_PREFIX_NO            27 	string	-  ZIP_PREFIX_NBR
+17509.POSTAL_CD                28 	string	-  POSTAL_CD
+17509.CNTRY_NM                 29 	string	-  CNTRY_NM
+17509.MLTY_POSTAL_TC           30 	string	-  MLTY_POSTAL_TYPE_CD
+17509.M_PST_OFFICE_TC          31 	string	-  MLTY_POST_OFFICE_TYPE_CD
+17509.FRGN_POSTAL_CD           32 	string	-  FRGN_POSTAL_CD
+17509.BURIAL_DSLWNC_REASON_TC  33 	string	-  BURIAL_DSLWNC_REASON_TYPE_CD
+17509.SVC_CNECTD_CD            34 	string	-  SVC_CNECTD_CD
+17509.BURIAL_AMT_TXT           35 	string	-  BURIAL_AMT_TXT
+17509.PLOT_AMT_TXT             36 	string	-  PLOT_AMT_TXT
+17509.TRNSPN_AMT_TXT           37 	string	-  TRNSPN_AMT_TXT
+17509.STN_NBR                  38 	string	-  STN_NBR
+17509.FILE_NBR                 39 	string	-  FILE_NBR
+17509.VET_FIRST_NM             40 	string	-  VET_FIRST_NM
+17509.VET_MIDDLE_NM            41 	string	-  VET_MIDDLE_NM
+17509.VET_LAST_NM              42 	string	-  VET_LAST_NM
+17509.VET_PAYEE_TXT            43 	string	-  VET_PAYEE_TXT
+17509.CLMNT_ZIP_PREFIX_TXT     44 	string	-  CLMNT_ZIP_PREFIX_TXT
+17509.CLMNT_CNTRY_NM           45 	string	-  CLMNT_CNTRY_NM
+17509.CLMNT_TRSRY_ADR_1_TXT    46 	string	-  CLMNT_TRSRY_ADR_1_TXT
+17509.CLMNT_TRSRY_ADR_2_TXT    47 	string	-  CLMNT_TRSRY_ADR_2_TXT
+17509.CLMNT_TRSRY_ADR_3_TXT    48 	string	-  CLMNT_TRSRY_ADR_3_TXT
+17509.CLMNT_TRSRY_ADR_4_TXT    49 	string	-  CLMNT_TRSRY_ADR_4_TXT
+17509.CLMNT_TRSRY_ADR_5_TXT    50 	string	-  CLMNT_TRSRY_ADR_5_TXT
+17509.CLMNT_TRSRY_ADR_6_TXT    51 	string	-  CLMNT_TRSRY_ADR_6_TXT
+17509.RAD_DT                   52 	string	-  RAD_DT
+17509.GENDER_TXT               53 	string	-  GENDER_TXT
+17509.DVLP_TRNSPN_IND          54 	string	-  DVLP_TRNSPN_IND
+17509.ADDRS_FIVE_TXT           55 	string	-  ADDRS_FIVE_TXT
+17509.POA_CD                   56 	string	-  POA_CD
+17509.AWD_TC                   57 	string	-  AWARD_TYPE_CD
+#
+#  VN_RTRMNT_PAY       BUILD: 34 VERS: 34
+*base 17582
+VN_RTRMNT_PAY                  0 	string	-  Entity Name
+17582.0.ROW_CNT                1 	long  	-  Architecture Field
+17582.ROW_ID                   2 	long  	-  Architecture Field
+17582.CALL_ID                  3 	long  	-  Architecture Field
+17582.PARENT_NAME              4 	string  	-  Architecture Field
+17582.PARENT_ID                5 	long  	-  Architecture Field
+17582.JRN_DT                   6 	string	-  JRN_DT
+17582.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+17582.JRN_USER_ID              8 	string	-  JRN_USER_ID
+17582.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+17582.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+17582.PTCPNT_ID                11 	string	-  PTCPNT_ID
+17582.LINE_ITEM_NO             12 	long  	-  LINE_ITEM_NBR
+17582.EFCTV_DT                 13 	string	-  EFCTV_DT
+17582.FULL_WAIVER_IND          14 	string	-  FULL_WAIVER_IND
+17582.GROSS_MTHLY_AMT          15 	string	-  GROSS_MTHLY_AMT
+17582.RTRMNT_WAIVED_DT         16 	string	-  RTRMNT_WAIVED_DT
+17582.SBP_OVRPMT_AMT           17 	string	-  SBP_OVRPMT_AMT
+17582.AFTER_TAX_AMT            18 	string	-  AFTER_TAX_AMT
+17582.RTRMNT_PAY_TC            19 	string	-  RTRMNT_PAY_TYPE_CD
+17582.RTRMNT_PAY_TN            20 	string	-  RTRMNT_PAY_TYPE_NM
+17582.VERIFIED_IND             21 	string	-  VERIFIED_IND
+17582.APPLCN_CD                22 	string	-  APPLCN_CD
+17582.INSERT_DT                23 	string	-  INSERT_DT
+#
+#  VN_AWD_PTC       BUILD: 34 VERS: 34
+*base 17641
+VN_AWD_PTC                     0 	string	-  Entity Name
+17641.0.ROW_CNT                1 	long  	-  Architecture Field
+17641.ROW_ID                   2 	long  	-  Architecture Field
+17641.CALL_ID                  3 	long  	-  Architecture Field
+17641.PARENT_NAME              4 	string  	-  Architecture Field
+17641.PARENT_ID                5 	long  	-  Architecture Field
+17641.JRN_DT                   6 	string	-  JRN_DT
+17641.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+17641.JRN_USER_ID              8 	string	-  JRN_USER_ID
+17641.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+17641.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+17641.AWD_PTC_ID               11 	string	-  AWARD_PTCPNT_ID
+17641.PTCPNT_ELGBTY_ID         12 	string	-  PTCPNT_ELGBTY_ID
+17641.PTCPNT_BENE_ID           13 	string	-  PTCPNT_BENE_ID
+17641.AWD_TC                   14 	string	-  AWARD_TYPE_CD
+17641.PTCPNT_ID                15 	string	-  PTCPNT_ID
+17641.AWD_PTCPNT_TC            16 	string	-  AWARD_PTCPNT_TYPE_CD
+#
+#  VN_FID_RLN       BUILD: 34 VERS: 34
+*base 18069
+VN_FID_RLN                     0 	string	-  Entity Name
+18069.0.ROW_CNT                1 	long  	-  Architecture Field
+18069.ROW_ID                   2 	long  	-  Architecture Field
+18069.CALL_ID                  3 	long  	-  Architecture Field
+18069.PARENT_NAME              4 	string  	-  Architecture Field
+18069.PARENT_ID                5 	long  	-  Architecture Field
+18069.JRN_DT                   6 	string	-  JRN_DT
+18069.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+18069.JRN_USER_ID              8 	string	-  JRN_USER_ID
+18069.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+18069.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+18069.PTCPNT_ID                11 	string	-  PTCPNT_ID
+18069.PTCPNT_FID_ID            12 	string	-  PTCPNT_FID_ID
+18069.FID_RLNSHP_NM            13 	string	-  FID_RLNSHP_NM
+18069.FID_NM                   14 	string	-  FID_NM
+#
+#  VN_VNET_SYSTEM       BUILD: 34 VERS: 34
+*base 18794
+VN_VNET_SYSTEM                 0 	string	-  Entity Name
+18794.0.ROW_CNT                1 	long  	-  Architecture Field
+18794.ROW_ID                   2 	long  	-  Architecture Field
+18794.CALL_ID                  3 	long  	-  Architecture Field
+18794.PARENT_NAME              4 	string  	-  Architecture Field
+18794.PARENT_ID                5 	long  	-  Architecture Field
+18794.JRN_DT                   6 	string	-  JRN_DT
+18794.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+18794.JRN_USER_ID              8 	string	-  JRN_USER_ID
+18794.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+18794.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+18794.FIELD_NM                 11 	string	-  FIELD_NM
+18794.VALUE_DT                 12 	string	-  VALUE_DT
+18794.VALUE_TXT                13 	string	-  VALUE_TXT
+18794.VALUE_NO                 14 	long  	-  VALUE_NBR
+#
+#  VN_CNTRL_DIARY       BUILD: 34 VERS: 34
+*base 18870
+VN_CNTRL_DIARY                 0 	string	-  Entity Name
+18870.0.ROW_CNT                1 	long  	-  Architecture Field
+18870.ROW_ID                   2 	long  	-  Architecture Field
+18870.CALL_ID                  3 	long  	-  Architecture Field
+18870.PARENT_NAME              4 	string  	-  Architecture Field
+18870.PARENT_ID                5 	long  	-  Architecture Field
+18870.JRN_DT                   6 	string	-  JRN_DT
+18870.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+18870.JRN_USER_ID              8 	string	-  JRN_USER_ID
+18870.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+18870.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+18870.TRAN_NO_ID               11 	string	-  TRAN_NBR_ID
+18870.CREATE_DT                12 	string	-  CREATE_DT
+18870.PTCPNT_DIARY_ID          13 	string	-  PTCPNT_DIARY_ID
+18870.EXC_STT_TC               14 	string	-  EXC_STATUS_TYPE_CD
+18870.BATCH_REJECT_TC          15 	string	-  BATCH_REJECT_TYPE_CD
+18870.EXC_DT                   16 	string	-  EXC_DT
+18870.PTCPNT_VET_ID            17 	string	-  PTCPNT_VET_ID
+18870.PTCPNT_BENE_ID           18 	string	-  PTCPNT_BENE_ID
+18870.DIARY_DT_TXT             19 	string	-  DIARY_DT_TXT
+18870.DIARY_RSN_TC             20 	string	-  DIARY_REASON_TYPE_CD
+#
+#  VN_DEVACTN       BUILD: 34 VERS: 34
+*base 19290
+VN_DEVACTN                     0 	string	-  Entity Name
+19290.0.ROW_CNT                1 	long  	-  Architecture Field
+19290.ROW_ID                   2 	long  	-  Architecture Field
+19290.CALL_ID                  3 	long  	-  Architecture Field
+19290.PARENT_NAME              4 	string  	-  Architecture Field
+19290.PARENT_ID                5 	long  	-  Architecture Field
+19290.JRN_DT                   6 	string	-  JRN_DT
+19290.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+19290.JRN_USER_ID              8 	string	-  JRN_USER_ID
+19290.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+19290.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+19290.DEVACTN_ID               11 	string	-  DVLPMT_ACTION_ID
+19290.DOCID                    12 	string	-  DCMNT_ID
+19290.NM                       13 	string	-  NM
+19290.CREATE_DT                14 	string	-  CREATE_DT
+19290.SUSPNS_DT                15 	string	-  SUSPNS_DT
+19290.SUSPNS_DYS               16 	long  	-  SUSPNS_DAYS
+19290.RULES_BASED_IND          17 	string	-  RULES_BASED_IND
+19290.SUSPNS_UNIT              18 	string	-  SUSPNS_UNIT
+19290.STD_DEVACTN_ID           19 	string	-  STD_DVLPMT_ACTION_ID
+19290.STD_DEVACTN_CD           20 	string	-  STD_DVLPMT_ACTION_CD
+19290.STDACTN_DESCP            21 	string	-  STD_ACTION_DESCP
+19290.SUSPNS_DURATN            22 	long  	-  SUSPNS_DURATN
+19290.PRGRPH_ID                23 	string	-  PRGRPH_ID
+19290.PIES_REQST_CD            24 	string	-  PIES_REQST_CD
+19290.LCTN_ID                  25 	string	-  LCTN_ID
+19290.PTCPNT_ID                26 	string	-  PTCPNT_ID
+19290.PGM_TC                   27 	string	-  PGM_TYPE_CD
+19290.HEADNG_ID                28 	string	-  HEADNG_ID
+19290.TXT                      29 	carray	-  TXT
+19290.CST_HEADNG_ID            30 	string	-  CUSTOM_HEADNG_ID
+19290.CST_PRGRPH_TXT           31 	carray	-  CUSTOM_PRGRPH_TXT
+19290.LETTER_CMPNT_ID          32 	string	-  LETTER_CMPNT_ID
+#
+#  VN_DEVACTN_GRP       BUILD: 34 VERS: 34
+*base 19353
+VN_DEVACTN_GRP                 0 	string	-  Entity Name
+19353.0.ROW_CNT                1 	long  	-  Architecture Field
+19353.ROW_ID                   2 	long  	-  Architecture Field
+19353.CALL_ID                  3 	long  	-  Architecture Field
+19353.PARENT_NAME              4 	string  	-  Architecture Field
+19353.PARENT_ID                5 	long  	-  Architecture Field
+19353.JRN_DT                   6 	string	-  JRN_DT
+19353.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+19353.JRN_USER_ID              8 	string	-  JRN_USER_ID
+19353.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+19353.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+19353.DOCID                    11 	string	-  DCMNT_ID
+19353.OUTDCMT_TC               12 	string	-  OUTGNG_DCMNT_TYPE_CD
+19353.CLM_ID                   13 	string	-  CLAIM_ID
+19353.LTTR_TMPLAT_ID           14 	string	-  LETTER_TMPLAT_ID
+19353.DCMNT_DT                 15 	string	-  DCMNT_DT
+19353.NM                       16 	string	-  NM
+19353.ESTABD_DT                17 	string	-  ESTABD_DT
+19353.PRINT_DT                 18 	string	-  PRINT_DT
+19353.INCLD_ENCLSR_IND         19 	string	-  INCLD_ENCLSR_IND
+19353.FILE_STT_DT              20 	string	-  FILE_STATUS_DT
+19353.FILE_STT_TC              21 	string	-  FILE_STATUS_TYPE_CD
+19353.DVLPMT_TC                22 	string	-  DVLPMT_TYPE_CD
+19353.LTTR_TXT                 23 	carray	-  LETTER_TXT
+19353.BAR_CD                   24 	string	-  BAR_CD
+19353.PTCPNT_ID                25 	string	-  PTCPNT_ID
+19353.PTCPNT_DCMNT_TN          26 	string	-  PTCPNT_DCMNT_TYPE_NM
+19353.LTTR_TC                  27 	string	-  LETTER_TYPE_CD
+19353.SN                       28 	long  	-  SEQ_NBR
+19353.SPLIT_TXT                29 	carray	-  SPLIT_TXT
+19353.LTTR_TXT2                30 	carray	-  LETTER_TXT2
+19353.AWD_EVENT_ID             31 	string	-  AWARD_EVENT_ID
+19353.TEMPLAT_TC               32 	string	-  TEMPLAT_TC
+#
+#  VN_HEADNG       BUILD: 34 VERS: 34
+*base 19590
+VN_HEADNG                      0 	string	-  Entity Name
+19590.0.ROW_CNT                1 	long  	-  Architecture Field
+19590.ROW_ID                   2 	long  	-  Architecture Field
+19590.CALL_ID                  3 	long  	-  Architecture Field
+19590.PARENT_NAME              4 	string  	-  Architecture Field
+19590.PARENT_ID                5 	long  	-  Architecture Field
+19590.JRN_DT                   6 	string	-  JRN_DT
+19590.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+19590.JRN_USER_ID              8 	string	-  JRN_USER_ID
+19590.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+19590.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+19590.HEADNG_ID                11 	string	-  HEADNG_ID
+19590.NM                       12 	string	-  NM
+19590.SYSTEM_TC                13 	string	-  SYSTEM_TYPE_CD
+19590.HEADNG_CD                14 	string	-  HEADNG_CD
+#
+#  VN_BNFT_CLAIM       BUILD: 34 VERS: 34
+*base 19679
+VN_BNFT_CLAIM                  0 	string	-  Entity Name
+19679.0.ROW_CNT                1 	long  	-  Architecture Field
+19679.ROW_ID                   2 	long  	-  Architecture Field
+19679.CALL_ID                  3 	long  	-  Architecture Field
+19679.PARENT_NAME              4 	string  	-  Architecture Field
+19679.PARENT_ID                5 	long  	-  Architecture Field
+19679.JRN_DT                   6 	string	-  JRN_DT
+19679.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+19679.JRN_USER_ID              8 	string	-  JRN_USER_ID
+19679.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+19679.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+19679.CLM_ID                   11 	string	-  CLAIM_ID
+19679.CLM_RCVD_DT              12 	string	-  CLAIM_RCVD_DT
+19679.SVC_TC                   13 	string	-  SVC_TYPE_CD
+19679.PGM_TC                   14 	string	-  PGM_TYPE_CD
+19679.BNFT_CLM_TC              15 	string	-  BNFT_CLAIM_TYPE_CD
+19679.STT_TC                   16 	string	-  STATUS_TYPE_CD
+19679.PTCPNT_VET_ID            17 	string	-  PTCPNT_VET_ID
+19679.PTCPNT_CLMANT_ID         18 	string	-  PTCPNT_CLMANT_ID
+19679.LCTN_ID                  19 	string	-  LCTN_ID
+19679.LAST_CNTCT_DT            20 	string	-  LAST_CNTCT_DT
+19679.PRIRTY                   21 	string	-  PRIRTY
+19679.OPEN_DT                  22 	string	-  OPEN_DT
+19679.BNFT_CLM_TN              23 	string	-  BNFT_CLAIM_TYPE_NM
+19679.PTCPNT_DPOSIT_ACNT_ID    24 	string	-  PTCPNT_DPOSIT_ACNT_ID
+19679.PTCPNT_MAIL_ADDRS_ID     25 	string	-  PTCPNT_MAIL_ADDRS_ID
+19679.PTCPNT_PYMT_ADDRS_ID     26 	string	-  PTCPNT_PYMT_ADDRS_ID
+19679.PAYEE_CD                 27 	string	-  PAYEE_CD
+19679.END_PRDCT_TYPE_CD        28 	string	-  END_PRDCT_TYPE_CD
+19679.END_PRDCT_CHANGE_DT      29 	string	-  END_PRDCT_CHANGE_DT
+19679.CLM_JRSDTN_LCTN_ID       30 	string	-  CLM_JRSDTN_LCTN_ID
+19679.BRKR_JRSDTN_LCTN_ID      31 	string	-  BRKR_JRSDTN_LCTN_ID
+19679.CEST_USER_ID             32 	string	-  CEST_USER_ID
+#
+#  VN_READ_ACNTG       BUILD: 34 VERS: 34
+*base 19725
+VN_READ_ACNTG                  0 	string	-  Entity Name
+19725.0.ROW_CNT                1 	long  	-  Architecture Field
+19725.ROW_ID                   2 	long  	-  Architecture Field
+19725.CALL_ID                  3 	long  	-  Architecture Field
+19725.PARENT_NAME              4 	string  	-  Architecture Field
+19725.PARENT_ID                5 	long  	-  Architecture Field
+19725.JRN_DT                   6 	string	-  JRN_DT
+19725.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+19725.JRN_USER_ID              8 	string	-  JRN_USER_ID
+19725.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+19725.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+19725.FINCL_BUS_TRAN_ID        11 	string	-  FINCL_BUSNS_TRAN_ID
+19725.AMT                      12 	string	-  AMT
+19725.BUS_TRAN_ID              13 	string	-  BUSNS_TRAN_ID
+19725.BUS_TRAN_TC              14 	string	-  BUSNS_TRAN_TYPE_CD
+19725.LCTN_ID                  15 	string	-  LCTN_ID
+19725.TRAN_DT                  16 	string	-  TRAN_DT
+19725.LDGR_ACNT_TC             17 	string	-  LEDGER_ACNT_TYPE_CD
+19725.PAYEE_TC                 18 	string	-  PAYEE_TYPE_CD
+19725.PGM_TC                   19 	string	-  PGM_TYPE_CD
+19725.PYMT_METHOD_TC           20 	string	-  PYMT_METHOD_TYPE_CD
+19725.PTCPNT_BENE_ID           21 	string	-  PTCPNT_BENE_ID
+19725.PTCPNT_RECIP_ID          22 	string	-  PTCPNT_RECIP_ID
+19725.TRSRY_SN                 23 	long  	-  TRSURY_SEQ_NBR
+19725.AWD_EVENT_ID             24 	string	-  AWARD_EVENT_ID
+#
+#  VN_LCTN_ADDRS       BUILD: 34 VERS: 34
+*base 19755
+VN_LCTN_ADDRS                  0 	string	-  Entity Name
+19755.0.ROW_CNT                1 	long  	-  Architecture Field
+19755.ROW_ID                   2 	long  	-  Architecture Field
+19755.CALL_ID                  3 	long  	-  Architecture Field
+19755.PARENT_NAME              4 	string  	-  Architecture Field
+19755.PARENT_ID                5 	long  	-  Architecture Field
+19755.JRN_DT                   6 	string	-  JRN_DT
+19755.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+19755.JRN_USER_ID              8 	string	-  JRN_USER_ID
+19755.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+19755.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+19755.LCTN_ID                  11 	string	-  LCTN_ID
+19755.NM                       12 	string	-  NM
+19755.RO_NO                    13 	string	-  RO_NBR
+19755.ADR_ONE_TXT              14 	string	-  ADDRS_ONE_TXT
+19755.ADR_TWO_TXT              15 	string	-  ADDRS_TWO_TXT
+19755.ADR_THREE_TXT            16 	string	-  ADDRS_THREE_TXT
+19755.CITY_NM                  17 	string	-  CITY_NM
+19755.COUNTY_NM                18 	string	-  COUNTY_NM
+19755.ZIP_PREFIX_NO            19 	string	-  ZIP_PREFIX_NBR
+19755.ZIP_1ST_SFX_NO           20 	string	-  ZIP_FIRST_SUFFIX_NBR
+19755.ZIP_SEC_SFX_NO           21 	string	-  ZIP_SECOND_SUFFIX_NBR
+19755.EFCTV_DT                 22 	string	-  EFCTV_DT
+19755.UPDT_DT                  23 	string	-  UPDATE_DT
+19755.END_DT                   24 	string	-  END_DT
+19755.DRCTN_TXT                25 	string	-  DRCTN_TXT
+19755.MAP_CD_TXT               26 	string	-  MAP_CODE_TXT
+19755.MAP_GRID_NO              27 	string	-  MAP_GRID_NBR
+19755.POSTAL_CD                28 	string	-  POSTAL_CD
+19755.CNTRY_TN                 29 	string	-  CNTRY_TYPE_NM
+19755.STN_AREA_NO              30 	long  	-  STN_AREA_NBR
+19755.STN_PHONE_NO             31 	string	-  STN_PHONE_NBR
+19755.STN_EXTNSN_NO            32 	long  	-  STN_EXTNSN_NBR
+19755.LTTR_SIGNTR              33 	string	-  LETTER_SIGNTR
+19755.LTTR_SIGNTR_TITLE        34 	string	-  LETTER_SIGNTR_TITLE
+19755.LTTR_STN_EMAIL           35 	string	-  LETTER_STN_EMAIL
+#
+#  VN_NOTE       BUILD: 34 VERS: 34
+*base 19872
+VN_NOTE                        0 	string	-  Entity Name
+19872.0.ROW_CNT                1 	long  	-  Architecture Field
+19872.ROW_ID                   2 	long  	-  Architecture Field
+19872.CALL_ID                  3 	long  	-  Architecture Field
+19872.PARENT_NAME              4 	string  	-  Architecture Field
+19872.PARENT_ID                5 	long  	-  Architecture Field
+19872.JRN_DT                   6 	string	-  JRN_DT
+19872.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+19872.JRN_USER_ID              8 	string	-  JRN_USER_ID
+19872.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+19872.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+19872.NOTE_ID                  11 	string	-  NOTE_ID
+19872.CLM_ID                   12 	string	-  CLAIM_ID
+19872.PTCPNT_ID                13 	string	-  PTCPNT_ID
+19872.CREATE_DT                14 	string	-  CREATE_DT
+19872.BNFT_CLM_NOTE_TC         15 	string	-  BNFT_CLAIM_NOTE_TYPE_CD
+19872.PTCPNT_NOTE_TC           16 	string	-  PTCPNT_NOTE_TYPE_CD
+19872.NOTE_OUT_TN              17 	string	-  NOTE_OUT_TYPE_NM
+19872.SUSPNS_DT                18 	string	-  SUSPNS_DT
+19872.TXT                      19 	string	-  TXT
+19872.USER_ID                  20 	string	-  USER_ID
+19872.USER_NM                  21 	string	-  USER_NM
+19872.MODIFD_DT                22 	string	-  MODIFD_DT
+19872.STD_NOTE_ID              23 	string	-  STD_NOTE_ID
+#
+#  VN_CLM_LC_STAT       BUILD: 34 VERS: 34
+*base 19901
+VN_CLM_LC_STAT                 0 	string	-  Entity Name
+19901.0.ROW_CNT                1 	long  	-  Architecture Field
+19901.ROW_ID                   2 	long  	-  Architecture Field
+19901.CALL_ID                  3 	long  	-  Architecture Field
+19901.PARENT_NAME              4 	string  	-  Architecture Field
+19901.PARENT_ID                5 	long  	-  Architecture Field
+19901.JRN_DT                   6 	string	-  JRN_DT
+19901.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+19901.JRN_USER_ID              8 	string	-  JRN_USER_ID
+19901.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+19901.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+19901.CLM_ID                   11 	string	-  CLAIM_ID
+19901.SN                       12 	string	-  SEQ_NBR
+19901.CHNGD_DT                 13 	string	-  CHNGD_DT
+19901.BNFT_CLM_LC_STT_TN       14 	string	-  BNFT_CLAIM_LC_STATUS_TYPE_NM
+19901.RSN_TXT                  15 	string	-  REASON_TXT
+19901.CLOSED_DT                16 	string	-  CLOSED_DT
+19901.LC_STT_RSN_TC            17 	string	-  LC_STATUS_REASON_TYPE_CD
+19901.CLM_JRSDTN_LCTN_ID       18 	string	-  CLAIM_JRSDTN_LCTN_ID
+19901.ACTN_JRSDTN_LCTN_ID      19 	string	-  ACTION_JRSDTN_LCTN_ID
+19901.ACTN_PTCPNT_ID           20 	string	-  ACTION_PTCPNT_ID
+#
+#  VN_STD_ENC_PARA       BUILD: 34 VERS: 34
+*base 20784
+VN_STD_ENC_PARA                0 	string	-  Entity Name
+20784.0.ROW_CNT                1 	long  	-  Architecture Field
+20784.ROW_ID                   2 	long  	-  Architecture Field
+20784.CALL_ID                  3 	long  	-  Architecture Field
+20784.PARENT_NAME              4 	string  	-  Architecture Field
+20784.PARENT_ID                5 	long  	-  Architecture Field
+20784.JRN_DT                   6 	string	-  JRN_DT
+20784.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+20784.JRN_USER_ID              8 	string	-  JRN_USER_ID
+20784.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+20784.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+20784.PARA_ID                  11 	string	-  PARA_ID
+20784.ENCLSR_ID                12 	string	-  ENCLSR_ID
+20784.JET_FORM_NM              13 	string	-  JET_FORM_NM
+20784.NM                       14 	string	-  NM
+20784.ONE_OCRNC_IND            15 	long  	-  ONE_TM_OCRNC_IND
+20784.COPIES_QTY               16 	long  	-  COPIES_QTY
+20784.SYSTEM_TC                17 	string	-  SYSTEM_TYPE_CD
+#
+#  VN_LTR_ENCLSR       BUILD: 34 VERS: 34
+*base 20802
+VN_LTR_ENCLSR                  0 	string	-  Entity Name
+20802.0.ROW_CNT                1 	long  	-  Architecture Field
+20802.ROW_ID                   2 	long  	-  Architecture Field
+20802.CALL_ID                  3 	long  	-  Architecture Field
+20802.PARENT_NAME              4 	string  	-  Architecture Field
+20802.PARENT_ID                5 	long  	-  Architecture Field
+20802.JRN_DT                   6 	string	-  JRN_DT
+20802.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+20802.JRN_USER_ID              8 	string	-  JRN_USER_ID
+20802.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+20802.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+20802.LTR_ENCLSR_ID            11 	string	-  LTR_ENCLSR_ID
+20802.DOC_ID                   12 	string	-  DOC_ID
+20802.STENCID                  13 	string	-  STD_ENCLSR_ID
+20802.NM                       14 	string	-  NM
+20802.ENCLSR_COPY_QTY          15 	long  	-  ENCLSR_COPY_QTY
+20802.DEFLT_COPY_QTY           16 	long  	-  DEFAULT_COPY_QTY
+20802.JETFORM_NM               17 	string	-  JETFORM_NM
+#
+#  VN_LTR       BUILD: 34 VERS: 34
+*base 20825
+VN_LTR                         0 	string	-  Entity Name
+20825.0.ROW_CNT                1 	long  	-  Architecture Field
+20825.ROW_ID                   2 	long  	-  Architecture Field
+20825.CALL_ID                  3 	long  	-  Architecture Field
+20825.PARENT_NAME              4 	string  	-  Architecture Field
+20825.PARENT_ID                5 	long  	-  Architecture Field
+20825.DOC_ID                   6 	string	-  DOC_ID
+20825.DOC_TC                   7 	string	-  DOC_TYPE_CD
+20825.LTTR_TC                  8 	string	-  LETTER_TYPE_CD
+20825.AWD_EVENT_ID             9 	string	-  AWARD_EVENT_ID
+20825.LTTR_TXT                 10 	string	-  LETTER_TXT
+20825.SN                       11 	string	-  SEQ_NBR
+20825.SPLIT_TXT                12 	string	-  SPLIT_TXT
+20825.LTTR_CLOB                13 	string	-  LETTER_CLOB
+#
+#  VN_EFT_ADDRESS       BUILD: 34 VERS: 34
+*base 21405
+VN_EFT_ADDRESS                 0 	string	-  Entity Name
+21405.0.ROW_CNT                1 	long  	-  Architecture Field
+21405.ROW_ID                   2 	long  	-  Architecture Field
+21405.CALL_ID                  3 	long  	-  Architecture Field
+21405.PARENT_NAME              4 	string  	-  Architecture Field
+21405.PARENT_ID                5 	long  	-  Architecture Field
+21405.JRN_DT                   6 	string	-  JRN_DT
+21405.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+21405.JRN_USER_ID              8 	string	-  JRN_USER_ID
+21405.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+21405.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+21405.PTCPNT_DPOSIT_ACNT_ID    11 	string	-  PTCPNT_DPOSIT_ACNT_ID
+21405.NM                       12 	string	-  NM
+21405.RTNG_TNST_NO             13 	string	-  ROUTNG_TRNSIT_NBR
+21405.PTCPNT_ID_A              14 	string	-  PTCPNT_ID_A
+21405.PTCPNT_ID_B              15 	string	-  PTCPNT_ID_B
+21405.PTCPNT_ADR_TN            16 	string	-  PTCPNT_ADDRS_TYPE_NM
+21405.EFCTV_DT                 17 	string	-  EFCTV_DT
+21405.DPOSIT_ACNT_TN           18 	string	-  DPOSIT_ACNT_TYPE_NM
+21405.DPOSIT_ACNT_NO           19 	string	-  DPOSIT_ACNT_NBR
+21405.TRSRY_SEQ_NO             20 	long  	-  TRSURY_SEQ_NBR
+21405.END_DT                   21 	string	-  END_DT
+21405.AWARD_TC                 22 	string	-  AWARD_TYPE_CD
+21405.PRPTNL_PHRASE_TN         23 	string	-  PRPTNL_PHRASE_TYPE_NM
+21405.FIDUCIARY_NM             24 	string	-  FIDUCIARY_NM
+21405.PTCPNT_NM                25 	string	-  PTCPNT_NM
+21405.PTCPNT_MAIL_ADDRS_ID     26 	string	-  PTCPNT_MAIL_ADDRS_ID
+#
+#  VN_PTCPNT_ADDRS       BUILD: 34 VERS: 34
+*base 21445
+VN_PTCPNT_ADDRS                0 	string	-  Entity Name
+21445.0.ROW_CNT                1 	long  	-  Architecture Field
+21445.ROW_ID                   2 	long  	-  Architecture Field
+21445.CALL_ID                  3 	long  	-  Architecture Field
+21445.PARENT_NAME              4 	string  	-  Architecture Field
+21445.PARENT_ID                5 	long  	-  Architecture Field
+21445.JRN_DT                   6 	string	-  JRN_DT
+21445.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+21445.JRN_USER_ID              8 	string	-  JRN_USER_ID
+21445.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+21445.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+21445.PTCPNT_ADDRS_ID          11 	string	-  PTCPNT_ADDRS_ID
+21445.PTCPNT_ID                12 	string	-  PTCPNT_ID
+21445.PTCPNT_ADR_TN            13 	string	-  PTCPNT_ADDRS_TYPE_NM
+21445.EFCTV_DT                 14 	string	-  EFCTV_DT
+21445.TRSRY_SEQ_NO             15 	long  	-  TRSURY_SEQ_NBR
+21445.ADR_ONE_TXT              16 	string	-  ADDRS_ONE_TXT
+21445.ADR_TWO_TXT              17 	string	-  ADDRS_TWO_TXT
+21445.ADR_THREE_TXT            18 	string	-  ADDRS_THREE_TXT
+21445.CITY_NM                  19 	string	-  CITY_NM
+21445.POSTAL_CD                20 	string	-  POSTAL_CD
+21445.ZIP_PREFIX_NO            21 	string	-  ZIP_PREFIX_NBR
+21445.ZIP_1ST_SFX_NO           22 	string	-  ZIP_FIRST_SUFFIX_NBR
+21445.ZIP_2ND_SFX_NO           23 	string	-  ZIP_SECOND_SUFFIX_NBR
+21445.COUNTY_NM                24 	string	-  COUNTY_NM
+21445.CNTRY_TN                 25 	string	-  CNTRY_TYPE_NM
+21445.END_DT                   26 	string	-  END_DT
+21445.TRTRY_NM                 27 	string	-  TRTRY_NM
+21445.PRVNC_NM                 28 	string	-  PRVNC_NM
+21445.M_PST_OFFICE_CD          29 	string	-  MLTY_POST_OFFICE_TYPE_CD
+21445.MIL_POSTAL_TC            30 	string	-  MLTY_POSTAL_TYPE_CD
+21445.EMAIL_ADR_TXT            31 	string	-  EMAIL_ADDRS_TXT
+21445.TRSRY_FNCTRY_TN          32 	string	-  TRSURY_FRGN_CNTRY_TYPE_NM
+21445.MAIL_STOP_TXT            33 	string	-  MAIL_STOP_TXT
+21445.FRGN_POSTAL_CD           34 	string	-  FRGN_POSTAL_CD
+21445.BAD_ADDRS_IND            35 	string	-  BAD_ADDRS_IND
+21445.EFT_WAIVER_TN            36 	string	-  EFT_WAIVER_TYPE_NM
+21445.TRSURY_ADDRS_ONE_TXT     37 	string	-  TRSURY_ADDRS_ONE_TXT
+21445.TRSURY_ADDRS_TWO_TXT     38 	string	-  TRSURY_ADDRS_TWO_TXT
+21445.TRSURY_ADDRS_THREE_TXT   39 	string	-  TRSURY_ADDRS_THREE_TXT
+21445.TRSURY_ADDRS_FOUR_TXT    40 	string	-  TRSURY_ADDRS_FOUR_TXT
+21445.TRSURY_ADDRS_FIVE_TXT    41 	string	-  TRSURY_ADDRS_FIVE_TXT
+21445.TRSURY_ADDRS_SIX_TXT     42 	string	-  TRSURY_ADDRS_SIX_TXT
+21445.AWARD_TC                 43 	string	-  AWARD_TYPE_CD
+21445.PTCPNT_NM                44 	string	-  PTCPNT_NM
+21445.PTCPNT_MAIL_ADDRS_ID     45 	string	-  PTCPNT_MAIL_ADDRS_ID
+#
+#  VN_RBA_CLM       BUILD: 34 VERS: 34
+*base 21818
+VN_RBA_CLM                     0 	string	-  Entity Name
+21818.0.ROW_CNT                1 	long  	-  Architecture Field
+21818.ROW_ID                   2 	long  	-  Architecture Field
+21818.CALL_ID                  3 	long  	-  Architecture Field
+21818.PARENT_NAME              4 	string  	-  Architecture Field
+21818.PARENT_ID                5 	long  	-  Architecture Field
+21818.JRN_DT                   6 	string	-  JRN_DT
+21818.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+21818.JRN_USER_ID              8 	string	-  JRN_USER_ID
+21818.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+21818.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+21818.RBA_CLM_SN               11 	string	-  RBA_CLAIM_SEQ_NBR
+21818.PTCPNT_VET_ID            12 	string	-  PTCPNT_VET_ID
+21818.PRFL_DT                  13 	string	-  PRFIL_DT
+21818.PTCPNT_CLMNT_ID          14 	string	-  PTCPNT_CLMANT_ID
+21818.BNFT_CLM_TN              15 	string	-  BNFT_CLAIM_TYPE_NM
+21818.CLMNT_NM                 16 	string	-  CLMANT_NM
+21818.BNFT_CLM_TC              17 	string	-  BNFT_CLAIM_TYPE_CD
+21818.CLM_ID                   18 	string	-  CLAIM_ID
+21818.STATUS_TC                19 	string	-  STATUS_TYPE_CD
+21818.CLAIM_RCVD_DT            20 	string	-  CLAIM_RCVD_DT
+21818.RATING_DT                21 	string	-  RATING_DT
+21818.END_PRDCT_TYPE_CD        22 	string	-  END_PRDCT_TYPE_CD
+21818.LOCKED_IND               23 	string	-  LOCKED_IND
+21818.RBA_USER_NM              24 	string	-  RBA_USER_NM
+#
+#  VN_STN_SRVC       BUILD: 34 VERS: 34
+*base 22270
+VN_STN_SRVC                    0 	string	-  Entity Name
+22270.0.ROW_CNT                1 	long  	-  Architecture Field
+22270.ROW_ID                   2 	long  	-  Architecture Field
+22270.CALL_ID                  3 	long  	-  Architecture Field
+22270.PARENT_NAME              4 	string  	-  Architecture Field
+22270.PARENT_ID                5 	long  	-  Architecture Field
+22270.JRN_DT                   6 	string	-  JRN_DT
+22270.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+22270.JRN_USER_ID              8 	string	-  JRN_USER_ID
+22270.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+22270.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+22270.LCTN_ID                  11 	string	-  LCTN_ID
+22270.NM                       12 	string	-  NM
+22270.FCLTY_TC                 13 	string	-  FCLTY_TYPE_CD
+22270.CD                       14 	string	-  CD
+22270.ADJUST_RSNBL_VALUE_IND   15 	string	-  ADJUST_RSNBL_VALUE_IND
+22270.ESTAB_RSNBL_VALUE_IND    16 	string	-  ESTAB_RSNBL_VALUE_IND
+22270.DESCP_TXT                17 	string	-  DESCP_TXT
+22270.PTCPNT_ID                18 	string	-  PTCPNT_ID
+#
+#  VN_BUSNS_VALIDN       BUILD: 34 VERS: 34
+*base 22712
+VN_BUSNS_VALIDN                0 	string	-  Entity Name
+22712.0.ROW_CNT                1 	long  	-  Architecture Field
+22712.ROW_ID                   2 	long  	-  Architecture Field
+22712.CALL_ID                  3 	long  	-  Architecture Field
+22712.PARENT_NAME              4 	string  	-  Architecture Field
+22712.PARENT_ID                5 	long  	-  Architecture Field
+22712.JRN_DT                   6 	string	-  JRN_DT
+22712.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+22712.JRN_USER_ID              8 	string	-  JRN_USER_ID
+22712.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+22712.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+22712.PROJ_NM                  11 	string	-  PROJ_NM
+22712.VALIDN_RULE_NM           12 	string	-  VALIDN_RULE_NM
+22712.VALIDN_RULE_CD           13 	string	-  VALIDN_RULE_CD
+22712.VALIDN_VALUE_NO          14 	string	-  VALIDN_VALUE_NBR
+22712.VALIDN_VALUE_DT          15 	string	-  VALIDN_VALUE_DT
+22712.VALIDN_VALUE_TXT         16 	string	-  VALIDN_VALUE_TXT
+22712.VALIDN_MESAGE_TXT        17 	string	-  VALIDN_MESAGE_TXT
+#
+#  VN_STN_JRSDTN       BUILD: 34 VERS: 34
+*base 22879
+VN_STN_JRSDTN                  0 	string	-  Entity Name
+22879.0.ROW_CNT                1 	long  	-  Architecture Field
+22879.ROW_ID                   2 	long  	-  Architecture Field
+22879.CALL_ID                  3 	long  	-  Architecture Field
+22879.PARENT_NAME              4 	string  	-  Architecture Field
+22879.PARENT_ID                5 	long  	-  Architecture Field
+22879.JRN_DT                   6 	string	-  JRN_DT
+22879.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+22879.JRN_USER_ID              8 	string	-  JRN_USER_ID
+22879.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+22879.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+22879.STN_OF_JRSDTN_ID         11 	string	-  STN_OF_JRSDTN_ID
+22879.PTCPNT_VET_ID            12 	string	-  PTCPNT_VET_ID
+22879.PTCPNT_BENE_ID           13 	string	-  PTCPNT_BENE_ID
+22879.AWARD_TC                 14 	string	-  AWARD_TC
+22879.SVC_TC                   15 	string	-  SVC_TC
+22879.PGM_TC                   16 	string	-  PGM_TC
+22879.SOJ_LCTN_ID              17 	string	-  SOJ_LCTN_ID
+22879.BEGIN_DT                 18 	string	-  BEGIN_DT
+22879.END_DT                   19 	string	-  END_DT
+#
+#  VN_ERRORS       BUILD: 34 VERS: 34
+*base 22904
+VN_ERRORS                      0 	string	-  Entity Name
+22904.0.ROW_CNT                1 	long  	-  Architecture Field
+22904.ROW_ID                   2 	long  	-  Architecture Field
+22904.CALL_ID                  3 	long  	-  Architecture Field
+22904.PARENT_NAME              4 	string  	-  Architecture Field
+22904.PARENT_ID                5 	long  	-  Architecture Field
+22904.JRN_DT                   6 	string	-  JRN_DT
+22904.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+22904.JRN_USER_ID              8 	string	-  JRN_USER_ID
+22904.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+22904.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+22904.VN_ERROR                 11 	long  	-  VN_ERROR
+22904.TABLE_NAME               12 	string	-  OBJECT
+22904.FIELD_NAME               13 	string	-  FIELD_NM
+22904.VN_MSG                   14 	string	-  VN_MSG
+22904.DATASOURCE               15 	string	-  DATASOURCE
+22904.DS_ERROR                 16 	string	-  CODE
+22904.DS_MESSAGE               17 	string	-  MESSAGE
+22904.ROW_NUM                  18 	long  	-  ROW_NUM
+22904.ORA_MSG                  19 	string	-  ORA_MSG
+22904.LOG                      20 	string	-  LOG
+#
+#  VN_SRCH_RLN       BUILD: 34 VERS: 34
+*base 22930
+VN_SRCH_RLN                    0 	string	-  Entity Name
+22930.0.ROW_CNT                1 	long  	-  Architecture Field
+22930.ROW_ID                   2 	long  	-  Architecture Field
+22930.CALL_ID                  3 	long  	-  Architecture Field
+22930.PARENT_NAME              4 	string  	-  Architecture Field
+22930.PARENT_ID                5 	long  	-  Architecture Field
+22930.JRN_DT                   6 	string	-  JRN_DT
+22930.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+22930.JRN_USER_ID              8 	string	-  JRN_USER_ID
+22930.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+22930.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+22930.SRCH_PTCPNT_ID           11 	string	-  SRCH_PTCPNT_ID
+22930.SRCH_RLN_TYPE            12 	string	-  SRCH_RLN_TYPE
+22930.PTCPNT_ID                13 	string	-  PTCPNT_ID
+22930.FIRST_NM                 14 	string	-  FIRST_NM
+22930.MIDDLE_NM                15 	string	-  MIDDLE_NM
+22930.LAST_NM                  16 	string	-  LAST_NM
+22930.SLTTN_TN                 17 	string	-  SLTTN_TYPE_NM
+22930.SFX_NM                   18 	string	-  SUFFIX_NM
+22930.ORG_NM                   19 	string	-  ORG_NM
+22930.ORG_TN                   20 	string	-  ORG_TYPE_NM
+22930.FILE_NO                  21 	string	-  FILE_NBR
+22930.SSN_NO                   22 	string	-  SSN_NBR
+22930.TAX_ID_NO                23 	string	-  TAX_IDFCTN_NBR
+22930.AWD_TN                   24 	string	-  AWARD_TYPE_NM
+22930.AWD_ROLE                 25 	string	-  AWARD_ROLE
+22930.CLM_TN                   26 	string	-  CLAIM_TYPE_NM
+22930.CLM_DT                   27 	string	-  CLAIM_DT
+22930.CLM_STT                  28 	string	-  CLAIM_STATUS
+22930.RO_NO                    29 	string	-  RO_NBR
+22930.STN_NM                   30 	string	-  STN_NM
+22930.CLM_ROLE                 31 	string	-  CLAIM_ROLE
+22930.PTCPNT_RSHP_TN           32 	string	-  PTCPNT_RLNSHP_TYPE_NM
+22930.POA_FID                  33 	string	-  POA_FID
+22930.POA_ID                   34 	string	-  POA_ID
+22930.PAYEE_TC                 35 	string	-  PAYEE_TYPE_CD
+22930.PGM_TC                   36 	string	-  PGM_TYPE_CD
+22930.AWD_STT_TC               37 	string	-  STATUS_TYPE_CD
+22930.PTCPNT_VET_ID            38 	string	-  PTCPNT_VET_ID
+22930.PTCPNT_BENE_ID           39 	string	-  PTCPNT_BENE_ID
+22930.AWD_TC                   40 	string	-  AWARD_TYPE_CD
+22930.CNVRTD_IND               41 	string	-  CNVRTD_IND
+#
+#  VN_AWDAUTH_EVNT       BUILD: 34 VERS: 34
+*base 22976
+VN_AWDAUTH_EVNT                0 	string	-  Entity Name
+22976.0.ROW_CNT                1 	long  	-  Architecture Field
+22976.ROW_ID                   2 	long  	-  Architecture Field
+22976.CALL_ID                  3 	long  	-  Architecture Field
+22976.PARENT_NAME              4 	string  	-  Architecture Field
+22976.PARENT_ID                5 	long  	-  Architecture Field
+22976.JRN_DT                   6 	string	-  JRN_DT
+22976.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+22976.JRN_USER_ID              8 	string	-  JRN_USER_ID
+22976.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+22976.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+22976.AUTH_EVNT_SN             11 	string	-  AUTH_EVNT_SN
+22976.AUTH_EVNT_TC             12 	string	-  AUTH_EVNT_TC
+22976.AUTH_EVNT_DT             13 	string	-  AUTH_EVNT_DT
+22976.PTCPNT_ID                14 	string	-  PTCPNT_ID
+22976.AGE_SN                   15 	string	-  AGE_SN
+22976.RECIP_EVNT_SN            16 	string	-  RECIP_EVNT_SN
+22976.PTCPNT_ID_A              17 	string	-  PTCPNT_VET_ID
+22976.PTCPNT_ID_B              18 	string	-  PTCPNT_BENE_ID
+22976.AWD_TC                   19 	string	-  AWARD_TYPE_CD
+#
+#  VN_MLTY_DEC       BUILD: 34 VERS: 34
+*base 23842
+VN_MLTY_DEC                    0 	string	-  Entity Name
+23842.0.ROW_CNT                1 	long  	-  Architecture Field
+23842.ROW_ID                   2 	long  	-  Architecture Field
+23842.CALL_ID                  3 	long  	-  Architecture Field
+23842.PARENT_NAME              4 	string  	-  Architecture Field
+23842.PARENT_ID                5 	long  	-  Architecture Field
+23842.JRN_DT                   6 	string	-  JRN_DT
+23842.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+23842.JRN_USER_ID              8 	string	-  JRN_USER_ID
+23842.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+23842.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+23842.PTCPNT_ID                11 	string	-  PTCPNT_ID
+23842.MD_ID                    12 	string	-  MD_ID
+23842.M_PER_DCORTN_TN          13 	string	-  MLTY_DCORTN_NM
+23842.M_PER_DCORTN_TC          14 	string	-  MLTY_DCORTN_CD
+23842.DESCP_TXT                15 	string	-  DESCP_TXT
+23842.DACTVT_DT                16 	string	-  DACTVT_DT
+23842.STRSOR_IND               17 	string	-  STRSOR_IND
+#
+#  AR_SVC_CALLS2       BUILD: 34 VERS: 34
+*base 24632
+AR_SVC_CALLS2                  0 	string	-  Entity Name
+24632.0.ROW_CNT                1 	long  	-  Architecture Field
+24632.ROW_ID                   2 	long  	-  Architecture Field
+24632.CALL_ID                  3 	long  	-  Architecture Field
+24632.PARENT_NAME              4 	string  	-  Architecture Field
+24632.PARENT_ID                5 	long  	-  Architecture Field
+24632.JRN_DT                   6 	string	-  JRN_DT
+24632.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+24632.JRN_USER_ID              8 	string	-  JRN_USER_ID
+24632.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+24632.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+24632.SERVICE                  11 	string	-  SERVICE
+24632.VERS                     12 	long  	-  VERS
+24632.SVC_ID                   13 	long  	-  SVC_ID
+24632.ATMI_FUNC                14 	string	-  ATMI_FUNC
+24632.CALL_FLAGS               15 	long  	-  CALL_FLAGS
+24632.DESCRIPTION              16 	string	-  DESCRIPTION
+24632.PRJ_NM                   17 	string	-  PRJ_NM
+24632.BUILD_NO                 18 	long  	-  BUILD_NBR
+#
+#  VN_FAMILY_HIST       BUILD: 34 VERS: 34
+*base 24782
+VN_FAMILY_HIST                 0 	string	-  Entity Name
+24782.0.ROW_CNT                1 	long  	-  Architecture Field
+24782.ROW_ID                   2 	long  	-  Architecture Field
+24782.CALL_ID                  3 	long  	-  Architecture Field
+24782.PARENT_NAME              4 	string  	-  Architecture Field
+24782.PARENT_ID                5 	long  	-  Architecture Field
+24782.JRN_DT                   6 	string	-  JRN_DT
+24782.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+24782.JRN_USER_ID              8 	string	-  JRN_USER_ID
+24782.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+24782.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+24782.PTCPNT_ID                11 	string	-  PTCPNT_ID
+24782.PTCPNT_TN                12 	string	-  PTCPNT_TYPE_NM
+24782.TAX_ID_NO                13 	string	-  TAX_IDFCTN_NBR
+24782.PTCPNT_ID_A              14 	string	-  PTCPNT_ID_A
+24782.PTCPNT_RSHP_TN           15 	string	-  PTCPNT_RLNSHP_TYPE_NM
+24782.EFCTV_DT                 16 	string	-  EFCTV_DT
+24782.END_DT                   17 	string	-  END_DT
+24782.LAST_NM                  18 	string	-  LAST_NM
+24782.FIRST_NM                 19 	string	-  FIRST_NM
+24782.MIDDLE_NM                20 	string	-  MIDDLE_NM
+24782.SLTTN_TN                 21 	string	-  SLTTN_TYPE_NM
+24782.SFX_NM                   22 	string	-  SUFFIX_NM
+24782.SSN_NO                   23 	string	-  SSN_NBR
+24782.FILE_NO                  24 	string	-  FILE_NBR
+24782.BRTHDY_DT                25 	string	-  BRTHDY_DT
+24782.GENDER_CD                26 	string	-  GENDER_CD
+24782.DEATH_DT                 27 	string	-  DEATH_DT
+24782.VET_IND                  28 	string	-  VET_IND
+24782.STT_TC                   29 	string	-  STATUS_TYPE_CD
+24782.PTC_RLN_HIST_ID          30 	string	-  PTCPNT_RLNSHP_HIST_ID
+#
+#  VN_DSCHRG_PAY       BUILD: 34 VERS: 34
+*base 25394
+VN_DSCHRG_PAY                  0 	string	-  Entity Name
+25394.0.ROW_CNT                1 	long  	-  Architecture Field
+25394.ROW_ID                   2 	long  	-  Architecture Field
+25394.CALL_ID                  3 	long  	-  Architecture Field
+25394.PARENT_NAME              4 	string  	-  Architecture Field
+25394.PARENT_ID                5 	long  	-  Architecture Field
+25394.JRN_DT                   6 	string	-  JRN_DT
+25394.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+25394.JRN_USER_ID              8 	string	-  JRN_USER_ID
+25394.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+25394.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+25394.PTCPNT_ID                11 	string	-  PTCPNT_ID
+25394.LINE_ITEM_NO             12 	long  	-  LINE_ITEM_NBR
+25394.DISCHARGE_PAY_TN         13 	string	-  DISCHARGE_PAY_TYPE_NM
+25394.DISCHARGE_PAY_TC         14 	string	-  DISCHARGE_PAY_TYPE_CD
+25394.GROSS_AMT                15 	string	-  GROSS_AMT
+25394.AFTER_TAX_AMT            16 	string	-  AFTER_TAX_AMT
+25394.RECEIPT_DT               17 	string	-  RECEIPT_DT
+25394.DIS_TEXT                 18 	string	-  DSBLTY_TEXT
+25394.VERIFIED_IND             19 	string	-  VERIFIED_IND
+25394.APPLCN_CD                20 	string	-  APPLCN_CD
+25394.INSERT_DT                21 	string	-  INSERT_DT
+#
+#  VN_CNTRL_RBAVVA       BUILD: 34 VERS: 34
+*base 25794
+VN_CNTRL_RBAVVA                0 	string	-  Entity Name
+25794.0.ROW_CNT                1 	long  	-  Architecture Field
+25794.ROW_ID                   2 	long  	-  Architecture Field
+25794.CALL_ID                  3 	long  	-  Architecture Field
+25794.PARENT_NAME              4 	string  	-  Architecture Field
+25794.PARENT_ID                5 	long  	-  Architecture Field
+25794.JRN_DT                   6 	string	-  JRN_DT
+25794.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+25794.JRN_USER_ID              8 	string	-  JRN_USER_ID
+25794.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+25794.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+25794.TRAN_NO_ID               11 	string	-  TRAN_NBR_ID
+25794.CREATE_DT                12 	string	-  CREATE_DT
+25794.EXC_STATUS_TYPE_CD       13 	string	-  EXC_STATUS_TYPE_CD
+25794.PTCPNT_VET_ID            14 	string	-  PTCPNT_VET_ID
+25794.PRFIL_DT                 15 	string	-  PRFIL_DT
+25794.FILE_NBR                 16 	string	-  FILE_NBR
+25794.CDSHT_DCMNT_ID           17 	string	-  CDSHT_DCMNT_ID
+25794.NARRTV_DCMNT_ID          18 	string	-  NARRTV_DCMNT_ID
+25794.PROCSG_DT                19 	string	-  PROCSG_DT
+#
+#  VN_DSBLTY_JOIN2       BUILD: 34 VERS: 34
+*base 25819
+VN_DSBLTY_JOIN2                0 	string	-  Entity Name
+25819.0.ROW_CNT                1 	long  	-  Architecture Field
+25819.ROW_ID                   2 	long  	-  Architecture Field
+25819.CALL_ID                  3 	long  	-  Architecture Field
+25819.PARENT_NAME              4 	string  	-  Architecture Field
+25819.PARENT_ID                5 	long  	-  Architecture Field
+25819.JRN_DT                   6 	string	-  JRN_DT
+25819.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+25819.JRN_USER_ID              8 	string	-  JRN_USER_ID
+25819.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+25819.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+25819.PTCPNT_ID_A              11 	string	-  PTCPNT_ID_A
+25819.DECN_TC                  12 	string	-  DECN_TYPE_CD
+25819.DECN_TN                  13 	string	-  DECN_TYPE_NM
+25819.DECN_BASIS_TC            14 	string	-  DECN_BASIS_TYPE_CD
+25819.DECN_BASIS_TN            15 	string	-  DECN_BASIS_TYPE_NM
+25819.FUTURE_EXAM_DT           16 	string	-  FUTURE_EXAM_DT
+25819.LAST_EXAM_DT             17 	string	-  LAST_EXAM_DT
+25819.SVC_PER_TN               18 	string	-  SVC_PERIOD_TYPE_NM
+25819.SVC_PER_TC               19 	string	-  SVC_PERIOD_TYPE_CD
+25819.BLATRL_TC                20 	string	-  BLATRL_TYPE_CD
+25819.BLATRL_TN                21 	string	-  BLATRL_TYPE_NM
+25819.COMBAT_IND               22 	string	-  COMBAT_IND
+25819.MAJOR_IND                23 	string	-  MAJOR_IND
+25819.PREV_SVC_PCT             24 	long  	-  PREV_SVC_PCT
+25819.CNC_ENTL_TC              25 	string	-  CONCUR_ENTLMT_TYPE_CD
+25819.DIS_WH_PCT               26 	long  	-  DSBLTY_WTHLDG_PCT
+25819.DIS_SN                   27 	string	-  DSBLTY_SEQ_NBR
+25819.DIS_RFRNC_SN             28 	string	-  DSBLTY_RFRNC_SEQ_NBR
+25819.BEGIN_DT                 29 	string	-  BEGIN_DT
+25819.END_DT                   30 	string	-  END_DT
+25819.RATING_DT                31 	string	-  RATING_DT
+25819.RATING_SN                32 	string	-  RATING_SEQ_NBR
+25819.DGNSTC_TC                33 	string	-  DGNSTC_TYPE_CD
+25819.DGNSTC_TN                34 	string	-  DGNSTC_TYPE_NM
+25819.DGNSTC_TXT               35 	string	-  DGNSTC_TXT
+25819.HYP_DGNSTC_TC            36 	string	-  HYPNTD_DGNSTC_TYPE_CD
+25819.PRCNT_NO                 37 	long  	-  PRCNT_NBR
+25819.CNC_ENTL_TN              38 	string	-  CONCUR_ENTLMT_TYPE_NM
+25819.CONV_BEGIN_DT            39 	string	-  CONV_BEGIN_DT
+25819.CONV_END_DT              40 	string	-  CONV_END_DT
+25819.SCHEDULE_TC              41 	string	-  SCHEDULE_TYPE_CD
+25819.SCHEDULE_TN              42 	string	-  SCHEDULE_TYPE_NM
+25819.PRGRPH_TC                43 	string	-  PRGRPH_TYPE_CD
+25819.PRGRPH_TN                44 	string	-  PRGRPH_TYPE_NM
+25819.SPLMNTL_DECN_TN          45 	string	-  SPLMNTL_DECN_TYPE_NM
+25819.SPLMNTL_DECN_TC          46 	string	-  SPLMNTL_DECN_TYPE_CD
+25819.PREV_EVALTN_IND          47 	string	-  PREV_EVALTN_IND
+25819.RBA_ISSUE_ID             48 	string	-  RBA_ISSUE_ID
+25819.INACTV_DT                49 	string	-  INACTV_DT
+25819.PRFL_DT                  50 	string	-  PRFIL_DT
+25819.DIS_DT                   51 	string	-  DSBLTY_DT
+25819.DIS_RFRNC_DT             52 	string	-  DSBLTY_RFRNC_DT
+25819.EXAM_AT_ONCE_IND         53 	string	-  EXAM_AT_ONCE_IND
+25819.SVC_EVENT_DT             54 	string	-  SVC_EVENT_DT
+25819.PREV_RATING_SN           55 	string	-  PREV_RATING_SEQ_NBR
+#
+#  VN_RBA_PRFIL2       BUILD: 34 VERS: 34
+*base 25941
+VN_RBA_PRFIL2                  0 	string	-  Entity Name
+25941.0.ROW_CNT                1 	long  	-  Architecture Field
+25941.ROW_ID                   2 	long  	-  Architecture Field
+25941.CALL_ID                  3 	long  	-  Architecture Field
+25941.PARENT_NAME              4 	string  	-  Architecture Field
+25941.PARENT_ID                5 	long  	-  Architecture Field
+25941.JRN_DT                   6 	string	-  JRN_DT
+25941.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+25941.JRN_USER_ID              8 	string	-  JRN_USER_ID
+25941.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+25941.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+25941.PTCPNT_VET_ID            11 	string	-  PTCPNT_VET_ID
+25941.PRFL_DT                  12 	string	-  PRFIL_DT
+25941.RATING_DT                13 	string	-  RATING_DT
+25941.RCVD_DT                  14 	string	-  RCVD_DT
+25941.LOCKED_IND               15 	string	-  LOCKED_IND
+25941.DCMNT_TITLE_TXT          16 	string	-  DCMNT_TITLE_TXT
+25941.JRSDTN_TXT               17 	string	-  JRSDTN_TXT
+25941.RATING_INTRO_TXT         18 	carray	-  RATING_INTRO_TXT
+25941.RBA_USER_ID              19 	string	-  RBA_USER_ID
+25941.SEC_SIGNTR_TXT           20 	string	-  SECOND_SIGNTR_TXT
+25941.SYSTEM_TC                21 	string	-  SYSTEM_TYPE_CD
+25941.PTCPNT_POA_ID            22 	string	-  PTCPNT_POA_ID
+25941.POA_NM                   23 	string	-  POA_NM
+25941.CMBND_PCNT_SCOPE_DT      24 	string	-  CMBND_PCNT_SCOPE_DT
+25941.COMBAT_DSBLTY_CD         25 	string	-  COMBAT_DSBLTY_CD
+25941.ADDTNL_DGNSTC_CODES_QTY  26 	long  	-  ADDTNL_DGNSTC_CODES_QTY
+25941.PRMLGN_DT                27 	string	-  PRMLGN_DT
+25941.PRMLNG_CLAIM_ID          28 	string	-  PRMLNG_CLAIM_ID
+25941.CNVRSN_DT                29 	string	-  CNVRSN_DT
+25941.PNDNG_PRMLGN_DT          30 	string	-  PNDNG_PRMLGN_DT
+25941.CLIENT_RATING_DT         31 	string	-  CLIENT_RATING_DT
+25941.CDSHT_DCMNT_ID           32 	string	-  CDSHT_DCMNT_ID
+25941.NARRTV_DCMNT_ID          33 	string	-  NARRTV_DCMNT_ID
+25941.PEB_REF_PERCENT          34 	long  	-  PEB_REFERD_COMBND_PCT
+25941.PEB_REF_BILAT_NBR        35 	double	-  PEB_REFERD_BLATRL_NBR
+25941.DES_SC_PERCENT           36 	long  	-  DES_SC_COMBND_PCT
+25941.DES_SC_BILAT_NBR         37 	double	-  DES_SC_BLATRL_NBR
+#
+#  VN_VSRS2       BUILD: 34 VERS: 34
+*base 28142
+VN_VSRS2                       0 	string	-  Entity Name
+28142.0.ROW_CNT                1 	long  	-  Architecture Field
+28142.ROW_ID                   2 	long  	-  Architecture Field
+28142.CALL_ID                  3 	long  	-  Architecture Field
+28142.PARENT_NAME              4 	string  	-  Architecture Field
+28142.PARENT_ID                5 	long  	-  Architecture Field
+28142.JRN_DT                   6 	string	-  JRN_DT
+28142.JRN_LCTN_ID              7 	string	-  JRN_LCTN_ID
+28142.JRN_USER_ID              8 	string	-  JRN_USER_ID
+28142.JRN_STT_TC               9 	string	-  JRN_STATUS_TYPE_CD
+28142.JRN_OBJ_ID               10 	string	-  JRN_OBJ_ID
+28142.ADTNL_WHERE              11 	string	-  ADDITIONAL_WHERE
+28142.PROCEDURE_NAME           12 	string	-  PROCEDURE_NAME
+28142.ENTDEF_ID                13 	long  	-  ENTDEF_ID
+28142.DEFLT_IND                14 	string	-  DEFAULT_IND
+28142.VSR_ID                   15 	long  	-  VSR_ID
+28142.SETDEF_ID                16 	long  	-  SETDEF_ID
+28142.OPERATION_TYPE           17 	string	-  OPERATION_TYPE
+28142.PRJ_NM                   18 	string	-  PRJ_NM
+28142.BUILD_NO                 19 	long  	-  BUILD_NBR

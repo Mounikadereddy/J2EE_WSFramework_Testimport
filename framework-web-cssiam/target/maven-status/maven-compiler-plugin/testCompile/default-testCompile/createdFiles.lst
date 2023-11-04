@@ -1,0 +1,9 @@
+gov\va\vba\framework\css\cssiam\security\BepHostedEnvTest.class
+gov\va\vba\framework\css\cssiam\security\BepHostedMappedAppsTest.class
+gov\va\vba\framework\css\cssiam\security\CSSIAMAuthorizationFilterTest.class
+gov\va\vba\framework\css\cssiam\security\UnrecognizedApplicationExceptionTest.class
+gov\va\vba\framework\css\cssiam\security\BepHostedEnvsTest.class
+gov\va\vba\framework\css\cssiam\security\MissingHeaderExceptionTest.class
+gov\va\vba\framework\css\cssiam\security\BepHostedAppTest.class
+gov\va\vba\framework\css\cssiam\security\FilterBaseTest.class
+gov\va\vba\framework\css\cssiam\security\AuthorizationContextTest.class

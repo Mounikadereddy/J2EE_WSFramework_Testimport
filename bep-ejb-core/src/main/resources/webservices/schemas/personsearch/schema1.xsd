@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="ALIAS_NAME">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PRIOR_FIRST_NAME" type="xs:string"/>
+        <xs:element name="PRIOR_LAST_NAME" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="EDUCATION">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="EDUCATION_LEVEL_DATE" type="xs:date"/>
+        <xs:element name="EDUCATION_LEVEL_CODE" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="MAILING_ADDRESS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ADDRESS_LINE_ONE" type="xs:string"/>
+        <xs:element name="ADDRESS_LINE_TWO" type="xs:string"/>
+        <xs:element name="CITY" type="xs:string"/>
+        <xs:element name="STATE_CODE" type="xs:string"/>
+        <xs:element name="ZIP_CODE" type="xs:string"/>
+        <xs:element name="ZIP_CODE_EXT" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PAGE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SEGMENT_ID" type="xs:string"/>
+        <xs:element name="PAY_PLAN_CODE" type="xs:string"/>
+        <xs:element name="PAGE_CD" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PERSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="VA_ID" type="xs:string"/>
+        <xs:element name="FIRST_NAME" type="xs:string"/>
+        <xs:element name="MIDDLE_NAME" type="xs:string"/>
+        <xs:element name="LAST_NAME" type="xs:string"/>
+        <xs:element name="PN_ID" type="xs:string"/>
+        <xs:element name="SEX" type="xs:string"/>
+        <xs:element name="BIRTH_DATE" type="xs:date"/>
+        <xs:element name="MARITAL_STATUS" type="xs:string"/>
+        <xs:element name="DEATH_DATE" type="xs:date"/>
+        <xs:element name="ID_TYPE_CODE" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PERSONNEL">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ORGANIZATION_CODE" type="xs:string"/>
+        <xs:element name="CATEGORY_CODE" type="xs:string"/>
+        <xs:element name="SEGMENT_ID" type="xs:string"/>
+        <xs:element name="SERVICE_CODE" type="xs:string"/>
+        <xs:element name="BEGIN_DATE" type="xs:date"/>
+        <xs:element name="PE_DATE" type="xs:date"/>
+        <xs:element name="TERM_DATE" type="xs:date"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PERSONNEL_ST">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ISVC_SEP_CODE" type="xs:string"/>
+        <xs:element name="CHAR_SERVICE_CODE" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="TELEPHONE_NUMBER">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PHONE_NUMBER" type="xs:string"/>
+        <xs:element name="TELEPHONE_NUMER_TYPE_CODE" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="VADIR">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PERSON" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="PERSONNEL" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="MAILING_ADDRESS" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="TELEPHONE_NUMBER" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="ALIAS_NAME" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="EDUCATION" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="PAGE" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="PERSONNEL_ST" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+

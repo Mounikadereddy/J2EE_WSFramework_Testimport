@@ -1,0 +1,134 @@
+<LetterFields>
+  <sectionId>RBPS</sectionId>
+  <today>Oct 16, 2013</today>
+  <sojLine1>St. Paul Regional Office, Bishop Henry Whipple Federal Bldg.</sojLine1>
+  <sojLine2>1 Federal Drive, Fort Snelling</sojLine2>
+  <sojLine3>1 Federal Drive, Fort Snelling</sojLine3>
+  <sojCity>St. Paul</sojCity>
+  <sojCityStateCountryZip>St. Paul,  MN USA 55111-4050</sojCityStateCountryZip>
+  <sojCountry>USA</sojCountry>
+  <sojState>MN</sojState>
+  <sojZipPrefix>55111-4050</sojZipPrefix>
+  <sojZipSuffix1>4050</sojZipSuffix1>
+  <sojZipSuffix2>0000</sojZipSuffix2>
+  <firstLast>Marcia Fleming</firstLast>
+  <lastFirst>Marcia, Fleming P</lastFirst>
+  <line1>46-405 HOLOKAA ST</line1>
+  <city>KANEOHE</city>
+  <country>USA</country>
+  <state>HI</state>
+  <zipPrefix>96744</zipPrefix>
+  <zipSuffix1>0000</zipSuffix1>
+  <zip>96744-0000</zip>
+  <cityStateCountryZip>KANEOHE, HI USA 96744-0000</cityStateCountryZip>
+  <salutation>Dear Marcia Fleming</salutation>
+  <hasPOA>false</hasPOA>
+  <forPoa>true</forPoa>
+  <poaNoPoaText>We have no record of you appointing a service organization or representative to assist you with your claim. You can contact us for a listing of the recognized Veterans&apos; service organizations and/or representatives. Veterans&apos; service organizations, which are recognized or approved to provide services to the Veteran community, can also help you with any questions.</poaNoPoaText>
+  <poaName>Disabled Veterans Association</poaName>
+  <senderName>K. L. Anderson</senderName>
+  <senderTitle>Veterans Service Center Manager</senderTitle>
+  <claimDate>May 23, 2013</claimDate>
+  <claimNumber>796126696</claimNumber>
+  <fileNumber>796126696</fileNumber>
+  <lastName>Fleming</lastName>
+  <firstName>Marcia</firstName>
+  <middleName>P</middleName>
+  <spouseName>Spousy</spouseName>
+  <joinedApprovalChildNames>child Vicki effective Feb 14, 2013</joinedApprovalChildNames>
+  <approvalChildNames>
+    <string>Vicki effective Feb 14, 2013</string>
+  </approvalChildNames>
+  <totalDependents>9</totalDependents>
+  <totalDependentsSentence>We are paying you as a Veteran with 9 dependent(s).</totalDependentsSentence>
+  <yourPaymentIncludes>Your payment includes an additional amount for your child Vicki effective Feb 14, 2013.</yourPaymentIncludes>
+  <weMadeThisDecisionText>We made this decision because your reported dependents meet the criteria for establishing a relationship and you are in receipt of at least 30% service-connected disability benefits.</weMadeThisDecisionText>
+  <letUsKnowText>Let us know right away if there is any change in the status of your dependents.</letUsKnowText>
+  <denialText></denialText>
+  <childrenNames>
+    <string>EMMA</string>
+  </childrenNames>
+  <decisionFormTypes>
+    <string>21-686c</string>
+  </decisionFormTypes>
+  <form1>FORM_21_686C</form1>
+  <hereIsWhatToDoCallUs>Call us at 1-800-827-1000. If you use a Telecommunications Device for the Deaf (TDD), the Federal number is 711.</hereIsWhatToDoCallUs>
+  <hasApprovals>true</hasApprovals>
+  <hasDenials>false</hasDenials>
+  <hasMilitaryPay>true</hasMilitaryPay>
+  <adjustmentAmount>1400.0</adjustmentAmount>
+  <withHeldYear>2012</withHeldYear>
+  <approvals>
+    <AwardSummary>
+      <formattedAwardAmount>$2105.00</formattedAwardAmount>
+      <paymentChangeDate>Feb 14, 2013</paymentChangeDate>
+      <firstFormattedReason>Vicki was added to your award as a school child</firstFormattedReason>
+      <restOfFormattedReasons>
+        <string></string>
+      </restOfFormattedReasons>
+      <formattedReasons>
+        <string>Vicki was added to your award as a school child</string>
+      </formattedReasons>
+    </AwardSummary>
+    <AwardSummary>
+      <formattedAwardAmount>$1699.00</formattedAwardAmount>
+      <paymentChangeDate>Jan 1, 2018</paymentChangeDate>
+      <firstFormattedReason>Martha will turn 18 and be removed from your award</firstFormattedReason>
+      <restOfFormattedReasons>
+        <string></string>
+      </restOfFormattedReasons>
+      <formattedReasons>
+        <string>Martha will turn 18 and be removed from your award</string>
+      </formattedReasons>
+    </AwardSummary>
+    <AwardSummary>
+      <formattedAwardAmount>$1645.00</formattedAwardAmount>
+      <paymentChangeDate>Jan 2, 2020</paymentChangeDate>
+      <firstFormattedReason>Jackie will turn 18 and be removed from your award</firstFormattedReason>
+      <restOfFormattedReasons>
+        <string></string>
+      </restOfFormattedReasons>
+      <formattedReasons>
+        <string>Jackie will turn 18 and be removed from your award</string>
+      </formattedReasons>
+    </AwardSummary>
+    <AwardSummary>
+      <formattedAwardAmount>$1483.00</formattedAwardAmount>
+      <paymentChangeDate>Jun 6, 2024</paymentChangeDate>
+      <firstFormattedReason>Minni will turn 18 and be removed from your award</firstFormattedReason>
+      <restOfFormattedReasons>
+        <string>Pony will turn 18 and be removed from your award</string>
+        <string>Tinni will turn 18 and be removed from your award</string>
+      </restOfFormattedReasons>
+      <formattedReasons>
+        <string>Minni will turn 18 and be removed from your award</string>
+        <string>Pony will turn 18 and be removed from your award</string>
+        <string>Tinni will turn 18 and be removed from your award</string>
+      </formattedReasons>
+    </AwardSummary>
+    <AwardSummary>
+      <formattedAwardAmount>$1402.00</formattedAwardAmount>
+      <paymentChangeDate>May 3, 2025</paymentChangeDate>
+      <firstFormattedReason>Kelly will turn 18 and be removed from your award</firstFormattedReason>
+      <restOfFormattedReasons>
+        <string></string>
+      </restOfFormattedReasons>
+      <formattedReasons>
+        <string>Kelly will turn 18 and be removed from your award</string>
+      </formattedReasons>
+    </AwardSummary>
+    <AwardSummary>
+      <formattedAwardAmount>$0.00</formattedAwardAmount>
+      <paymentChangeDate>May 23, 2013</paymentChangeDate>
+      <firstFormattedReason>Vicki has been removed from your award since they are not attending school</firstFormattedReason>
+      <restOfFormattedReasons>
+        <string>Darryl has been removed from your award since they are not attending school</string>
+      </restOfFormattedReasons>
+      <formattedReasons>
+        <string>Vicki has been removed from your award since they are not attending school</string>
+        <string>Darryl has been removed from your award since they are not attending school</string>
+      </formattedReasons>
+    </AwardSummary>
+  </approvals>
+  <denials/>
+</LetterFields>

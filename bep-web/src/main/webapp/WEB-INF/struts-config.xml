@@ -1,0 +1,60 @@
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<struts-config>
+  <!--============================================== Form Bean Definitions  -->
+  <form-beans>
+  	<!-- Locale form bean -->
+    <form-bean name="tuxedoForm" type="org.apache.struts.action.DynaActionForm">
+    	<form-property name="station" type="java.lang.String"/>
+    	<form-property name="userid" type="java.lang.String"/>
+		<form-property name="applData" type="java.lang.String"/>	
+		<form-property name="reply" type="java.lang.String"/>			
+		<!-- LGY Fields -->		    		            
+		<form-property name="appName" type="java.lang.String"/>
+		<form-property name="serviceName" type="java.lang.String"/>
+		<form-property name="portalId" type="java.lang.String"/>
+		<form-property name="key" type="java.lang.String"/>		    		            
+    </form-bean>
+  </form-beans>
+
+  <!-- ======================================== Global Forward Definitions  -->
+  <global-forwards>
+    <forward name="home" path="/index.jsp"/>
+    <forward name="Login" path="/Login.jsp"/>
+    <forward name="ERROR" path="/Error.html"/>
+   </global-forwards>
+
+  <!-- ========================================= Action Mapping Definitions -->
+  <action-mappings>
+    <action path="/welcome" forward="/index.jsp"/>
+
+    <action path="/test" scope="request" type="gov.va.vba.framework.web.actions.SecurityAction">
+   	  	<forward name="success" path="/common/SnoopServlet.jsp"/>
+  	   	<!--<forward name="success" path="/Logout.html"/>-->
+    </action>      
+
+    <action path="/process*" scope="request" type="gov.va.vba.framework.web.actions.SecurityAction" validate="false">
+   	  	<forward name="success" path="/{1}.jsp"/>
+    </action>      
+   
+  </action-mappings>
+  
+  <!-- ============================================= Controller Definition  -->
+  <controller inputForward="true" />
+  
+  <!-- ===================================== Message Resources Definitions  -->
+  <message-resources parameter="org.apache.struts.webapp.validator.MessageResources" />
+  <message-resources key="other" parameter="org.apache.struts.webapp.validator.OtherMessageResources" />
+  <message-resources key="different" parameter="org.apache.struts.webapp.validator.DifferentMessageResources" />
+  
+  <!-- ============================================ Plug Ins Configuration  -->
+  <!-- 
+       Add multiple validator resource files by setting the pathnames property 
+       with a comma delimitted list of resource files to load. 
+    -->
+  <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+    <set-property property="pathnames" value="/WEB-INF/validator-rules.xml,/WEB-INF/validator/validation.xml" />
+    <set-property property="stopOnFirstError" value="true" />
+  </plug-in>
+</struts-config>

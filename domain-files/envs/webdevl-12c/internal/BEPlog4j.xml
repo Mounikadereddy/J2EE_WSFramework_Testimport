@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+        </Console>
+		<RollingFile name="vreqaAppender" fileName="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/vreqa.log"
+                 filePattern="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/$${date:yyyy-MM}/vreqa-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss,SSS} %c{1} [%p] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+		</RollingFile>
+		
+		<RollingFile name="rootAppender" fileName="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/root.log"
+                 filePattern="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/$${date:yyyy-MM}/root-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss,SSS} %c{1} [%p] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+		</RollingFile>
+		
+		<RollingFile name="ecacheAppender" fileName="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/ecache.log"
+                 filePattern="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/$${date:yyyy-MM}/ecache-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss,SSS} %c{1} [%p] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+		</RollingFile>
+		
+		<RollingFile name="corpAppender" fileName="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/corp.log"
+                 filePattern="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/$${date:yyyy-MM}/corp-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss,SSS} %c{1} [%p] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+		</RollingFile>
+		
+		<RollingFile name="corpCommonAppender" fileName="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/corp_common.log"
+                 filePattern="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/$${date:yyyy-MM}/corp_common-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss,SSS} %c{1} [%p] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+		</RollingFile>
+		
+		<RollingFile name="frameworkAppender" fileName="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/framework.log"
+                 filePattern="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/$${date:yyyy-MM}/framework-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss,SSS} %c{1} [%p] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+		</RollingFile>
+		
+		<RollingFile name="VBADefaultAppender" fileName="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/VBADefault.log"
+                 filePattern="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/$${date:yyyy-MM}/VBADefault-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss,SSS} %c{1} [%p] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+		</RollingFile>
+		
+		<RollingFile name="focasAppender" fileName="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/focas.log"
+                 filePattern="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/$${date:yyyy-MM}/focas-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss,SSS} %c{1} [%p] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+		</RollingFile>
+		
+		<RollingFile name="weamsAppender" fileName="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/weams.log"
+                 filePattern="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/$${date:yyyy-MM}/weams-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss,SSS} %c{1} [%p] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+		</RollingFile>
+		
+		<RollingFile name="wsmsAppender" fileName="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/wsms.log"
+                 filePattern="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/$${date:yyyy-MM}/wsms-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss,SSS} %c{1} [%p] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+		</RollingFile>
+		
+		<RollingFile name="corpRoAppender" fileName="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/corp_ro.log"
+                 filePattern="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/$${date:yyyy-MM}/corp_ro-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{MM-dd-yyyy hh:mm:ss} %p [%c.%M()]:%m%x%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+		</RollingFile>
+		
+		<RollingFile name="corpEduAppender" fileName="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/corp_edu.log"
+                 filePattern="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/$${date:yyyy-MM}/corp_edu-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{MM-dd-yyyy hh:mm:ss} %p [%c.%M()]:%m%x%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+		</RollingFile>
+		
+		<RollingFile name="corpPersonAppender" fileName="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/corp_person.log"
+                 filePattern="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/$${date:yyyy-MM}/corp_person-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{MM-dd-yyyy hh:mm:ss} %p [%c.%M()]:%m%x%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+		</RollingFile>
+		
+		<RollingFile name="vetsnetAppender" fileName="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/vetsnet.log"
+                 filePattern="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/$${date:yyyy-MM}/vetsnet-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss,SSS} %c{1} [%p] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+		</RollingFile>
+		
+		<RollingFile name="ftsAppender" fileName="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/fts.log"
+                 filePattern="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/$${date:yyyy-MM}/fts-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss,SSS} %c{1} [%p] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+		</RollingFile>
+		
+		<RollingFile name="rbpsAppender" fileName="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/rbps.log"
+                 filePattern="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/$${date:yyyy-MM}/rbps-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss,SSS} %c{1} [%p] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+		</RollingFile>
+		
+		<RollingFile name="visAppender" fileName="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/vis.log"
+                 filePattern="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/$${date:yyyy-MM}/vis-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss,SSS} %c{1} [%p] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+		</RollingFile>
+		
+		<RollingFile name="vrmAppender" fileName="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/vrm.log"
+                 filePattern="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/$${date:yyyy-MM}/vrm-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss,SSS} %c{1} [%p] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+		</RollingFile>
+		
+		<RollingFile name="rootAuditAppender" fileName="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/root.audit"
+                 filePattern="/weblogs/webdev/domains/VBAIntDomain/VBAIntCluster/root.audit.%d{yyyy-MM-dd}-%i">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss,SSS}|%m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+		</RollingFile>
+	 
+    </Appenders>
+    <Loggers>
+        
+	<Logger name="gov.vba.vreqa" level="debug" additivity="false">
+      
+      <AppenderRef ref="vreqaAppender" level="debug"/>
+    </Logger>
+	
+	 <Logger name="rootLogger" level="debug" additivity="false">
+      
+      <AppenderRef ref="rootAppender" level="debug"/>
+    </Logger>
+	
+	 <Logger name="gov.va.vba.framework.esb.proxy.handler.dao.impl.CssProfileCacheDAO_Impl" level="debug" additivity="false">
+      
+      <AppenderRef ref="ecacheAppender" level="debug"/>
+    </Logger>
+	
+	 <Logger name="gov.va.vba.corp" level="debug" additivity="false">
+      
+      <AppenderRef ref="corpAppender" level="debug"/>
+    </Logger>
+	
+	 <Logger name="gov.va.vba.corp.common" level="debug" additivity="false">
+      
+      <AppenderRef ref="corpCommonAppender" level="debug"/>
+    </Logger>
+	
+	 <Logger name="gov.va.vba.framework" level="debug" additivity="false">
+      
+      <AppenderRef ref="frameworkAppender" level="debug"/>
+    </Logger>
+	
+	 <Logger name="gov.va.vba.focas" level="debug" additivity="false">
+      
+      <AppenderRef ref="focasAppender" level="debug"/>
+    </Logger>
+	
+	 <Logger name="gov.va.vba.weams" level="debug" additivity="false">
+      
+      <AppenderRef ref="weamsAppender" level="debug"/>
+    </Logger>
+	
+	 <Logger name="gov.va.vba.wsms" level="debug" additivity="false">
+      
+      <AppenderRef ref="wsmsAppender" level="debug"/>
+    </Logger>
+	
+	 <Logger name="gov.va.vba.corp.ro" level="debug" additivity="false">
+      
+      <AppenderRef ref="corpRoAppender" level="debug"/>
+    </Logger>
+	
+	 <Logger name="gov.va.vba.corp.edu" level="debug" additivity="false">
+      
+      <AppenderRef ref="corpEduAppender" level="debug"/>
+    </Logger>
+	
+	 <Logger name="gov.va.vba.corp.person" level="debug" additivity="false">
+      
+      <AppenderRef ref="corpPersonAppender" level="debug"/>
+    </Logger>
+	
+	 <Logger name="gov.va.vba.vetsnet" level="debug" additivity="false">
+      
+      <AppenderRef ref="vetsnetAppender" level="debug"/>
+    </Logger>
+	
+	 <Logger name="gov.va.vba.vetsnet.fts" level="debug" additivity="false">
+      
+      <AppenderRef ref="ftsAppender" level="debug"/>
+    </Logger>
+	
+	<Logger name="gov.va.vba.rbps" level="debug" additivity="false">
+      
+      <AppenderRef ref="rbpsAppender" level="debug"/>
+    </Logger>
+	
+	<Logger name="gov.va.vis" level="debug" additivity="false">
+      
+      <AppenderRef ref="visAppender" level="debug"/>
+    </Logger>
+	
+	<Logger name="gov.va.vba.benefits.vrm" level="debug" additivity="false">
+      
+      <AppenderRef ref="vrmAppender" level="debug"/>
+    </Logger>
+	
+	<Logger name="audit" level="debug" additivity="false">
+      
+      <AppenderRef ref="rootAuditAppender" level="debug"/>
+    </Logger>
+		
+	<Root level="debug">
+      <AppenderRef ref="rootAppender"/>
+    </Root>
+		
+    </Loggers>
+</Configuration>

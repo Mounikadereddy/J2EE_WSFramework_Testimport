@@ -1,0 +1,17 @@
+gov\va\vba\framework\css\cssiam\security\AuthorizationContext.class
+gov\va\vba\framework\css\cssiam\security\IamMandatoryTraits.class
+gov\va\vba\framework\css\cssiam\security\CSSIAMAuthorizationFilter.class
+gov\va\vba\framework\css\cssiam\security\FilterBase.class
+gov\va\vba\framework\css\cssiam\security\IamTrait.class
+gov\va\vba\framework\css\cssiam\security\FilterBase$IAMSiteMinderHttpHeaders.class
+gov\va\vba\framework\css\cssiam\security\MissingHeaderException.class
+gov\va\vba\framework\css\cssiam\security\BepHostedMappedApps.class
+gov\va\vba\framework\css\cssiam\security\XSSPreventionWrapper.class
+gov\va\vba\framework\css\cssiam\security\UnrecognizedApplicationException.class
+gov\va\vba\framework\css\cssiam\security\CSSProfileSecurityFrameworkException.class
+gov\va\vba\framework\css\cssiam\security\CSSIAMFilterConfig.class
+gov\va\vba\framework\css\cssiam\security\BepHostedApp.class
+gov\va\vba\framework\css\cssiam\security\MissingParameterException.class
+gov\va\vba\framework\css\cssiam\security\BepHostedEnv.class
+gov\va\vba\framework\css\cssiam\security\XSSFilter.class
+gov\va\vba\framework\css\cssiam\security\BepHostedEnvs.class

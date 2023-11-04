@@ -1,0 +1,60 @@
+HR.va-hr-gray {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid
+}
+HR.va-hr-black {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid
+}
+DIV.va-boxed-content {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #000000 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; BORDER-LEFT: #000000 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #000000 1px solid
+}
+.va-paragraph-header {
+	FONT-WEIGHT: bold; COLOR: #6b1424
+}
+.va-section-header {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 115%; PADDING-BOTTOM: 3px; COLOR: #ffffff; PADDING-TOP: 3px; BACKGROUND-COLOR: #6b1424
+}
+.va-bold {
+	FONT-WEIGHT: bold
+}
+.va-emphasis {
+	FONT-STYLE: italic
+}
+.va-small {
+	FONT-SIZE: 90%
+}
+.va-xsmall {
+	FONT-SIZE: 80%
+}
+.va-large {
+	FONT-SIZE: 115%
+}
+.va-xlarge {
+	FONT-SIZE: 130%
+}
+.va-highlight {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BACKGROUND-COLOR: #f8f3e2
+}
+.va-grayed-out {
+	COLOR: #999999
+}
+.va-address {
+	FONT-FAMILY: "Courier New", Courier, mono
+}
+.va-datatable {
+	MARGIN-TOP: 15px; FONT-SIZE: 11px; FONT-FAMILY: verdana, arial, helvetica, sans-serif; BACKGROUND-COLOR: #000000; TEXT-ALIGN: left
+}
+.va-datatable TH {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; FONT-WEIGHT: bold; PADDING-BOTTOM: 4px; COLOR: #000000; PADDING-TOP: 4px; BACKGROUND-COLOR: #e4e4e4; TEXT-ALIGN: left
+}
+.va-datatable TD.empty-header-cell {
+	BACKGROUND-COLOR: #f0f0f0
+}
+.va-datatable TD {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 11px; PADDING-BOTTOM: 5px; COLOR: #000000; PADDING-TOP: 5px; BACKGROUND-COLOR: #ffffff
+}
+.va-datatable TD UL {
+	FONT-SIZE: 11px
+}
+.va-datatable CAPTION {
+	MARGIN-TOP: 15px; FONT-WEIGHT: bold; PADDING-BOTTOM: 3px; TEXT-ALIGN: left
+}

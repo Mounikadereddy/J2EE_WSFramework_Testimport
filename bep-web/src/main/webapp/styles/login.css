@@ -1,0 +1,60 @@
+a{color: #FF0000; text-decoration: none;}
+a:hover{color: #FF0000; text-decoration: underline; font-weight:bold}
+..error {COLOR: #FF0000; FONT-FAMILY:Arial; FONT-SIZE:10pt; FONT-WEIGHT:bold;padding-left:190px;}
+..msg {COLOR: #CC0000; FONT-FAMILY:Arial; FONT-SIZE:9pt; FONT-WEIGHT:bold;}
+..lefttext {COLOR: #000000; FONT-FAMILY: Arial, Verdana; FONT-SIZE: 11px;}
+..footer {COLOR: #fff; FONT-FAMILY: Arial, Verdana; FONT-SIZE: 12px; FONT-WEIGHT:bold;}
+..date {COLOR: #FFFFFF; FONT-FAMILY: Arial, Verdana; FONT-SIZE: 8pt;}
+..pwinput {border-top:1px #999999 solid;border-left:1px #999999 solid; border-right:1px #000000 solid; border-bottom:1px #000000 solid; HEIGHT:19px;WIDTH:180px; font-family:Arial;}
+.style15 {font-size: 14px}
+
+.notecolumn_image {
+	background: url(../images/notebgr.gif);
+	background-repeat:no-repeat;
+}
+
+.notecolumn {
+	color: #ff0000;
+	font-size: 16px;
+}
+
+.form-control{
+	border:1px #706c6c solid;
+	height:21px;
+	font-family:Arial;
+	font-size:14px;
+	border-radius: 5px;	
+}
+
+.form-label{
+	color:#003366;
+	font: bold 9pts Arial;
+	padding-top:5px;	
+}
+.upper {
+	text-transform:uppercase;
+}
+
+.highlight-form-control {
+	border-left-color: #ff0000;
+	border-left-width: 3px;
+	border-left-style: solid;
+}
+
+#station{
+	width:40px;
+	padding: 4px 4px;
+}
+
+#username, #pw, #profileId{
+	width: 120px;
+	padding: 4px 4px;
+}
+
+
+.loginBtn{
+   width: 120px; 
+   height: 30px;
+}
+	
+	

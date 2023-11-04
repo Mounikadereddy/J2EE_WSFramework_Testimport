@@ -1,0 +1,116 @@
+<LetterFields>
+  <sectionId>RBPS</sectionId>
+  <today>Nov 13, 2012</today>
+  <sojLine1>St. Paul Regional Office</sojLine1>
+  <sojLine2>Bishop Henry Whipple Federal Bldg.</sojLine2>
+  <sojLine3>1 Federal Drive, Fort Snelling</sojLine3>
+  <sojCity>St. Paul</sojCity>
+  <sojCountry>USA</sojCountry>
+  <sojState>MN</sojState>
+  <sojZipPrefix>55111</sojZipPrefix>
+  <sojZipSuffix1>4050</sojZipSuffix1>
+  <sojZipSuffix2>0000</sojZipSuffix2>
+  <firstLast>Custodian of SUZANNE RAMIREZ</firstLast>
+  <lastFirst>RAMIREZ, SUZANNE</lastFirst>
+  <fiduciaryName>RODENT KEEPER</fiduciaryName>
+  <fiduciaryPrepositionalPhrase>Custodian of</fiduciaryPrepositionalPhrase>
+  <fiduciaryAttentionText></fiduciaryAttentionText>
+  <line1>123 ABCST</line1>
+  <city>WACO</city>
+  <country>USA</country>
+  <state>TX</state>
+  <zipPrefix>76710</zipPrefix>
+  <zipSuffix1>0000</zipSuffix1>
+  <zip>76710-0000</zip>
+  <cityStateCountryZip>WACO TX USA 76710-0000</cityStateCountryZip>
+  <salutation>Dear Suzanne Ramirez</salutation>
+  <hasPOA>false</hasPOA>
+  <forPoa>true</forPoa>
+  <poaNoPoaText>We have no record of you appointing a service organization or representative to assist you with your claim. You can contact us for a listing of the recognized Veterans&apos; service organizations and/or representatives. Veterans&apos; service organizations, which are recognized or approved to provide services to the Veteran community, can also help you with any questions.</poaNoPoaText>
+  <senderName>K. L. Anderson</senderName>
+  <senderTitle>Veterans Service Center Manager</senderTitle>
+  <claimDate>Oct 11, 2012</claimDate>
+  <claimNumber>796093718</claimNumber>
+  <fileNumber>796093718</fileNumber>
+  <lastName>Ramirez</lastName>
+  <firstName>Suzanne</firstName>
+  <spouseName>Jacob</spouseName>
+  <joinedApprovalChildNames>child Sam effective Sep 01, 2007</joinedApprovalChildNames>
+  <approvalChildNames>
+    <string>Sam effective Sep 01, 2007</string>
+  </approvalChildNames>
+  <approvalSpouseName>Jacob effective Sep 01, 2007</approvalSpouseName>
+  <totalDependents>2</totalDependents>
+  <totalDependentsSentence>We are paying you as a Veteran with 2 dependent(s).</totalDependentsSentence>
+  <yourPaymentIncludes>Your payment includes an additional amount for your spouse Jacob effective Sep 01, 2007 and  your child Sam effective Sep 01, 2007.</yourPaymentIncludes>
+  <denialText></denialText>
+  <childrenNames>
+    <string>Sam</string>
+  </childrenNames>
+  <decisionFormTypes>
+    <string>21-686c</string>
+  </decisionFormTypes>
+  <form1>FORM_21_686C</form1>
+  <hereIsWhatToDoCallUs>Call us at 1-800-827-1000. If you use a Telecommunications Device for the Deaf (TDD), the Federal number is 711.</hereIsWhatToDoCallUs>
+  <hasApprovals>true</hasApprovals>
+  <hasDenials>false</hasDenials>
+  <approvals>
+    <AwardSummary>
+      <formattedAwardAmount>$2711.00</formattedAwardAmount>
+      <paymentChangeDate>Sep 1, 2007</paymentChangeDate>
+      <firstFormattedReason>Jacob was added to your award</firstFormattedReason>
+      <restOfFormattedReasons>
+        <string>Sam was added to your award</string>
+      </restOfFormattedReasons>
+    </AwardSummary>
+    <AwardSummary>
+      <formattedAwardAmount>$2772.00</formattedAwardAmount>
+      <paymentChangeDate>Dec 1, 2007</paymentChangeDate>
+      <firstFormattedReason>Cost of Living Adjustment</firstFormattedReason>
+      <restOfFormattedReasons>
+        <string></string>
+      </restOfFormattedReasons>
+    </AwardSummary>
+    <AwardSummary>
+      <formattedAwardAmount>$2932.00</formattedAwardAmount>
+      <paymentChangeDate>Dec 1, 2008</paymentChangeDate>
+      <firstFormattedReason>Cost of Living Adjustment</firstFormattedReason>
+      <restOfFormattedReasons>
+        <string></string>
+      </restOfFormattedReasons>
+    </AwardSummary>
+    <AwardSummary>
+      <formattedAwardAmount>$2823.00</formattedAwardAmount>
+      <paymentChangeDate>May 23, 2009</paymentChangeDate>
+      <firstFormattedReason>Sam turned 18 and has been removed from your award</firstFormattedReason>
+      <restOfFormattedReasons>
+        <string></string>
+      </restOfFormattedReasons>
+    </AwardSummary>
+    <AwardSummary>
+      <formattedAwardAmount>$2924.00</formattedAwardAmount>
+      <paymentChangeDate>Dec 1, 2011</paymentChangeDate>
+      <firstFormattedReason>Cost of Living Adjustment</firstFormattedReason>
+      <restOfFormattedReasons>
+        <string></string>
+      </restOfFormattedReasons>
+    </AwardSummary>
+    <AwardSummary>
+      <formattedAwardAmount>$3172.00</formattedAwardAmount>
+      <paymentChangeDate>Aug 1, 2012</paymentChangeDate>
+      <firstFormattedReason>Sam was added to your award as a school child</firstFormattedReason>
+      <restOfFormattedReasons>
+        <string></string>
+      </restOfFormattedReasons>
+    </AwardSummary>
+    <AwardSummary>
+      <formattedAwardAmount>$2924.00</formattedAwardAmount>
+      <paymentChangeDate>May 23, 2014</paymentChangeDate>
+      <firstFormattedReason>Sam will turn 23 and be removed from your award</firstFormattedReason>
+      <restOfFormattedReasons>
+        <string></string>
+      </restOfFormattedReasons>
+    </AwardSummary>
+  </approvals>
+  <denials/>
+</LetterFields>

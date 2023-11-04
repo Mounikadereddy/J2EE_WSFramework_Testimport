@@ -1,0 +1,57 @@
+Baseline Creation Procedure
+
+1. Verify that local version up-to-date with the repository (Team->Synchronize)
+
+2. Change the version from: A.B.C-d-SNAPSHOT to A.B.C-d
+
+	a. change the permission of all the pom files: find . -name "pom.xml" -exec chmod 755 {} \;
+	b. Make the version change: mvn versions:set -DnewVersion=A.B.C-d
+	c. Commit version changes: mvn versions:commit
+	d. Change poms not related to parent-pom manually (Optionally this ant script can be used: ant change-version -DnewVersion=A.B.C-d -DoldVersion=A.B.C-d-SNAPSHOT) :
+		bep-apps-envs/pom.xml
+		weblogic-deploy/pom.xml
+		weblogic-undeploy/pom.xml
+		weblogic-undeploy-test-web/pom.xml
+3. Change ivy.xml to update the new release version: rev="A.B.C-d"
+
+4.  Clean and purge local repository:
+
+	a. mvn clean
+	b. manually purge local repository [delete framework folder from .m2]
+
+5. Compile, Package, Install
+	a. mvn clean install -DskipTests
+
+6. Manually update dist/ folder with distribution libraries
+
+7. Deliver changes to the repository
+
+8. Create new baseline in Dimensions
+	Project: J2EE_FRAMEWORK_SHARED
+	Baseline name: FRAMEWORK_A_B_C-d
+	Design Part: WEB_EAS:WEB_EAS.A;1
+	Type: INTER_BL
+	Template: ALL_LATEST_ITEMS
+
+9. Create/Run Hudson Jobs:
+	a. Build project BGSTeam3.T3_FRAMEWORK_MVN_BASELINE_RELEASE_DEPLOY_NEXUS
+
+10. Validate that ivy/ant build file would get the ear from the Nexus Repo
+	a. Run ant build: ant clean, package
+	b. Verify that a build folder was created, and contains the file: bep-app-A.B.C-d.ear
+
+CREATE NEW SNAPSHOT
+
+11. Modify pom files to chnage version from A.B.C-d to A.B.C-e-SNAPSHOT
+	a. change the permission of all the pom files: find . -name "pom.xml" -exec chmod 755 {} \;
+	b. Make the version change: mvn versions:set -DnewVersion=A.B.C-e-SNAPSHOT
+	c. Commit version changes: mvn versions:commit
+	d. Change poms not related to parent-pom manually (optionally this ant script can be used: ant change-version -DnewVersion=A.B.C-e-SNAPSHOT -DoldVersion=A.B.C-d):
+		bep-apps-envs/pom.xml
+		weblogic-deploy/pom.xml
+		weblogic-undeploy/pom.xml
+		weblogic-undeploy-test-web/pom.xml
+
+12. Deliver changes to the repository
+
+13. Create the new release notes document J2EEFramework_Release_NotesA.B.C-d.docx

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<letter>
+    <veteran>
+        <file_nbr>011-15-2011</file_nbr>
+        <payee_nbr>00</payee_nbr>
+        <namex>SUSPEND RESUME</namex>
+    </veteran>
+    <award type="CPL"/>
+    <address>
+        <line id="0">
+            <text>SUSPEND RESUME</text>
+        </line>
+        <line id="1">
+            <text>123 N MARION ST</text>
+        </line>
+        <line id="2">
+            <text>TAMPA FL 33602</text>
+        </line>
+        <line id="3">
+            <text></text>
+        </line>
+        <line id="4">
+            <text></text>
+        </line>
+        <line id="5">
+            <text></text>
+        </line>
+    </address>
+    <reduction_text>
+        <paragraph id="4">
+            <text></text>
+        </paragraph>
+    </reduction_text>
+    <enclosures>
+        <count>1</count>
+        <name>24-0313</name>
+    </enclosures>
+    <overpayment>
+        <paragraph id="0">
+            <text></text>
+        </paragraph>
+    </overpayment>
+    <award_event type="S"/>
+    <station_address>
+        <line id="0">
+            <text>PO Box 1437</text>
+        </line>
+        <line id="1">
+            <text>St. Petersburg</text>
+        </line>
+        <line id="2">
+            <text>FL</text>
+        </line>
+        <line id="3">
+            <text>33731</text>
+        </line>
+    </station_address>
+    <signature>
+        <paragraph id="0"/>
+    </signature>
+    <url>http://localhost:7001/vetsnet/pension/logout.do</url>
+    <regional_office>
+        <facility_type>3</facility_type>
+        <code>17</code>
+    </regional_office>
+    <letter_date>November 28, 2011</letter_date>
+</letter>

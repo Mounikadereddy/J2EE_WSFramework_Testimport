@@ -1,0 +1,36 @@
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<struts-config>
+  <!--============================================== Form Bean Definitions  -->
+  <form-beans>
+  	<!-- Locale form bean -->
+    <form-bean name="testServiceForm" type="org.apache.struts.action.DynaActionForm">
+    	<form-property name="station" type="java.lang.String"/>
+    	<form-property name="userid" type="java.lang.String"/>
+    </form-bean>
+  </form-beans>
+
+  <!-- ======================================== Global Forward Definitions  -->
+  <global-forwards>
+    <forward name="home" path="/testService.jsp"/>
+   </global-forwards>
+
+  <!-- ========================================= Action Mapping Definitions -->
+  <action-mappings>
+    <action path="/testservice" scope="request" type="gov.va.vba.framework.web.actions.TestServiceAction" validate="false">
+   	  	<forward name="success" path="/testService.jsp"/>
+    </action>      
+   
+  </action-mappings>
+  
+  <!-- ============================================= Controller Definition  -->
+  <controller inputForward="true" />
+  
+  <!-- ===================================== Message Resources Definitions  -->
+  <message-resources parameter="org.apache.struts.webapp.validator.MessageResources" />
+  <message-resources key="other" parameter="org.apache.struts.webapp.validator.OtherMessageResources" />
+  <message-resources key="different" parameter="org.apache.struts.webapp.validator.DifferentMessageResources" />
+  
+
+</struts-config>

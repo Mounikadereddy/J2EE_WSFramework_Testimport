@@ -1,0 +1,9 @@
+<ivysettings>
+  <settings defaultResolver="nexus"/>
+  <property name="nexus-release" value="http://vaausappcrp890.aac.va.gov:8081/nexus/content/repositories/releases"/>
+  <property name="nexus-central" value="http://vaausappcrp890.aac.va.gov:8081/nexus/content/repositories/central"/>
+  <property name="nexus-thirdparty" value="http://vaausappcrp890.aac.va.gov:8081/nexus/content/repositories/thirdparty/"/>
+  <resolvers>
+      <ibiblio name="nexus" m2compatible="true" root="${nexus-release}" />
+   </resolvers>
+</ivysettings>

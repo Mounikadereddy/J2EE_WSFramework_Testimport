@@ -1,0 +1,587 @@
+<!--
+
+IMPORTANT!!!
+
+Only check this file into the J2EE FRAMEWORK project in Dimensions!!!
+
+Failure to do this will result in updating the wrong version and a merge will be required.
+
+How to export login.fcc to Apache Intranet.
+
+1.	Open Dimensions Desktop Client.
+2.	Open J2EE Framework project.
+3.	Navigate to  login.fcc in src/main/webapa
+4.	Click on login.fcc
+5.	Pull down Item menu from Menu bar
+6.	Select Export to Project
+7.	Select APACHE_INTRANET from �Project� combo box
+8.	Enter �/webApp� into �New folder� text box. 
+9.	Click �OK� button.
+10.	Go to APACHE_INTRANET project and refresh the window to verify that the export is completed successfully .
+
+-->
+
+<!--
+	=======================================================================================================
+	Main VBA Login page for the WebLogic SOA platform. This is a static fcc hosted on the Apache web 
+	server that's plugged in to the SiteMinder web agent.
+	
+	Author: Mario Rodrigues
+	Date: 	3/19/2006
+	Date: 	6/14/2011: Added web 2.0 modal window-like functionality for warning message
+	=======================================================================================================
+		
+-->
+<!-- SiteMinder Encoding=ISO-8859-1; -->
+
+@smretries=0
+@username=%userId% 
+@password=%pwLength%:%password%:%newPwLength%:%newPassword%:stationid=%stationId%%retryCount%
+<html>
+<head>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/alertbox.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="styles/warning.css"/>
+
+<script language="JavaScript">
+
+	window.history.forward(1);
+	//if ((typeof(window.opener)!="undefined") && !(window.opener.closed)) {
+       //alert("Found parent!");
+     //  window.close();
+      // window.opener.location.replace("/");
+   // }
+	
+</script>
+	<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
+	<META HTTP-EQUIV="Pragma" CONTENT="no-cache" />
+	<META HTTP-EQUIV="Expires" CONTENT="-1" />
+	<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache" />
+	
+	<title>VBA Enterprise Web Platform: Common Security Login</title>
+	<script  type="text/javascript" language="Javascript">
+		var now = new Date();		
+		/**
+		 * Initializes the form
+		 */
+		function loginFormInit() {				
+			var warning = "<br><h1>***WARNING***WARNING***WARNING***WARNING***</h1><p>This system is intended to be used by authorized VA network users for viewing and retrieving information only except as otherwise explicitly authorized. VA information resides on and transmits through computer systems and networks funded by VA; all use is considered to be understanding and acceptance that there is no reasonable expectation of privacy for any data or transmissions on Government Intranet or Extranet (non-public) networks or systems. All transactions that occur on this system and all data transmitted through this system are subject to review and action including (but not limited to) monitoring, recording, retrieving, copying, auditing, inspecting, investigating, restricting access, blocking, tracking, disclosing to authorized personnel, or any other authorized actions by all authorized VA and law enforcement personnel. All use of this system constitutes understanding and unconditional acceptance of these terms. Unauthorized attempts or acts to either (1) access, upload, change, or delete information on this system, (2) modify this system, (3) deny access to this system, or (4) accrue resources for unauthorized use on this system are strictly prohibited. Such attempts or acts are subject to action that may result in criminal, civil, or administrative penalties.</p>";
+			if (jQuery.trim("$$errormsg$$").length == 0) {		
+				$('input').attr('disabled','disabled');
+				main.alert(warning, null, 'I have read the warning above, OK');		
+				$("input").removeAttr('disabled');						
+			}
+			if(document.loginForm != null){
+				resetCredFields();							
+			}
+		}	
+
+
+		/**
+		 * Pops up a help window
+		 */
+		function helpme(){
+			window.open('http://www.vba.va.gov',"help",	
+						"width=750,height=600,toolbar=no,location=no,menubar=no,status=no,resizable=0, scrollbars=1");
+		}
+		
+		/**
+		 * 
+		 */
+		function openWin (url,wd,hg,lf,top)  {  //temp "under construction"
+			opf='toolbar=no,top='+top+',left='+lf+',screenY='+top+',screenX='+lf+',width='+wd+',height='+hg+',resizable=0,scrollbars=1,toolbars=no';
+			help=window.open(url,'blank',opf);
+			help.focus();
+		}
+		
+		/**
+		 * Resets login fields
+		 */
+		function resetCredFields() {
+			document.loginForm.stationId.value = "";
+			document.loginForm.userId.value = "";
+			document.loginForm.password.value = "";
+			//document.loginForm.stationId.focus();
+			setFocus();
+		}
+
+		function setFocus() {
+			if ("$$errormsg$$".length >0) {
+				document.getElementById('errorMsgsAnchor').focus();
+			} else {
+				document.loginForm.stationId.focus();
+			}
+		}
+
+		function setFocusMessage() {
+			if ("$$errormsg$$".length >0) {
+				document.getElementById('errorMsgsAnchor').focus();
+			} 
+		}
+
+		
+		function replaceAllBackSlash(targetStr){
+			  var index=targetStr.indexOf("\\\\");
+			  while(index >= 0){
+				  targetStr=targetStr.replace("\\\\","");
+				  index=targetStr.indexOf("\\\\");
+			  }
+			  return targetStr;
+		}
+
+		function isValidPasswd(vPwd){
+			var validChars = /^[a-zA-Z0-9;#$%&'\()*+,\-.\/!\"<=>?@\[\\\\\\\]\^_`{|}~]+$/;	
+			//vPwd = replaceAllBackSlash(vPwd);			
+		    if(vPwd.match(validChars)){
+		    	return true;
+		    }
+		    else{
+		    	return false;
+		    }
+		}
+		
+		function isValidUserId(vId){
+			var validChars = /^[a-zA-Z0-9;#$%&'\()*+,\-.\/!\"<=>?@\[\\\\\\\]\^_`{|}~]+$/;	
+		    if(vId.match(validChars)){
+		    	return true;
+		    }
+		    else{
+		    	return false;
+		    }
+		}
+		
+		function isNum(vNum){
+		    var numbers = /^[0-9]+$/;
+		    if(vNum.match(numbers)){
+		    	return true;		    	
+		    }
+		    else{
+		    	return false;
+		    }
+		}
+		
+		/**
+		 * Does a cursory form validation and then submits if all fields pass validation
+		 */
+		function submitForm() {
+			 if (document.loginForm.stationId.value.length != 3 )  {
+				alert( "Station ID must be 3 characters" );
+				document.loginForm.stationId.focus();
+				return false;
+			 }
+			 else if(!isNum(document.loginForm.stationId.value)){
+				alert('Invalid Station ID, Station ID may only contain Numeric values');
+				document.loginForm.stationId.focus();
+				return false;
+			 }
+			 else if (document.loginForm.userId.value == "" )  {
+				alert( "Please enter a User Id" );
+				document.loginForm.userId.focus();
+				return false;
+			 }
+			 else if (document.loginForm.userId.value.length < 5 )  {
+				alert( "User Id must be at least 5 characters" );
+				document.loginForm.userId.focus();
+				return false;
+			 }
+			 else if (!isValidUserId(document.loginForm.username.value.toUpperCase()))  {
+				alert('User Id may only contain combination for following characters: (no : and <space>) 0-9, a-z, A-Z and ; # $ % & � () * + , - .  / !  " < = > ?  @ [ \\\\ ] ^ _ ` { | } ~');
+				document.loginForm.username.focus();
+				return false;
+			 }
+			 else if (document.loginForm.password.value == "" )  {
+				alert( "Please enter a password" );
+				document.loginForm.password.focus();
+				return false;
+			 }
+			 else if (document.loginForm.password.value.length < 5 )  {
+				alert( "Password must be at least 5 characters" );
+				document.loginForm.password.focus();
+				return false;
+			 }
+			 else if(!isValidPasswd(document.loginForm.password.value)){
+				alert('Password may only contain combination for following characters: (no : and <space>) 0-9, a-z, A-Z and ; # $ % & � () * + , - .  / !  " < = > ?  @ [ \\\\ ] ^ _ ` { | } ~');
+				document.loginForm.password.focus();
+				return false;
+			 }
+
+			 
+			 if (document.loginForm.changePw_cb.checked == false) {
+				document.loginForm.confirmNewPassword.disabled = true;
+				document.loginForm.newPassword.disabled = true;
+			 } 
+			 else {
+				if (document.loginForm.newPassword.value.length < 8) {
+					alert( "New password must be at least 8 characters." );
+					document.loginForm.newPassword.focus();
+					return false;
+				}
+				else if (document.loginForm.confirmNewPassword.value != 
+							document.loginForm.newPassword.value) {
+					alert( "'New Password' and 'Confirm New Password' fields must be identical." );
+					document.loginForm.newPassword.focus();
+					return false;
+				}		
+				else if(!isValidPasswd(document.loginForm.newPassword.value)){
+					alert('New Password may only contain combination for following characters: (no : and <space>) 0-9, a-z, A-Z and ; # $ % & � () * + , - .  / !  " < = > ?  @ [ \\\\ ] ^ _ ` { | } ~');
+					document.loginForm.newPassword.focus();
+					return false;
+				}
+				document.loginForm.newPwLength.value = document.loginForm.newPassword.value.length;
+			 }
+			 document.loginForm.userId.value = document.loginForm.userId.value.toUpperCase();//TODO: temporary until event is fixed
+			 document.loginForm.pwLength.value = document.loginForm.password.value.length;
+			 var retryCookie = getCookieValue('SMTRYNO');
+			 if (retryCookie != false)
+			 	document.loginForm.retryCount.value = ":"+retryCookie;
+			 document.loginForm.submit();
+		}
+
+		/**
+		 * Writes a message to the current document node
+		 */		
+		function writeMessage(msg) {
+			return document.write(msg);	
+		}
+		
+		/**
+		 * Shows or hides a tagged object
+		 */		
+		function togglePwChange() {
+			//alert("someone called togglePW");			
+			if (document.loginForm.changePw_cb.checked == true) {
+				document.getElementById("changePassword").style.visibility = "visible";
+				document.loginForm.newPassword.focus();
+			} 
+			else {
+				document.getElementById("changePassword").style.visibility = "hidden";
+		  }
+		}		
+		
+		/**
+		 * Autmatically submits the form when the ENTER-KEY is pressed from a field
+		 */
+		function handleEnter(field, e) {
+			var keycode;
+
+			if (window.event) 
+				keycode = window.event.keyCode;
+			else if (e) 
+				keycode = e.which;
+			else return true;
+			
+			if (keycode == 13) {
+				//field.form.submit();
+				submitForm();
+				return false;
+			}
+			else
+				return true;
+		}
+		
+		function getCookieValue(name) {			
+		
+			var start = document.cookie.indexOf(name+"=");
+			//alert("START of "+name+": = "+start);
+			var len = start + name.length + 1;
+			//alert("END of "+name+": = "+end);
+			if ((!start) && (name != document.cookie.substring(0, name.length))) {
+				return false;
+			}
+			if (start == -1) 
+				return false;
+			var end = document.cookie.indexOf(";", len);
+			if ( end == -1 ) 
+				end = document.cookie.length;
+			return parseInt(unescape(document.cookie.substring(len, end)))+1;
+		}				
+ </script>
+ <style> 
+	<!--TODO: move to separate SS-->
+		a{color: #FF0000; text-decoration: none;}
+		a:hover{color: #FF0000; text-decoration: underline; font-weight:bold}
+		..error {COLOR: #FF0000; FONT-FAMILY:Arial; FONT-SIZE:10pt; FONT-WEIGHT:bold;}
+		..msg {COLOR: #CC0000; FONT-FAMILY:Arial; FONT-SIZE:9pt; FONT-WEIGHT:bold;}
+		..lefttext {COLOR: #000000; FONT-FAMILY: Arial, Verdana; FONT-SIZE: 11px;}
+		..footer {COLOR: #FFFFFF; FONT-FAMILY: Arial, Verdana; FONT-SIZE: 11px;}
+		..date {COLOR: #FFFFFF; FONT-FAMILY: Arial, Verdana; FONT-SIZE: 8pt;}
+		<!--A.link {COLOR:#003399; FONT-FAMILY:Arial; FONT-SIZE:8pt; TEXT-DECORATION:none;}-->
+		<!--A.link:visited {COLOR:#003399; FONT-FAMILY:Arial; FONT-SIZE:8pt; TEXT-DECORATION:none;}-->
+		<!--A.link:hover {COLOR:#FFFF00; FONT-FAMILY:Arial; FONT-SIZE:8pt; TEXT-DECORATION:underline;}-->
+		..pwinput {border-top:1px #999999 solid;border-left:1px #999999 solid; border-right:1px #000000 solid; border-bottom:1px #000000 solid; HEIGHT:19px;WIDTH:180px; font-family:Arial;}
+	.style15 {font-size: 14px}
+ </style>
+
+</head>
+<body onload="loginFormInit();" onfocus="setFocusMessage();">
+
+<form name="loginForm" style="margin:0px" id="loginForm" method="post" onSubmit="return submitForm()">	
+	<input type="hidden" name="smquerydata" value="$$smquerydata$$" />
+	<input type="hidden" name="target" value="$$target$$" />
+	<input type="hidden" name="smauthreason" value="$$smauthreason$$" />
+	<input type="hidden" name="smagentname" value="$$smagentname$$" />
+	<input type="hidden" name="postpreservationdata" value="$$postpreservationdata$$" />
+	<input type="hidden" name="SMENC" VALUE="ISO-8859-1" />
+	<input type="hidden" name="SMLOCALE" value="US-EN" />
+	<input type="hidden" name="pwLength" value=""/>
+	<input type="hidden" name="newPwLength" value=""/>
+	<input type="hidden" name="retryCount" value=""/>
+	<table align="center" cellpadding="0" cellSpacing="0" width="600" style="BORDER:1px #999999 solid;" border="0" >
+		<tr>
+			<td align="center">
+				<table bgColor="#003366" cellpadding="0" cellSpacing="0" width="100%" border="0">
+					<tr>
+						<td width="14" align="center"><img src="images/css.gif" alt="Official seal of the United States Department of Veterans Affairs, VBA Common Security" width="225" height="75" /> </td>
+						<td align="right"><img src="images/flag.jpeg" alt="Flag of the United States of America" width="270" height="75" 
+										style="border-left:1px #FFFFFF solid;" /> </td>
+					</tr>
+					<!--Date-->
+					<tr>
+						<td colspan="2" bgcolor="#336699" valign="middle" class="date" 
+								style="text-align:left;padding-left:10px;border-top:1px #FFFFFF solid;border-bottom:1px #FFFFFF solid;" height="20">
+							<script type="text/javascript" language="javascript">
+									writeMessage(now.toLocaleDateString()+"&nbsp;&nbsp;&nbsp;"+now.toLocaleTimeString());
+							</script>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<table bgColor="#FFFFFF" cellPadding="0" cellSpacing="0" width="600" border="0">
+								<tr>
+									<td align="left" style="padding-left:190px" class="error">
+											<b><!--ERRORS go here-->		
+												<a href="#" id="errorMsgsAnchor">
+												<script type="text/javascript" language="javascript">	
+													if ("$$errormsg$$".length >0) {													
+														var messages = "$$errormsg$$".split("|");														
+														writeMessage("<br>");
+														if (messages[0].indexOf("$")!= -1) {
+															writeMessage(messages[0].substring(0, messages[0].indexOf("$"))+"<br>");															
+															var j = 1;
+														}
+														else {
+															var j = 0;
+														}														
+														for (i=j; i<messages.length; i++) {
+															writeMessage("<br><li>"+messages[i]+"</li><br>");
+														}														
+													}
+													
+												</script>
+												</a>
+											</b>
+											<br/>
+									</td>
+								</tr>
+								<tr>
+									<td class="lefttext" valign="top" style="padding:10px;">
+										<table width="50%" cellpadding="0" cellspacing="0" border="0" align="center">
+											<tr>
+												<td valign="middle" align="center" style="padding-left:70px">
+													<img src="images/login.gif" alt="Log in to VBA common security" width="191" height="32"/>												</td>
+											</tr>
+											<tbody style="padding-left:100px">
+												<tr>
+													<td valign="middle" style="color:#003366;font: bold 8pts/10pts Arial;padding-top:5px">
+														<label for="station">Station ID:</label>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<input name="stationId" maxlength="3" type="text" id="station" 
+																style="border-top:1px #999999 solid;border-left:1px #999999 solid; border-right:1px #000000 					
+																			solid; border-bottom:1px #000000 solid; HEIGHT:19px;
+																			WIDTH:35px;font-family:Arial;" autocomplete="on" title="Station Id"/>
+													</td>
+												</tr>
+												<tr>
+													<td valign="middle" style="color:#003366;font: bold 8pts/10pts Arial;padding-top:5px">
+														<label for="username">User ID:</label>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<input name="userId" maxlength="15" type="text" id="username"
+															style="border-top:1px #999999 solid;border-left:1px #999999 solid; border-right:1px #000000 solid;	 																					border-bottom:1px #000000 solid; HEIGHT:19px;width:114; font-family:Arial;text-transform:uppercase" autocomplete="off" width="30" onKeyPress="return handleEnter(this, event)" title="User Id"/>
+													</td>
+												</tr>
+												<tr>
+													<td valign="middle" style="color:#003366;font: bold 8pts/10pts Arial;padding-top:5px" width="65px">
+														<label for="pw">Password:</label>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<input name="password" maxlength="8"
+														style="border-top:1px #999999 solid;border-left:1px #999999 solid; border-right:1px #000000 solid; border-bottom:1px #000000 solid;HEIGHT:19px0;width:75; font-family:Arial;" 
+														autocomplete="off" type="password" id="pw" onKeyPress="return handleEnter(this, event)" title="Password"/>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<!--PUT DIV here-->
+								<tr>
+									<td align="center" class="lefttext">
+										<div id="changePassword" style="visibility:hidden;">										
+											<table>
+												<tr>
+													<td valign="middle" style="color:#003366;font:bold 8pts/10pts Arial;padding-left:90px">
+														<label for="newpwd">New Password:</label>												
+													</td>															
+													<td valign="middle" style="color:#003366;font: bold 8pts/10pts Arial">
+														<label for="confirmpassword">Confirm New Password:</label>													</td>																														
+												</tr>
+												<tr>
+													<td width="192" style="padding-left:90px">
+														<input name="newPassword" type="password" id="newpw" maxlength="8" title="New Password"/>
+													</td>
+													<td>
+														<input name="confirmNewPassword" type="password" id="confirmpassword" maxlength="8" 
+															onkeypress="return handleEnter(this, event)" title="Confirm New Password"/>
+													</td>
+												</tr>
+											</table>							
+										</div>
+									</td>
+								</tr>									
+								<tr>
+									<td align="center" style="color:#003366;font:bold 10pts/12pts Arial;">
+										<input name="changePw_cb" type="checkbox" id="changePassword" onClick="togglePwChange()"
+											style="border:thick" title="Change Password"/>
+											&nbsp;<label for="changePassword">Change Password</label>									
+									</td>
+								</tr>
+								<tr><td>&nbsp;</td></tr>
+								<!-- Removed per Ken, 9/5/06
+								<tr>
+									<td align="center">
+										<span class="lefttext" 
+										style="padding-left:20px; text-align:left;cursor:pointer;font-style:italic;color:red;"> 
+										<a href="javascript:openWin('UnderConstruction.html', '400', '400', '10', '10')"> 
+											<font color="red">Lost / Forgotten Credentials</font>										
+										</a>										
+										</span>									
+									</td>
+								</tr>															
+								-->
+								<tr><td>&nbsp;</td></tr>								
+								<tr>
+									<td align="center" style="padding-left:35px;">
+										<input name="submitFrm" type="button" alt="Submit" align="top" border="2" value="Submit" 
+								 				title="Submit" onClick="submitForm();"/>
+									</td>
+								</tr>								
+								<tr><td>&nbsp;</td></tr>
+								<tr><td>&nbsp;</td></tr>
+								
+								<tr>
+									<td rowspan="1" colspan="2" bgcolor="#CCCCCC" valign="middle" height="20"></td>
+								</tr>
+								<!--Helpful Links-->
+								<tr>
+									<td align="center" bgcolor="#FFFFFF">
+										<table>
+											<tr bgcolor="#FFFFFF" bordercolor="#FF3366">
+												<td width="191" valign="top" class="lefttext">
+													<a href="/">
+														<img src="images/buttons/home.gif" alt="Common Enterprise Platform Home" 
+															width="189" height="32"border="0"/>
+													</a>
+													<div align="left">Common Enterprise Platform Home</div>
+												</td>
+											<td width="50">&nbsp;</td>
+											
+												<td width="191" valign="top" class="lefttext">
+													<a href="#" onClick="javascript:openWin('Registration.html', '600', '500', '10', '10')"> 
+														<img src="images/buttons/newuser.gif"border="0" width="191" height="36" 
+															alt="Click here for Instructions on user registration"/> 
+													</a>
+													<div align="left" > New user registration and security related information </div>
+												</td>
+												<td width="50">&nbsp;</td>
+												<td width="191" valign="top" class="lefttext">
+													<a href="#" onClick="javascript:openWin('PasswordHelp.html', '600', '500', '10', '10')"> 
+														<img src="images/buttons/pwdhelp.gif" border="0" width="191" height="36" 
+															alt="Click here for Instructions for Password Reset"/> 
+													</a>
+													<div align="left" > Password Change/Reset information </div>
+												</td>
+												<td width="50">&nbsp;</td>
+												<!-- removed 9/5/06 per Ken
+												<td width="191" valign="top" class="lefttext">
+												<a href="#"> <img src="images/buttons/help.gif"border="0" width="191" height="32" 
+															alt="Click here for general information" 
+															onClick="openWin('UnderConstruction.html', '400', '400', '10', '10')"/> </a>
+													<div align="left">CSS and Login  Information</div>
+												</td>
+												-->
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!--End Helpful Links-->
+								<tr>
+									<td rowspan="1" colspan="2" bgcolor="#CCCCCC" valign="middle" class="date" 
+											style="text-align:left;padding-left:10px;border-top:1px #FFFFFF solid;	
+											border-bottom:1px #FFFFFF solid;" height="20"></td>
+								</tr>
+								<!--Start Disclaimer-->
+								<tr>
+									<td class="footer" bgcolor="#003366" colspan="2" 
+												style="padding:10px;border-top:1px solid;" nowrap="nowrap">
+										<div id="siteInfo" align="center">
+											<!--<span style="color:#FFFFFF">-->
+											<a href="#" onClick="openWin('http://www.vba.va.gov/', 
+																			'700', '500', '10', '10')"> <font color="#FFFFFF">About VBA</font></a>
+											<!--need fonts bec a:hover
+																																						 is ignoring color changes-->
+											&nbsp;&nbsp;|&nbsp;&nbsp; 
+											<a href="#" onClick="openWin('https://iris.va.gov', '700', '500', '10', '10')"> 
+												<font color="#FFFFFF">Contact The VBA</font>
+											</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+											<a href="#" onClick="openWin('http://www.va.gov/privacy/', '700', '500', '10', '10')"> 
+												<font color="red">Privacy Act and Consent Notice</font> 
+											</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+											<a href="#" onClick="openWin('http://www.va.gov/disclaim.htm', '700', '500', '10', '10')"> 
+												<font color="red">Disclaimer</font> 
+											</a> 
+											<!--&nbsp;&nbsp;|&nbsp;&nbsp; <a href="mailto:mario.rodrigues@vba.va.gov"> 
+												<font color="#FFFFFF">Comments</font> 
+											</a>-->
+											<!--</span>-->
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&copy;&nbsp;VBA&nbsp;
+											<script type="text/javascript" language="JavaScript">
+												document.write(now.getYear());
+											</script>
+										</div>
+									</td>
+								</tr>
+								<!--End Disclaimer-->
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</form>
+<br/>
+ <script type="text/javascript">
+    //writeMessage("Cookies: "+document.cookie);        
+	var expiredPwRegExpr = "password has expired";	
+	var newPasswordStrengthRegExpr = "new password must meet at least 3";
+	    
+    if ("$$errormsg$$".length >0) {      
+    	if (("$$errormsg$$".toLowerCase().search(expiredPwRegExpr) != -1 || "$$errormsg$$".toLowerCase().search(newPasswordStrengthRegExpr) != -1)){    	
+    		document.loginForm.changePw_cb.checked = true;			
+			togglePwChange();
+		}
+    }
+ </script>
+</body>
+</html>
+

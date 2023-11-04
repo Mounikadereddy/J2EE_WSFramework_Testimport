@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="148ed89c-dcd8-4cec-be2a-77f305b5f705" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="148ed89c-dcd8-4cec-be2a-77f305b5f705" name="Default Changelist" comment="" />
+      <created>1634321156856</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634321156856</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="760" y="274" key="SettingsEditor" timestamp="1641312889701">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="760" y="274" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1641312889701" />
+    <state x="643" y="205" width="1533" height="1110" key="find.popup" timestamp="1641324050238">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="643" y="205" width="1533" height="1110" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1641324050238" />
+    <state x="1002" y="612" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1641312895977">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1002" y="612" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1641312895977" />
+  </component>
+</project>

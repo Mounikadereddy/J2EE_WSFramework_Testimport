@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<weblogic-application xmlns="http://www.bea.com/ns/weblogic/90">
+<library-ref>
+   <library-name>BGS-BEP-EJB-Share</library-name>
+   <specification-version>1</specification-version>
+   <exact-match>true</exact-match>
+</library-ref>
+</weblogic-application>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="bep-app-envs" basedir="." default="generate">	
+	<target name="generate" description="for each environment, configuration files will be created">
+        <taskdef resource="net/sf/antcontrib/antlib.xml" />
+		<echo message="{src.config}/envs=${src.config}/envs"/>
+		<for param="file">
+		  <path>
+		    <fileset dir="${src.config}/envs" includes="**/*.config"/>
+		  </path>
+		  <sequential>
+		  	<echo message="config file name=@{file}" />
+		  	<basename property="filename" file="@{file}" suffix=".config" /> 
+		  	<var name="config.name" value="${filename}" />
+		    <var name="filename" unset="true"/>
+			<echo message="config.name =${config.name}"/>
+			<antcall target="env-templates" inheritAll="false" inheritRefs="false">
+				<param name="config.name" value="${config.name}" />
+				<param name="src.config" value="${src.config}" />
+				<param name="build.root" value="${build.root}" />
+			</antcall>
+		  </sequential>
+		</for>
+	</target>
+
+	<target name="env-templates">
+		<property name="template_home" value="${src.config}/templates"/>
+		<delete dir="${build.root}/target/temp"/>
+		<mkdir dir="${build.root}/target/temp"/>
+
+		<property name="substitution_file" value="${src.config}/envs/${config.name}.config"/>
+		<property name="template_file" value="${template_home}/BEPlog4j.properties.tpl"/>
+		<property name="output_file" value="${build.root}/target/temp/BEPlog4j.properties"/>
+
+		<property file="${substitution_file}" prefix="s"/>
+		<echo message="***log4j.properties***"/>
+		<echo message="config.name =${config.name}"/>
+		<echo message="substitution file: ${substitution_file}"/>
+		<echo message="template file: ${template_file}"/>
+		<echo message="output file: ${output_file}"/>
+		<echo message="value={s.log_file_location_prefix}=${s.log_file_location_prefix}"/>
+		<echo message="value={s.default_log_level}=${s.default_log_level}"/>
+
+		<delete file="${output_file}" quiet="true"/>
+		<copy file="${template_file}" tofile="${output_file}">
+			<filterchain>
+				<replacetokens>
+					<token key="log_file_location_prefix"
+	                          value="${s.log_file_location_prefix}"/>
+					<token key="default_log_level"
+	                          value="${s.default_log_level}"/>
+				</replacetokens>
+			</filterchain>
+		</copy>
+
+
+		<property name="substitution_file2"    value="${src.config}/envs/${config.name}.config"/>
+		<property name="template_file2" value="${template_home}/BEP.properties.tpl"/>
+		<property name="output_file2"   value="${build.root}/target/temp/BEP.properties"/>
+
+		<property file="${substitution_file}" prefix="s2"/>
+		<echo message="***BEP.properties***"/>
+		<echo message="config.name =${config.name}"/>
+		<echo message="substitution file: ${substitution_file2}"/>
+		<echo message="template file: ${template_file2}"/>
+		<echo message="output file: ${output_file2}"/>
+		<echo message="value={s.load_balancing_host}=${s.load_balancing_host}"/>
+		<echo message="value={s.load_balancing_port}=${s.load_balancing_port}"/>
+		<echo message="value={s.load_balancing_protocol}=${s.load_balancing_protocol}"/>
+		<echo message="value={s.smtp_server}=${s.smtp_server}"/>
+		<echo message="value={s.ldap_server_address}=${s.ldap_server_address}"/>
+		<echo message="value={s.ldap_version}=${s.ldap_version}"/>
+		<echo message="value={s.environment}=${s.environment}"/>
+		<echo message="value={s.external}=${s.external}"/>
+		<echo message="value={s.optimized_host}=${s.optimized_host}"/>
+		<echo message="value={s.optimized_port}=${s.optimized_port}"/>
+		<echo message="value={s.optimized_protocol}=${s.optimized_protocol}"/>
+		<echo message="value={s.correspondence_liveCycle_fileSystem}=${s.correspondence_liveCycle_fileSystem}"/>
+		<echo message="value={s.correspondence_liveCycle_url}=${s.correspondence_liveCycle_url}"/>
+		<echo message="value={s.log4j.properties_file_location_prefix}=${s.log4j.properties_file_location_prefix}"/>
+
+		<delete file="${output_file2}" quiet="true"/>
+		<copy file="${template_file2}" tofile="${output_file2}">
+			<filterchain>
+				<replacetokens>
+					<token key="log4j.properties_file_location_prefix"
+	                          value="${s2.log4j.properties_file_location_prefix}"/>
+					<token key="load_balancing_host"
+	                          value="${s2.load_balancing_host}"/>
+					<token key="load_balancing_port"
+	                          value="${s2.load_balancing_port}"/>
+					<token key="load_balancing_protocol"
+	                          value="${s2.load_balancing_protocol}"/>
+					<token key="smtp_server"
+	                          value="${s2.smtp_server}"/>
+					<token key="ldap_server_address"
+	                          value="${s2.ldap_server_address}"/>
+					<token key="ldap_version"
+	                          value="${s2.ldap_version}"/>
+					<token key="environment"
+	                          value="${s2.environment}"/>
+					<token key="external"
+	                          value="${s2.external}"/>
+					<token key="optimized_host"
+	                          value="${s2.optimized_host}"/>
+					<token key="optimized_port"
+	                          value="${s2.optimized_port}"/>
+					<token key="optimized_protocol"
+	                          value="${s2.optimized_protocol}"/>
+					<token key="correspondence_liveCycle_fileSystem"
+	                          value="${s2.correspondence_liveCycle_fileSystem}"/>
+					<token key="correspondence_liveCycle_url"
+	                          value="${s2.correspondence_liveCycle_url}"/>
+				</replacetokens>
+			</filterchain>
+		</copy>
+		<var name="zipfile" value="${build.root}/target/${config.name}.zip" />
+		<echo message="zip file: ${zipfile}"/>
+		<delete file="${zipfile}" />
+		<zip destfile="${zipfile}">
+			<zipfileset dir="${build.root}/target/temp" />
+		</zip>
+		<delete file="${output_file2}" quiet="true"/>
+		<delete dir="${build.root}/target/temp"/>
+	</target>
+
+</project>

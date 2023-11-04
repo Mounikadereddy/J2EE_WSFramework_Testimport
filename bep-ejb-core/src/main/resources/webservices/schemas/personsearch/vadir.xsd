@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/vadir" xmlns:tns="http://www.example.org/vadir" elementFormDefault="qualified">
+    <xsd:element name="PN">
+    	<xsd:complexType>
+    		<xsd:sequence>
+    			<xsd:element name="VA_ID" type="xsd:string"/>
+    			<xsd:element name="PN_1ST_NM" type="xsd:string"/>
+    			<xsd:element name="PN_MID_NM" type="xsd:string"/>
+    			<xsd:element name="PN_LST_NM" type="xsd:string"/>
+    			<xsd:element name="PN_ID" type="xsd:string"/>
+    			<xsd:element name="PN_SEX_CD" type="xsd:string"/>
+    			<xsd:element name="PN_BRTH_DT" type="xsd:date"/>
+    			<xsd:element name="MRTL_STAT_CD" type="xsd:string"/>
+    			<xsd:element name="PN_DTH_DT" type="xsd:date"/>
+    			<xsd:element name="PN_ID_TYP_CD" type="xsd:string"/>
+    		</xsd:sequence>
+    	</xsd:complexType>
+    </xsd:element>
+    <xsd:element name="PNL">
+    	<xsd:complexType>
+    		<xsd:sequence>
+    			<xsd:element name="ORG_CD" type="xsd:string"/>
+    			<xsd:element name="PNL_CAT_CD" type="xsd:string"/>
+    			<xsd:element name="PNL_SEG_ID" type="xsd:string"/>
+    			<xsd:element name="SVC_CD" type="xsd:string"/>
+    			<xsd:element name="PNL_BGN_DT" type="xsd:date"/>
+    			<xsd:element name="PNL_PE_DT" type="xsd:date"/>
+    			<xsd:element name="PNL_TERM_DT" type="xsd:date"/>
+    		</xsd:sequence>
+    	</xsd:complexType>
+    </xsd:element>
+    <xsd:element name="MA">
+    	<xsd:complexType>
+    		<xsd:sequence>
+    			<xsd:element name="MA_LN1_TX" type="xsd:string"/>
+    			<xsd:element name="MA_LN2_TX" type="xsd:string"/>
+    			<xsd:element name="MA_CITY_NM" type="xsd:string"/>
+    			<xsd:element name="MA_ST_CD" type="xsd:string"/>
+    			<xsd:element name="MA_PR_ZIP_CD" type="xsd:string"/>
+    			<xsd:element name="MA_PR_ZIPX_CD" type="xsd:string"/>
+    		</xsd:sequence>
+    	</xsd:complexType>
+    </xsd:element>
+    <xsd:element name="TNUM">
+    	<xsd:complexType>
+    		<xsd:sequence>
+    			<xsd:element name="PHONE_NUM" type="xsd:string"/>
+    			<xsd:element name="TNUM_TYP_CD" type="xsd:string"/>
+    		</xsd:sequence>
+    	</xsd:complexType>
+    </xsd:element>
+    <xsd:element name="AN">
+    	<xsd:complexType>
+    		<xsd:sequence>
+    			<xsd:element name="PRIOR_PN_1ST_NM" type="xsd:string"/>
+    			<xsd:element name="PRIOR_PN_LST_NM" type="xsd:string"/>
+    		</xsd:sequence>
+    	</xsd:complexType>
+    </xsd:element>
+    <xsd:element name="EDU">
+    	<xsd:complexType>
+    		<xsd:sequence>
+    			<xsd:element name="EDU_LVL_DT" type="xsd:date"/>
+    			<xsd:element name="EDU_LVL_CD" type="xsd:string"/>
+    		</xsd:sequence>
+    	</xsd:complexType>
+    </xsd:element>
+    <xsd:element name="PG">
+    	<xsd:complexType>
+    		<xsd:sequence>
+    			<xsd:element name="PG_SEG_ID" type="xsd:string"/>
+    			<xsd:element name="PAY_PLN_CD" type="xsd:string"/>
+    			<xsd:element name="PG_CD" type="xsd:string"/>
+    		</xsd:sequence>
+    	</xsd:complexType>
+    </xsd:element>
+    <xsd:element name="PNLST">
+    	<xsd:complexType>
+    		<xsd:sequence>
+    			<xsd:element name="ISVC_SEP_CD" type="xsd:string"/>
+    			<xsd:element name="CHAR_SVC_CD" type="xsd:string"/>
+    		</xsd:sequence>
+    	</xsd:complexType>
+    </xsd:element>
+
+
+</xsd:schema>

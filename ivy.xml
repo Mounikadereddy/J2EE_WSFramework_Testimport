@@ -1,0 +1,13 @@
+<ivy-module version="2.0">
+    <info organisation="gov.va.vba.framework" module="bep-ear" />
+      <configurations>  
+        <conf name="runtime" description="runtime" />  
+  </configurations>
+  
+  <dependencies>  
+    <dependency org="gov.va.vba.framework" name="bep-share-ejb-dependencies" rev="6.0.5-7" transitive="false" conf="runtime->default" />
+    <dependency org="gov.va.vba.framework" name="bep-share-ejb" rev="6.0.5-7" transitive="false" conf="runtime->default" />
+    <dependency org="gov.va.vba.framework" name="bep-app-legacy" rev="6.0.5-7" transitive="false" conf="runtime->default" />
+    <dependency org="gov.va.vba.framework" name="bep-app" rev="6.0.5-7" transitive="false" conf="runtime->default" />
+  </dependencies> 
+</ivy-module>

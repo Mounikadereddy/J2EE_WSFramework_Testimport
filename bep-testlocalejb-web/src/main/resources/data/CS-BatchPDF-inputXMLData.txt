@@ -1,0 +1,1803 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<letter>
+    <veteran>
+        <file_nbr>254-12-0404</file_nbr>
+        <payee_nbr>00</payee_nbr>
+        <namex>Alica Tolbert</namex>
+    </veteran>
+    <award type="CPL"/>
+    <address>
+        <line id="0">
+            <text>Alie Tolbert.</text>
+        </line>
+        <line id="1">
+            <text>200 Main Str.</text>
+        </line>
+        <line id="2">
+            <text>Brooklyn NY 01655</text>
+        </line>
+        <line id="3">
+            <text></text>
+        </line>
+        <line id="4">
+            <text></text>
+        </line>
+        <line id="5">
+            <text></text>
+        </line>
+    </address>
+    <enclosures>
+        <count>1</count>
+        <name>21-8768</name>
+    </enclosures>
+    <enclosures>
+        <count>1</count>
+        <name>24-0313</name>
+    </enclosures>
+    <rate>
+        <header>
+            <paragraph id="7"/>
+        </header>
+        <table id="1">
+            <row>
+                <effective_date>12/01/2006</effective_date>
+                <annual_rate>$9999.00</annual_rate>
+                <annual_income>$4,476.00</annual_income>
+                <annual_rate_max>$14,313.00</annual_rate_max>
+            </row>
+            <row>
+                <effective_date>02/01/2007</effective_date>
+                <annual_rate>$1,122.00</annual_rate>
+                <annual_income>$841.00</annual_income>
+                <annual_rate_max>$14,313.00</annual_rate_max>
+            </row>
+            <row>
+                <effective_date>12/01/2007</effective_date>
+                <annual_rate>$1,122.00</annual_rate>
+                <annual_income>$1,177.00</annual_income>
+                <annual_rate_max>$14,643.00</annual_rate_max>
+            </row>
+            <row>
+                <effective_date>01/01/2008</effective_date>
+                <annual_rate>$281.00</annual_rate>
+                <annual_income>$11,264.00</annual_income>
+                <annual_rate_max>$14,643.00</annual_rate_max>
+            </row>
+            <row>
+                <effective_date>12/01/2008</effective_date>
+                <annual_rate>$348.00</annual_rate>
+                <annual_income>$11,306.00</annual_income>
+                <annual_rate_max>$15,493.00</annual_rate_max>
+            </row>
+        </table>
+        <explanation>
+            <paragraph id="0"/>
+        </explanation>
+    </rate>
+    <free_text>
+        <paragraph id="0">
+            <text>ghfghgfh nfdj</text>
+        </paragraph>
+    </free_text>
+    <income>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$4,476.00</ivap>
+            <effective_date>December 01, 2006</effective_date>
+        </header>
+        <detail id="0">
+            <paragraph id="0"/>
+            <payee>CAPPO</payee>
+            <ptcpnt_id>543121</ptcpnt_id>
+            <begin_date>Fri Dec 01 00:00:00 CST 2006</begin_date>
+            <annual_income>
+                <earned>$0.00</earned>
+                <social_security>$0.00</social_security>
+                <retirement>$0.00</retirement>
+                <interest>$0.00</interest>
+                <insurance>$0.00</insurance>
+                <other>$4,476.00</other>
+            </annual_income>
+        </detail>
+        <detail id="10">
+            <paragraph id="0"/>
+            <payee>Consiglieri</payee>
+            <ptcpnt_id>543175</ptcpnt_id>
+            <begin_date>Fri Dec 01 00:00:00 CST 2006</begin_date>
+            <annual_income>
+                <earned>$0.00</earned>
+                <social_security>$0.00</social_security>
+                <retirement>$0.00</retirement>
+                <interest>$0.00</interest>
+                <insurance>$0.00</insurance>
+                <other>$0.00</other>
+            </annual_income>
+        </detail>
+        <change>
+            <paragraph id="0"/>
+        </change>
+    </income>
+    <supplemental>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$841.00</ivap>
+            <effective_date>February 01, 2007</effective_date>
+        </header>
+        <begin_date>Thu Feb 01 00:00:00 CST 2007</begin_date>
+        <income>
+            <header id="0">
+                <paragraph id="0"/>
+            </header>
+            <detail id="0">
+                <paragraph id="0"/>
+                <payee>VETERAN</payee>
+                <ptcpnt_id>543121</ptcpnt_id>
+                <begin_date>Thu Feb 01 00:00:00 CST 2007</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$11,922.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+                <annual_expense>
+                    <illness_burial>$0.00</illness_burial>
+                    <medical>$16,218.00</medical>
+                    <education>$0.00</education>
+                    <disability_social_security>$0.00</disability_social_security>
+                    <disability_retirement>$0.00</disability_retirement>
+                </annual_expense>
+            </detail>
+            <detail id="10">
+                <paragraph id="0"/>
+                <payee>SPOUSE</payee>
+                <ptcpnt_id>543175</ptcpnt_id>
+                <begin_date>Thu Feb 01 00:00:00 CST 2007</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$4,422.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+            </detail>
+        </income>
+    </supplemental>
+    <supplemental>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$1,177.00</ivap>
+            <effective_date>December 01, 2007</effective_date>
+        </header>
+        <begin_date>Sat Dec 01 00:00:00 CST 2007</begin_date>
+        <income>
+            <header>
+                <paragraph id="0"/>
+            </header>
+            <detail id="0">
+                <paragraph id="0"/>
+                <payee>VETERAN</payee>
+                <ptcpnt_id>543121</ptcpnt_id>
+                <begin_date>Sat Dec 01 00:00:00 CST 2007</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$0.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$1,177.00</other>
+                </annual_income>
+            </detail>
+            <detail id="10">
+                <paragraph id="0"/>
+                <payee>SPOUSE</payee>
+                <ptcpnt_id>543175</ptcpnt_id>
+                <begin_date>Sat Dec 01 00:00:00 CST 2007</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$0.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+            </detail>
+        </income>
+    </supplemental>
+    <supplemental>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$11,264.00</ivap>
+            <effective_date>January 01, 2008</effective_date>
+        </header>
+        <begin_date>Tue Jan 01 00:00:00 CST 2008</begin_date>
+        <income>
+            <header id="0">
+                <paragraph id="0"/>
+            </header>
+            <detail id="0">
+                <paragraph id="0"/>
+                <payee>VETERAN</payee>
+                <ptcpnt_id>543121</ptcpnt_id>
+                <begin_date>Tue Jan 01 00:00:00 CST 2008</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$12,196.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+                <annual_expense>
+                    <illness_burial>$0.00</illness_burial>
+                    <medical>$6,192.00</medical>
+                    <education>$0.00</education>
+                    <disability_social_security>$0.00</disability_social_security>
+                    <disability_retirement>$0.00</disability_retirement>
+                </annual_expense>
+            </detail>
+            <detail id="10">
+                <paragraph id="0"/>
+                <payee>SPOUSE</payee>
+                <ptcpnt_id>543175</ptcpnt_id>
+                <begin_date>Tue Jan 01 00:00:00 CST 2008</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$4,528.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+            </detail>
+        </income>
+    </supplemental>
+    <supplemental>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$11,306.00</ivap>
+            <effective_date>December 01, 2008</effective_date>
+        </header>
+        <begin_date>Mon Dec 01 00:00:00 CST 2008</begin_date>
+        <income>
+            <header id="0">
+                <paragraph id="0"/>
+            </header>
+            <detail id="0">
+                <paragraph id="0"/>
+                <payee>VETERAN</payee>
+                <ptcpnt_id>543121</ptcpnt_id>
+                <begin_date>Mon Dec 01 00:00:00 CST 2008</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$12,196.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+                <annual_expense>
+                    <illness_burial>$0.00</illness_burial>
+                    <medical>$6,192.00</medical>
+                    <education>$0.00</education>
+                    <disability_social_security>$0.00</disability_social_security>
+                    <disability_retirement>$0.00</disability_retirement>
+                </annual_expense>
+            </detail>
+            <detail id="10">
+                <paragraph id="0"/>
+                <payee>SPOUSE</payee>
+                <ptcpnt_id>543175</ptcpnt_id>
+                <begin_date>Mon Dec 01 00:00:00 CST 2008</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$4,528.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+            </detail>
+        </income>
+    </supplemental>
+    <expense>
+        <continuing_medical>
+            <paragraph id="0"/>
+        </continuing_medical>
+        <explanation>
+            <paragraph id="0"/>
+        </explanation>
+    </expense>
+    <cola>
+        <paragraph id="0"/>
+        <effective_date>December 01, 2007</effective_date>
+    </cola>
+    <cola>
+        <paragraph id="0"/>
+        <effective_date>December 01, 2008</effective_date>
+    </cola>
+    <dependents>
+        <additional_funds id="0">
+            <payee>spouse</payee>
+        </additional_funds>
+    </dependents>
+    <award_event type="S"/>
+    <benefit_attachment>
+        <paragraph id="0"/>
+    </benefit_attachment>
+    <role>authorizer</role>
+    <station_address>
+        <line id="0">
+            <text>P.O. Box 342000</text>
+        </line>
+        <line id="1">
+            <text>Milwaukee</text>
+        </line>
+        <line id="2">
+            <text>WI</text>
+        </line>
+        <line id="3">
+            <text>53234</text>
+        </line>
+    </station_address>
+    <signature>
+        <paragraph id="0"/>
+        <namex>Kathy Sylvester</namex>
+        <title>Veterans Service Center Manager</title>
+        <email>ksylvest@aol.com</email>
+    </signature>
+    <url>http://vbaauswebdev1.vba.va.gov:8040/vetsnet/pension/logout.do</url>
+    <regional_office>
+        <facility_type>3</facility_type>
+        <code>30</code>
+    </regional_office>
+    <letter_date>June 08, 2009</letter_date>
+    <letter_type>
+        <type>(RO COPY)</type>
+    </letter_type>
+</letter>
+
+<letter>
+    <veteran>
+        <file_nbr>254-12-0404</file_nbr>
+        <payee_nbr>00</payee_nbr>
+        <namex>Don Corleone</namex>
+    </veteran>
+    <award type="CPL"/>
+    <address>
+        <line id="0">
+            <text>Don J. Corleone Jr.</text>
+        </line>
+        <line id="1">
+            <text>734 Vincenzo Estrada</text>
+        </line>
+        <line id="2">
+            <text>Brooklyn NY 01655</text>
+        </line>
+        <line id="3">
+            <text></text>
+        </line>
+        <line id="4">
+            <text></text>
+        </line>
+        <line id="5">
+            <text></text>
+        </line>
+    </address>
+    <enclosures>
+        <count>1</count>
+        <name>21-8768</name>
+    </enclosures>
+    <enclosures>
+        <count>1</count>
+        <name>24-0313</name>
+    </enclosures>
+    <rate>
+        <header>
+            <paragraph id="7"/>
+        </header>
+        <table id="1">
+            <row>
+                <effective_date>12/01/2006</effective_date>
+                <annual_rate>$9999.00</annual_rate>
+                <annual_income>$4,476.00</annual_income>
+                <annual_rate_max>$14,313.00</annual_rate_max>
+            </row>
+            <row>
+                <effective_date>02/01/2007</effective_date>
+                <annual_rate>$1,122.00</annual_rate>
+                <annual_income>$841.00</annual_income>
+                <annual_rate_max>$14,313.00</annual_rate_max>
+            </row>
+            <row>
+                <effective_date>12/01/2007</effective_date>
+                <annual_rate>$1,122.00</annual_rate>
+                <annual_income>$1,177.00</annual_income>
+                <annual_rate_max>$14,643.00</annual_rate_max>
+            </row>
+            <row>
+                <effective_date>01/01/2008</effective_date>
+                <annual_rate>$281.00</annual_rate>
+                <annual_income>$11,264.00</annual_income>
+                <annual_rate_max>$14,643.00</annual_rate_max>
+            </row>
+            <row>
+                <effective_date>12/01/2008</effective_date>
+                <annual_rate>$348.00</annual_rate>
+                <annual_income>$11,306.00</annual_income>
+                <annual_rate_max>$15,493.00</annual_rate_max>
+            </row>
+        </table>
+        <explanation>
+            <paragraph id="0"/>
+        </explanation>
+    </rate>
+    <free_text>
+        <paragraph id="0">
+            <text>ghfghgfh nfdj</text>
+        </paragraph>
+    </free_text>
+    <income>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$4,476.00</ivap>
+            <effective_date>December 01, 2006</effective_date>
+        </header>
+        <detail id="0">
+            <paragraph id="0"/>
+            <payee>CAPPO</payee>
+            <ptcpnt_id>543121</ptcpnt_id>
+            <begin_date>Fri Dec 01 00:00:00 CST 2006</begin_date>
+            <annual_income>
+                <earned>$0.00</earned>
+                <social_security>$0.00</social_security>
+                <retirement>$0.00</retirement>
+                <interest>$0.00</interest>
+                <insurance>$0.00</insurance>
+                <other>$4,476.00</other>
+            </annual_income>
+        </detail>
+        <detail id="10">
+            <paragraph id="0"/>
+            <payee>Consiglieri</payee>
+            <ptcpnt_id>543175</ptcpnt_id>
+            <begin_date>Fri Dec 01 00:00:00 CST 2006</begin_date>
+            <annual_income>
+                <earned>$0.00</earned>
+                <social_security>$0.00</social_security>
+                <retirement>$0.00</retirement>
+                <interest>$0.00</interest>
+                <insurance>$0.00</insurance>
+                <other>$0.00</other>
+            </annual_income>
+        </detail>
+        <change>
+            <paragraph id="0"/>
+        </change>
+    </income>
+    <supplemental>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$841.00</ivap>
+            <effective_date>February 01, 2007</effective_date>
+        </header>
+        <begin_date>Thu Feb 01 00:00:00 CST 2007</begin_date>
+        <income>
+            <header id="0">
+                <paragraph id="0"/>
+            </header>
+            <detail id="0">
+                <paragraph id="0"/>
+                <payee>VETERAN</payee>
+                <ptcpnt_id>543121</ptcpnt_id>
+                <begin_date>Thu Feb 01 00:00:00 CST 2007</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$11,922.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+                <annual_expense>
+                    <illness_burial>$0.00</illness_burial>
+                    <medical>$16,218.00</medical>
+                    <education>$0.00</education>
+                    <disability_social_security>$0.00</disability_social_security>
+                    <disability_retirement>$0.00</disability_retirement>
+                </annual_expense>
+            </detail>
+            <detail id="10">
+                <paragraph id="0"/>
+                <payee>SPOUSE</payee>
+                <ptcpnt_id>543175</ptcpnt_id>
+                <begin_date>Thu Feb 01 00:00:00 CST 2007</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$4,422.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+            </detail>
+        </income>
+    </supplemental>
+    <supplemental>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$1,177.00</ivap>
+            <effective_date>December 01, 2007</effective_date>
+        </header>
+        <begin_date>Sat Dec 01 00:00:00 CST 2007</begin_date>
+        <income>
+            <header>
+                <paragraph id="0"/>
+            </header>
+            <detail id="0">
+                <paragraph id="0"/>
+                <payee>VETERAN</payee>
+                <ptcpnt_id>543121</ptcpnt_id>
+                <begin_date>Sat Dec 01 00:00:00 CST 2007</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$0.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$1,177.00</other>
+                </annual_income>
+            </detail>
+            <detail id="10">
+                <paragraph id="0"/>
+                <payee>SPOUSE</payee>
+                <ptcpnt_id>543175</ptcpnt_id>
+                <begin_date>Sat Dec 01 00:00:00 CST 2007</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$0.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+            </detail>
+        </income>
+    </supplemental>
+    <supplemental>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$11,264.00</ivap>
+            <effective_date>January 01, 2008</effective_date>
+        </header>
+        <begin_date>Tue Jan 01 00:00:00 CST 2008</begin_date>
+        <income>
+            <header id="0">
+                <paragraph id="0"/>
+            </header>
+            <detail id="0">
+                <paragraph id="0"/>
+                <payee>VETERAN</payee>
+                <ptcpnt_id>543121</ptcpnt_id>
+                <begin_date>Tue Jan 01 00:00:00 CST 2008</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$12,196.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+                <annual_expense>
+                    <illness_burial>$0.00</illness_burial>
+                    <medical>$6,192.00</medical>
+                    <education>$0.00</education>
+                    <disability_social_security>$0.00</disability_social_security>
+                    <disability_retirement>$0.00</disability_retirement>
+                </annual_expense>
+            </detail>
+            <detail id="10">
+                <paragraph id="0"/>
+                <payee>SPOUSE</payee>
+                <ptcpnt_id>543175</ptcpnt_id>
+                <begin_date>Tue Jan 01 00:00:00 CST 2008</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$4,528.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+            </detail>
+        </income>
+    </supplemental>
+    <supplemental>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$11,306.00</ivap>
+            <effective_date>December 01, 2008</effective_date>
+        </header>
+        <begin_date>Mon Dec 01 00:00:00 CST 2008</begin_date>
+        <income>
+            <header id="0">
+                <paragraph id="0"/>
+            </header>
+            <detail id="0">
+                <paragraph id="0"/>
+                <payee>VETERAN</payee>
+                <ptcpnt_id>543121</ptcpnt_id>
+                <begin_date>Mon Dec 01 00:00:00 CST 2008</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$12,196.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+                <annual_expense>
+                    <illness_burial>$0.00</illness_burial>
+                    <medical>$6,192.00</medical>
+                    <education>$0.00</education>
+                    <disability_social_security>$0.00</disability_social_security>
+                    <disability_retirement>$0.00</disability_retirement>
+                </annual_expense>
+            </detail>
+            <detail id="10">
+                <paragraph id="0"/>
+                <payee>SPOUSE</payee>
+                <ptcpnt_id>543175</ptcpnt_id>
+                <begin_date>Mon Dec 01 00:00:00 CST 2008</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$4,528.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+            </detail>
+        </income>
+    </supplemental>
+    <expense>
+        <continuing_medical>
+            <paragraph id="0"/>
+        </continuing_medical>
+        <explanation>
+            <paragraph id="0"/>
+        </explanation>
+    </expense>
+    <cola>
+        <paragraph id="0"/>
+        <effective_date>December 01, 2007</effective_date>
+    </cola>
+    <cola>
+        <paragraph id="0"/>
+        <effective_date>December 01, 2008</effective_date>
+    </cola>
+    <dependents>
+        <additional_funds id="0">
+            <payee>spouse</payee>
+        </additional_funds>
+    </dependents>
+    <award_event type="S"/>
+    <benefit_attachment>
+        <paragraph id="0"/>
+    </benefit_attachment>
+    <role>authorizer</role>
+    <station_address>
+        <line id="0">
+            <text>P.O. Box 342000</text>
+        </line>
+        <line id="1">
+            <text>Milwaukee</text>
+        </line>
+        <line id="2">
+            <text>WI</text>
+        </line>
+        <line id="3">
+            <text>53234</text>
+        </line>
+    </station_address>
+    <signature>
+        <paragraph id="0"/>
+        <namex>Kathy Sylvester</namex>
+        <title>Veterans Service Center Manager</title>
+        <email>ksylvest@aol.com</email>
+    </signature>
+    <url>http://vbaauswebdev1.vba.va.gov:8040/vetsnet/pension/logout.do</url>
+    <regional_office>
+        <facility_type>3</facility_type>
+        <code>30</code>
+    </regional_office>
+    <letter_date>June 08, 2009</letter_date>
+    <letter_type>
+        <type>(RO COPY)</type>
+    </letter_type>
+</letter>
+
+<letter>
+    <veteran>
+        <file_nbr>254-12-0404</file_nbr>
+        <payee_nbr>00</payee_nbr>
+        <namex>Anthony Consiglieri</namex>
+    </veteran>
+    <award type="CPL"/>
+    <address>
+        <line id="0">
+            <text>Anthony J. Consiglieri Jr.</text>
+        </line>
+        <line id="1">
+            <text>724234 Fulman Ave</text>
+        </line>
+        <line id="2">
+            <text>Bronx NY 21655</text>
+        </line>
+        <line id="3">
+            <text></text>
+        </line>
+        <line id="4">
+            <text></text>
+        </line>
+        <line id="5">
+            <text></text>
+        </line>
+    </address>
+    <enclosures>
+        <count>1</count>
+        <name>21-8768</name>
+    </enclosures>
+    <enclosures>
+        <count>1</count>
+        <name>24-0313</name>
+    </enclosures>
+    <rate>
+        <header>
+            <paragraph id="7"/>
+        </header>
+        <table id="1">
+            <row>
+                <effective_date>12/01/2006</effective_date>
+                <annual_rate>$9999.00</annual_rate>
+                <annual_income>$4,476.00</annual_income>
+                <annual_rate_max>$14,313.00</annual_rate_max>
+            </row>
+            <row>
+                <effective_date>02/01/2007</effective_date>
+                <annual_rate>$1,122.00</annual_rate>
+                <annual_income>$841.00</annual_income>
+                <annual_rate_max>$14,313.00</annual_rate_max>
+            </row>
+            <row>
+                <effective_date>12/01/2007</effective_date>
+                <annual_rate>$1,122.00</annual_rate>
+                <annual_income>$1,177.00</annual_income>
+                <annual_rate_max>$14,643.00</annual_rate_max>
+            </row>
+            <row>
+                <effective_date>01/01/2008</effective_date>
+                <annual_rate>$281.00</annual_rate>
+                <annual_income>$11,264.00</annual_income>
+                <annual_rate_max>$14,643.00</annual_rate_max>
+            </row>
+            <row>
+                <effective_date>12/01/2008</effective_date>
+                <annual_rate>$348.00</annual_rate>
+                <annual_income>$11,306.00</annual_income>
+                <annual_rate_max>$15,493.00</annual_rate_max>
+            </row>
+        </table>
+        <explanation>
+            <paragraph id="0"/>
+        </explanation>
+    </rate>
+    <free_text>
+        <paragraph id="0">
+            <text>ghfghgfh nfdj</text>
+        </paragraph>
+    </free_text>
+    <income>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$4,476.00</ivap>
+            <effective_date>December 01, 2006</effective_date>
+        </header>
+        <detail id="0">
+            <paragraph id="0"/>
+            <payee>CAPPO</payee>
+            <ptcpnt_id>543121</ptcpnt_id>
+            <begin_date>Fri Dec 01 00:00:00 CST 2006</begin_date>
+            <annual_income>
+                <earned>$0.00</earned>
+                <social_security>$0.00</social_security>
+                <retirement>$0.00</retirement>
+                <interest>$0.00</interest>
+                <insurance>$0.00</insurance>
+                <other>$4,476.00</other>
+            </annual_income>
+        </detail>
+        <detail id="10">
+            <paragraph id="0"/>
+            <payee>Consiglieri</payee>
+            <ptcpnt_id>543175</ptcpnt_id>
+            <begin_date>Fri Dec 01 00:00:00 CST 2006</begin_date>
+            <annual_income>
+                <earned>$0.00</earned>
+                <social_security>$0.00</social_security>
+                <retirement>$0.00</retirement>
+                <interest>$0.00</interest>
+                <insurance>$0.00</insurance>
+                <other>$0.00</other>
+            </annual_income>
+        </detail>
+        <change>
+            <paragraph id="0"/>
+        </change>
+    </income>
+    <supplemental>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$841.00</ivap>
+            <effective_date>February 01, 2007</effective_date>
+        </header>
+        <begin_date>Thu Feb 01 00:00:00 CST 2007</begin_date>
+        <income>
+            <header id="0">
+                <paragraph id="0"/>
+            </header>
+            <detail id="0">
+                <paragraph id="0"/>
+                <payee>VETERAN</payee>
+                <ptcpnt_id>543121</ptcpnt_id>
+                <begin_date>Thu Feb 01 00:00:00 CST 2007</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$11,922.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+                <annual_expense>
+                    <illness_burial>$0.00</illness_burial>
+                    <medical>$16,218.00</medical>
+                    <education>$0.00</education>
+                    <disability_social_security>$0.00</disability_social_security>
+                    <disability_retirement>$0.00</disability_retirement>
+                </annual_expense>
+            </detail>
+            <detail id="10">
+                <paragraph id="0"/>
+                <payee>SPOUSE</payee>
+                <ptcpnt_id>543175</ptcpnt_id>
+                <begin_date>Thu Feb 01 00:00:00 CST 2007</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$4,422.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+            </detail>
+        </income>
+    </supplemental>
+    <supplemental>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$1,177.00</ivap>
+            <effective_date>December 01, 2007</effective_date>
+        </header>
+        <begin_date>Sat Dec 01 00:00:00 CST 2007</begin_date>
+        <income>
+            <header>
+                <paragraph id="0"/>
+            </header>
+            <detail id="0">
+                <paragraph id="0"/>
+                <payee>VETERAN</payee>
+                <ptcpnt_id>543121</ptcpnt_id>
+                <begin_date>Sat Dec 01 00:00:00 CST 2007</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$0.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$1,177.00</other>
+                </annual_income>
+            </detail>
+            <detail id="10">
+                <paragraph id="0"/>
+                <payee>SPOUSE</payee>
+                <ptcpnt_id>543175</ptcpnt_id>
+                <begin_date>Sat Dec 01 00:00:00 CST 2007</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$0.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+            </detail>
+        </income>
+    </supplemental>
+    <supplemental>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$11,264.00</ivap>
+            <effective_date>January 01, 2008</effective_date>
+        </header>
+        <begin_date>Tue Jan 01 00:00:00 CST 2008</begin_date>
+        <income>
+            <header id="0">
+                <paragraph id="0"/>
+            </header>
+            <detail id="0">
+                <paragraph id="0"/>
+                <payee>VETERAN</payee>
+                <ptcpnt_id>543121</ptcpnt_id>
+                <begin_date>Tue Jan 01 00:00:00 CST 2008</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$12,196.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+                <annual_expense>
+                    <illness_burial>$0.00</illness_burial>
+                    <medical>$6,192.00</medical>
+                    <education>$0.00</education>
+                    <disability_social_security>$0.00</disability_social_security>
+                    <disability_retirement>$0.00</disability_retirement>
+                </annual_expense>
+            </detail>
+            <detail id="10">
+                <paragraph id="0"/>
+                <payee>SPOUSE</payee>
+                <ptcpnt_id>543175</ptcpnt_id>
+                <begin_date>Tue Jan 01 00:00:00 CST 2008</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$4,528.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+            </detail>
+        </income>
+    </supplemental>
+    <supplemental>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$11,306.00</ivap>
+            <effective_date>December 01, 2008</effective_date>
+        </header>
+        <begin_date>Mon Dec 01 00:00:00 CST 2008</begin_date>
+        <income>
+            <header id="0">
+                <paragraph id="0"/>
+            </header>
+            <detail id="0">
+                <paragraph id="0"/>
+                <payee>VETERAN</payee>
+                <ptcpnt_id>543121</ptcpnt_id>
+                <begin_date>Mon Dec 01 00:00:00 CST 2008</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$12,196.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+                <annual_expense>
+                    <illness_burial>$0.00</illness_burial>
+                    <medical>$6,192.00</medical>
+                    <education>$0.00</education>
+                    <disability_social_security>$0.00</disability_social_security>
+                    <disability_retirement>$0.00</disability_retirement>
+                </annual_expense>
+            </detail>
+            <detail id="10">
+                <paragraph id="0"/>
+                <payee>SPOUSE</payee>
+                <ptcpnt_id>543175</ptcpnt_id>
+                <begin_date>Mon Dec 01 00:00:00 CST 2008</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$4,528.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+            </detail>
+        </income>
+    </supplemental>
+    <expense>
+        <continuing_medical>
+            <paragraph id="0"/>
+        </continuing_medical>
+        <explanation>
+            <paragraph id="0"/>
+        </explanation>
+    </expense>
+    <cola>
+        <paragraph id="0"/>
+        <effective_date>December 01, 2007</effective_date>
+    </cola>
+    <cola>
+        <paragraph id="0"/>
+        <effective_date>December 01, 2008</effective_date>
+    </cola>
+    <dependents>
+        <additional_funds id="0">
+            <payee>spouse</payee>
+        </additional_funds>
+    </dependents>
+    <award_event type="S"/>
+    <benefit_attachment>
+        <paragraph id="0"/>
+    </benefit_attachment>
+    <role>authorizer</role>
+    <station_address>
+        <line id="0">
+            <text>P.O. Box 342000</text>
+        </line>
+        <line id="1">
+            <text>Milwaukee</text>
+        </line>
+        <line id="2">
+            <text>WI</text>
+        </line>
+        <line id="3">
+            <text>53234</text>
+        </line>
+    </station_address>
+    <signature>
+        <paragraph id="0"/>
+        <namex>Kathy Sylvester</namex>
+        <title>Veterans Service Center Manager</title>
+        <email>ksylvest@aol.com</email>
+    </signature>
+    <url>http://vbaauswebdev1.vba.va.gov:8040/vetsnet/pension/logout.do</url>
+    <regional_office>
+        <facility_type>3</facility_type>
+        <code>30</code>
+    </regional_office>
+    <letter_date>June 08, 2009</letter_date>
+    <letter_type>
+        <type>(RO COPY)</type>
+    </letter_type>
+</letter>
+
+<letter>
+    <veteran>
+        <file_nbr>254-12-0404</file_nbr>
+        <payee_nbr>00</payee_nbr>
+        <namex>Don Corleone</namex>
+    </veteran>
+    <award type="CPL"/>
+    <address>
+        <line id="0">
+            <text>Don J. Corleone Jr.</text>
+        </line>
+        <line id="1">
+            <text>734 Vincenzo Estrada</text>
+        </line>
+        <line id="2">
+            <text>Brooklyn NY 01655</text>
+        </line>
+        <line id="3">
+            <text></text>
+        </line>
+        <line id="4">
+            <text></text>
+        </line>
+        <line id="5">
+            <text></text>
+        </line>
+    </address>
+    <enclosures>
+        <count>1</count>
+        <name>21-8768</name>
+    </enclosures>
+    <enclosures>
+        <count>1</count>
+        <name>24-0313</name>
+    </enclosures>
+    <rate>
+        <header>
+            <paragraph id="7"/>
+        </header>
+        <table id="1">
+            <row>
+                <effective_date>12/01/2006</effective_date>
+                <annual_rate>$9999.00</annual_rate>
+                <annual_income>$4,476.00</annual_income>
+                <annual_rate_max>$14,313.00</annual_rate_max>
+            </row>
+            <row>
+                <effective_date>02/01/2007</effective_date>
+                <annual_rate>$1,122.00</annual_rate>
+                <annual_income>$841.00</annual_income>
+                <annual_rate_max>$14,313.00</annual_rate_max>
+            </row>
+            <row>
+                <effective_date>12/01/2007</effective_date>
+                <annual_rate>$1,122.00</annual_rate>
+                <annual_income>$1,177.00</annual_income>
+                <annual_rate_max>$14,643.00</annual_rate_max>
+            </row>
+            <row>
+                <effective_date>01/01/2008</effective_date>
+                <annual_rate>$281.00</annual_rate>
+                <annual_income>$11,264.00</annual_income>
+                <annual_rate_max>$14,643.00</annual_rate_max>
+            </row>
+            <row>
+                <effective_date>12/01/2008</effective_date>
+                <annual_rate>$348.00</annual_rate>
+                <annual_income>$11,306.00</annual_income>
+                <annual_rate_max>$15,493.00</annual_rate_max>
+            </row>
+        </table>
+        <explanation>
+            <paragraph id="0"/>
+        </explanation>
+    </rate>
+    <free_text>
+        <paragraph id="0">
+            <text>ghfghgfh nfdj</text>
+        </paragraph>
+    </free_text>
+    <income>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$4,476.00</ivap>
+            <effective_date>December 01, 2006</effective_date>
+        </header>
+        <detail id="0">
+            <paragraph id="0"/>
+            <payee>CAPPO</payee>
+            <ptcpnt_id>543121</ptcpnt_id>
+            <begin_date>Fri Dec 01 00:00:00 CST 2006</begin_date>
+            <annual_income>
+                <earned>$0.00</earned>
+                <social_security>$0.00</social_security>
+                <retirement>$0.00</retirement>
+                <interest>$0.00</interest>
+                <insurance>$0.00</insurance>
+                <other>$4,476.00</other>
+            </annual_income>
+        </detail>
+        <detail id="10">
+            <paragraph id="0"/>
+            <payee>Consiglieri</payee>
+            <ptcpnt_id>543175</ptcpnt_id>
+            <begin_date>Fri Dec 01 00:00:00 CST 2006</begin_date>
+            <annual_income>
+                <earned>$0.00</earned>
+                <social_security>$0.00</social_security>
+                <retirement>$0.00</retirement>
+                <interest>$0.00</interest>
+                <insurance>$0.00</insurance>
+                <other>$0.00</other>
+            </annual_income>
+        </detail>
+        <change>
+            <paragraph id="0"/>
+        </change>
+    </income>
+    <supplemental>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$841.00</ivap>
+            <effective_date>February 01, 2007</effective_date>
+        </header>
+        <begin_date>Thu Feb 01 00:00:00 CST 2007</begin_date>
+        <income>
+            <header id="0">
+                <paragraph id="0"/>
+            </header>
+            <detail id="0">
+                <paragraph id="0"/>
+                <payee>VETERAN</payee>
+                <ptcpnt_id>543121</ptcpnt_id>
+                <begin_date>Thu Feb 01 00:00:00 CST 2007</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$11,922.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+                <annual_expense>
+                    <illness_burial>$0.00</illness_burial>
+                    <medical>$16,218.00</medical>
+                    <education>$0.00</education>
+                    <disability_social_security>$0.00</disability_social_security>
+                    <disability_retirement>$0.00</disability_retirement>
+                </annual_expense>
+            </detail>
+            <detail id="10">
+                <paragraph id="0"/>
+                <payee>SPOUSE</payee>
+                <ptcpnt_id>543175</ptcpnt_id>
+                <begin_date>Thu Feb 01 00:00:00 CST 2007</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$4,422.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+            </detail>
+        </income>
+    </supplemental>
+    <supplemental>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$1,177.00</ivap>
+            <effective_date>December 01, 2007</effective_date>
+        </header>
+        <begin_date>Sat Dec 01 00:00:00 CST 2007</begin_date>
+        <income>
+            <header>
+                <paragraph id="0"/>
+            </header>
+            <detail id="0">
+                <paragraph id="0"/>
+                <payee>VETERAN</payee>
+                <ptcpnt_id>543121</ptcpnt_id>
+                <begin_date>Sat Dec 01 00:00:00 CST 2007</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$0.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$1,177.00</other>
+                </annual_income>
+            </detail>
+            <detail id="10">
+                <paragraph id="0"/>
+                <payee>SPOUSE</payee>
+                <ptcpnt_id>543175</ptcpnt_id>
+                <begin_date>Sat Dec 01 00:00:00 CST 2007</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$0.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+            </detail>
+        </income>
+    </supplemental>
+    <supplemental>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$11,264.00</ivap>
+            <effective_date>January 01, 2008</effective_date>
+        </header>
+        <begin_date>Tue Jan 01 00:00:00 CST 2008</begin_date>
+        <income>
+            <header id="0">
+                <paragraph id="0"/>
+            </header>
+            <detail id="0">
+                <paragraph id="0"/>
+                <payee>VETERAN</payee>
+                <ptcpnt_id>543121</ptcpnt_id>
+                <begin_date>Tue Jan 01 00:00:00 CST 2008</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$12,196.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+                <annual_expense>
+                    <illness_burial>$0.00</illness_burial>
+                    <medical>$6,192.00</medical>
+                    <education>$0.00</education>
+                    <disability_social_security>$0.00</disability_social_security>
+                    <disability_retirement>$0.00</disability_retirement>
+                </annual_expense>
+            </detail>
+            <detail id="10">
+                <paragraph id="0"/>
+                <payee>SPOUSE</payee>
+                <ptcpnt_id>543175</ptcpnt_id>
+                <begin_date>Tue Jan 01 00:00:00 CST 2008</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$4,528.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+            </detail>
+        </income>
+    </supplemental>
+    <supplemental>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$11,306.00</ivap>
+            <effective_date>December 01, 2008</effective_date>
+        </header>
+        <begin_date>Mon Dec 01 00:00:00 CST 2008</begin_date>
+        <income>
+            <header id="0">
+                <paragraph id="0"/>
+            </header>
+            <detail id="0">
+                <paragraph id="0"/>
+                <payee>VETERAN</payee>
+                <ptcpnt_id>543121</ptcpnt_id>
+                <begin_date>Mon Dec 01 00:00:00 CST 2008</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$12,196.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+                <annual_expense>
+                    <illness_burial>$0.00</illness_burial>
+                    <medical>$6,192.00</medical>
+                    <education>$0.00</education>
+                    <disability_social_security>$0.00</disability_social_security>
+                    <disability_retirement>$0.00</disability_retirement>
+                </annual_expense>
+            </detail>
+            <detail id="10">
+                <paragraph id="0"/>
+                <payee>SPOUSE</payee>
+                <ptcpnt_id>543175</ptcpnt_id>
+                <begin_date>Mon Dec 01 00:00:00 CST 2008</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$4,528.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+            </detail>
+        </income>
+    </supplemental>
+    <expense>
+        <continuing_medical>
+            <paragraph id="0"/>
+        </continuing_medical>
+        <explanation>
+            <paragraph id="0"/>
+        </explanation>
+    </expense>
+    <cola>
+        <paragraph id="0"/>
+        <effective_date>December 01, 2007</effective_date>
+    </cola>
+    <cola>
+        <paragraph id="0"/>
+        <effective_date>December 01, 2008</effective_date>
+    </cola>
+    <dependents>
+        <additional_funds id="0">
+            <payee>spouse</payee>
+        </additional_funds>
+    </dependents>
+    <award_event type="S"/>
+    <benefit_attachment>
+        <paragraph id="0"/>
+    </benefit_attachment>
+    <role>authorizer</role>
+    <station_address>
+        <line id="0">
+            <text>P.O. Box 342000</text>
+        </line>
+        <line id="1">
+            <text>Milwaukee</text>
+        </line>
+        <line id="2">
+            <text>WI</text>
+        </line>
+        <line id="3">
+            <text>53234</text>
+        </line>
+    </station_address>
+    <signature>
+        <paragraph id="0"/>
+        <namex>Kathy Sylvester</namex>
+        <title>Veterans Service Center Manager</title>
+        <email>ksylvest@aol.com</email>
+    </signature>
+    <url>http://vbaauswebdev1.vba.va.gov:8040/vetsnet/pension/logout.do</url>
+    <regional_office>
+        <facility_type>3</facility_type>
+        <code>30</code>
+    </regional_office>
+    <letter_date>June 08, 2009</letter_date>
+    <letter_type>
+        <type>(RO COPY)</type>
+    </letter_type>
+</letter>
+
+<letter>
+    <veteran>
+        <file_nbr>254-12-0404</file_nbr>
+        <payee_nbr>00</payee_nbr>
+        <namex>Don Corleone</namex>
+    </veteran>
+    <award type="CPL"/>
+    <address>
+        <line id="0">
+            <text>Don J. Corleone Jr.</text>
+        </line>
+        <line id="1">
+            <text>734 Vincenzo Estrada</text>
+        </line>
+        <line id="2">
+            <text>Brooklyn NY 01655</text>
+        </line>
+        <line id="3">
+            <text></text>
+        </line>
+        <line id="4">
+            <text></text>
+        </line>
+        <line id="5">
+            <text></text>
+        </line>
+    </address>
+    <enclosures>
+        <count>1</count>
+        <name>21-8768</name>
+    </enclosures>
+    <enclosures>
+        <count>1</count>
+        <name>24-0313</name>
+    </enclosures>
+    <rate>
+        <header>
+            <paragraph id="7"/>
+        </header>
+        <table id="1">
+            <row>
+                <effective_date>12/01/2006</effective_date>
+                <annual_rate>$9999.00</annual_rate>
+                <annual_income>$4,476.00</annual_income>
+                <annual_rate_max>$14,313.00</annual_rate_max>
+            </row>
+            <row>
+                <effective_date>02/01/2007</effective_date>
+                <annual_rate>$1,122.00</annual_rate>
+                <annual_income>$841.00</annual_income>
+                <annual_rate_max>$14,313.00</annual_rate_max>
+            </row>
+            <row>
+                <effective_date>12/01/2007</effective_date>
+                <annual_rate>$1,122.00</annual_rate>
+                <annual_income>$1,177.00</annual_income>
+                <annual_rate_max>$14,643.00</annual_rate_max>
+            </row>
+            <row>
+                <effective_date>01/01/2008</effective_date>
+                <annual_rate>$281.00</annual_rate>
+                <annual_income>$11,264.00</annual_income>
+                <annual_rate_max>$14,643.00</annual_rate_max>
+            </row>
+            <row>
+                <effective_date>12/01/2008</effective_date>
+                <annual_rate>$348.00</annual_rate>
+                <annual_income>$11,306.00</annual_income>
+                <annual_rate_max>$15,493.00</annual_rate_max>
+            </row>
+        </table>
+        <explanation>
+            <paragraph id="0"/>
+        </explanation>
+    </rate>
+    <free_text>
+        <paragraph id="0">
+            <text>ghfghgfh nfdj</text>
+        </paragraph>
+    </free_text>
+    <income>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$4,476.00</ivap>
+            <effective_date>December 01, 2006</effective_date>
+        </header>
+        <detail id="0">
+            <paragraph id="0"/>
+            <payee>CAPPO</payee>
+            <ptcpnt_id>543121</ptcpnt_id>
+            <begin_date>Fri Dec 01 00:00:00 CST 2006</begin_date>
+            <annual_income>
+                <earned>$0.00</earned>
+                <social_security>$0.00</social_security>
+                <retirement>$0.00</retirement>
+                <interest>$0.00</interest>
+                <insurance>$0.00</insurance>
+                <other>$4,476.00</other>
+            </annual_income>
+        </detail>
+        <detail id="10">
+            <paragraph id="0"/>
+            <payee>Consiglieri</payee>
+            <ptcpnt_id>543175</ptcpnt_id>
+            <begin_date>Fri Dec 01 00:00:00 CST 2006</begin_date>
+            <annual_income>
+                <earned>$0.00</earned>
+                <social_security>$0.00</social_security>
+                <retirement>$0.00</retirement>
+                <interest>$0.00</interest>
+                <insurance>$0.00</insurance>
+                <other>$0.00</other>
+            </annual_income>
+        </detail>
+        <change>
+            <paragraph id="0"/>
+        </change>
+    </income>
+    <supplemental>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$841.00</ivap>
+            <effective_date>February 01, 2007</effective_date>
+        </header>
+        <begin_date>Thu Feb 01 00:00:00 CST 2007</begin_date>
+        <income>
+            <header id="0">
+                <paragraph id="0"/>
+            </header>
+            <detail id="0">
+                <paragraph id="0"/>
+                <payee>VETERAN</payee>
+                <ptcpnt_id>543121</ptcpnt_id>
+                <begin_date>Thu Feb 01 00:00:00 CST 2007</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$11,922.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+                <annual_expense>
+                    <illness_burial>$0.00</illness_burial>
+                    <medical>$16,218.00</medical>
+                    <education>$0.00</education>
+                    <disability_social_security>$0.00</disability_social_security>
+                    <disability_retirement>$0.00</disability_retirement>
+                </annual_expense>
+            </detail>
+            <detail id="10">
+                <paragraph id="0"/>
+                <payee>SPOUSE</payee>
+                <ptcpnt_id>543175</ptcpnt_id>
+                <begin_date>Thu Feb 01 00:00:00 CST 2007</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$4,422.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+            </detail>
+        </income>
+    </supplemental>
+    <supplemental>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$1,177.00</ivap>
+            <effective_date>December 01, 2007</effective_date>
+        </header>
+        <begin_date>Sat Dec 01 00:00:00 CST 2007</begin_date>
+        <income>
+            <header>
+                <paragraph id="0"/>
+            </header>
+            <detail id="0">
+                <paragraph id="0"/>
+                <payee>VETERAN</payee>
+                <ptcpnt_id>543121</ptcpnt_id>
+                <begin_date>Sat Dec 01 00:00:00 CST 2007</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$0.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$1,177.00</other>
+                </annual_income>
+            </detail>
+            <detail id="10">
+                <paragraph id="0"/>
+                <payee>SPOUSE</payee>
+                <ptcpnt_id>543175</ptcpnt_id>
+                <begin_date>Sat Dec 01 00:00:00 CST 2007</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$0.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+            </detail>
+        </income>
+    </supplemental>
+    <supplemental>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$11,264.00</ivap>
+            <effective_date>January 01, 2008</effective_date>
+        </header>
+        <begin_date>Tue Jan 01 00:00:00 CST 2008</begin_date>
+        <income>
+            <header id="0">
+                <paragraph id="0"/>
+            </header>
+            <detail id="0">
+                <paragraph id="0"/>
+                <payee>VETERAN</payee>
+                <ptcpnt_id>543121</ptcpnt_id>
+                <begin_date>Tue Jan 01 00:00:00 CST 2008</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$12,196.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+                <annual_expense>
+                    <illness_burial>$0.00</illness_burial>
+                    <medical>$6,192.00</medical>
+                    <education>$0.00</education>
+                    <disability_social_security>$0.00</disability_social_security>
+                    <disability_retirement>$0.00</disability_retirement>
+                </annual_expense>
+            </detail>
+            <detail id="10">
+                <paragraph id="0"/>
+                <payee>SPOUSE</payee>
+                <ptcpnt_id>543175</ptcpnt_id>
+                <begin_date>Tue Jan 01 00:00:00 CST 2008</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$4,528.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+            </detail>
+        </income>
+    </supplemental>
+    <supplemental>
+        <header>
+            <paragraph id="0"/>
+            <ivap>$11,306.00</ivap>
+            <effective_date>December 01, 2008</effective_date>
+        </header>
+        <begin_date>Mon Dec 01 00:00:00 CST 2008</begin_date>
+        <income>
+            <header id="0">
+                <paragraph id="0"/>
+            </header>
+            <detail id="0">
+                <paragraph id="0"/>
+                <payee>VETERAN</payee>
+                <ptcpnt_id>543121</ptcpnt_id>
+                <begin_date>Mon Dec 01 00:00:00 CST 2008</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$12,196.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+                <annual_expense>
+                    <illness_burial>$0.00</illness_burial>
+                    <medical>$6,192.00</medical>
+                    <education>$0.00</education>
+                    <disability_social_security>$0.00</disability_social_security>
+                    <disability_retirement>$0.00</disability_retirement>
+                </annual_expense>
+            </detail>
+            <detail id="10">
+                <paragraph id="0"/>
+                <payee>SPOUSE</payee>
+                <ptcpnt_id>543175</ptcpnt_id>
+                <begin_date>Mon Dec 01 00:00:00 CST 2008</begin_date>
+                <annual_income>
+                    <earned>$0.00</earned>
+                    <social_security>$4,528.00</social_security>
+                    <retirement>$0.00</retirement>
+                    <interest>$0.00</interest>
+                    <insurance>$0.00</insurance>
+                    <other>$0.00</other>
+                </annual_income>
+            </detail>
+        </income>
+    </supplemental>
+    <expense>
+        <continuing_medical>
+            <paragraph id="0"/>
+        </continuing_medical>
+        <explanation>
+            <paragraph id="0"/>
+        </explanation>
+    </expense>
+    <cola>
+        <paragraph id="0"/>
+        <effective_date>December 01, 2007</effective_date>
+    </cola>
+    <cola>
+        <paragraph id="0"/>
+        <effective_date>December 01, 2008</effective_date>
+    </cola>
+    <dependents>
+        <additional_funds id="0">
+            <payee>spouse</payee>
+        </additional_funds>
+    </dependents>
+    <award_event type="S"/>
+    <benefit_attachment>
+        <paragraph id="0"/>
+    </benefit_attachment>
+    <role>authorizer</role>
+    <station_address>
+        <line id="0">
+            <text>P.O. Box 342000</text>
+        </line>
+        <line id="1">
+            <text>Milwaukee</text>
+        </line>
+        <line id="2">
+            <text>WI</text>
+        </line>
+        <line id="3">
+            <text>53234</text>
+        </line>
+    </station_address>
+    <signature>
+        <paragraph id="0"/>
+        <namex>Kathy Sylvester</namex>
+        <title>Veterans Service Center Manager</title>
+        <email>ksylvest@aol.com</email>
+    </signature>
+    <url>http://vbaauswebdev1.vba.va.gov:8040/vetsnet/pension/logout.do</url>
+    <regional_office>
+        <facility_type>3</facility_type>
+        <code>30</code>
+    </regional_office>
+    <letter_date>June 08, 2009</letter_date>
+    <letter_type>
+        <type>(RO COPY)</type>
+    </letter_type>
+</letter>
+
+</root>

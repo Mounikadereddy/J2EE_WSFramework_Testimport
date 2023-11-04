@@ -1,0 +1,115 @@
+package gov.va.vba.framework.domain.entities;
+import java.io.Serializable;
+import org.apache.commons.lang.builder.EqualsBuilder;
+import org.apache.commons.lang.builder.HashCodeBuilder;
+import org.apache.commons.lang.builder.ToStringBuilder;
+
+import javax.persistence.*;
+
+/**
+ * The primary key class for the BURIAL_BENE_DECN database table.
+ * 
+ * @author BEA Workshop
+ */
+@Embeddable()
+public class BurialBeneDecnPK implements Serializable {
+	//default serial version id, required for serializable classes.
+	private static final long serialVersionUID = 1L;
+	private String awardTypeCd;
+	private String burialBeneDecnTypeCd;
+	private java.sql.Timestamp decnDt;
+	private Long ptcpntIdA;
+	private Long ptcpntIdB;
+	private Long ptcpntIdC;
+
+    public BurialBeneDecnPK() {
+    }
+
+	@Column(name="AWARD_TYPE_CD", nullable=false, length=12)
+	public String getAwardTypeCd() {
+		return this.awardTypeCd;
+	}
+	public void setAwardTypeCd(String awardTypeCd) {
+		this.awardTypeCd = awardTypeCd;
+	}
+
+	@Column(name="BURIAL_BENE_DECN_TYPE_CD", nullable=false, length=12)
+	public String getBurialBeneDecnTypeCd() {
+		return this.burialBeneDecnTypeCd;
+	}
+	public void setBurialBeneDecnTypeCd(String burialBeneDecnTypeCd) {
+		this.burialBeneDecnTypeCd = burialBeneDecnTypeCd;
+	}
+
+	@Column(name="DECN_DT", nullable=false, length=7)
+	public java.sql.Timestamp getDecnDt() {
+		return this.decnDt;
+	}
+	public void setDecnDt(java.sql.Timestamp decnDt) {
+		this.decnDt = decnDt;
+	}
+
+	@Column(name="PTCPNT_ID_A", nullable=false, precision=15)
+	public Long getPtcpntIdA() {
+		return this.ptcpntIdA;
+	}
+	public void setPtcpntIdA(Long ptcpntIdA) {
+		this.ptcpntIdA = ptcpntIdA;
+	}
+
+	@Column(name="PTCPNT_ID_B", nullable=false, precision=15)
+	public Long getPtcpntIdB() {
+		return this.ptcpntIdB;
+	}
+	public void setPtcpntIdB(Long ptcpntIdB) {
+		this.ptcpntIdB = ptcpntIdB;
+	}
+
+	@Column(name="PTCPNT_ID_C", nullable=false, precision=15)
+	public Long getPtcpntIdC() {
+		return this.ptcpntIdC;
+	}
+	public void setPtcpntIdC(Long ptcpntIdC) {
+		this.ptcpntIdC = ptcpntIdC;
+	}
+
+	public boolean equals(Object other) {
+		if (this == other) {
+			return true;
+		}
+		if (!(other instanceof BurialBeneDecnPK)) {
+			return false;
+		}
+		BurialBeneDecnPK castOther = (BurialBeneDecnPK)other;
+		return new EqualsBuilder()
+			.append(this.getAwardTypeCd(), castOther.getAwardTypeCd())
+			.append(this.getBurialBeneDecnTypeCd(), castOther.getBurialBeneDecnTypeCd())
+			.append(this.getDecnDt(), castOther.getDecnDt())
+			.append(this.getPtcpntIdA(), castOther.getPtcpntIdA())
+			.append(this.getPtcpntIdB(), castOther.getPtcpntIdB())
+			.append(this.getPtcpntIdC(), castOther.getPtcpntIdC())
+			.isEquals();
+    }
+    
+	public int hashCode() {
+		return new HashCodeBuilder()
+			.append(getAwardTypeCd())
+			.append(getBurialBeneDecnTypeCd())
+			.append(getDecnDt())
+			.append(getPtcpntIdA())
+			.append(getPtcpntIdB())
+			.append(getPtcpntIdC())
+			.toHashCode();
+    }
+
+	public String toString() {
+		return new ToStringBuilder(this)
+			.append("awardTypeCd", getAwardTypeCd())
+			.append("burialBeneDecnTypeCd", getBurialBeneDecnTypeCd())
+			.append("decnDt", getDecnDt())
+			.append("ptcpntIdA", getPtcpntIdA())
+			.append("ptcpntIdB", getPtcpntIdB())
+			.append("ptcpntIdC", getPtcpntIdC())
+			.toString();
+	}
+}

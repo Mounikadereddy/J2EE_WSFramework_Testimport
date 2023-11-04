@@ -1,0 +1,538 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>gov.va.vba.framework</groupId>
+		<artifactId>framework-parent</artifactId>
+		<version>6.0.5-7</version>
+	</parent>
+	<groupId>gov.va.vba.framework</groupId>
+	<artifactId>bep-share-ejb-dependencies</artifactId>
+	<name>BEP Enterprise Application EJB Dependencies</name>
+	<description>BEP Enterprise Application EJB Dependencies</description>
+	<packaging>ear</packaging>
+	<properties>
+		<enterprise.lib>APP-INF/lib</enterprise.lib>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>gov.va.vba.framework</groupId>
+			<artifactId>framework</artifactId>
+			<version>6.0.5-7</version>
+		</dependency>
+<!-- 		<dependency> -->
+<!--             <groupId>com.bea.core</groupId> -->
+<!--             <artifactId>com.bea.core.xml.beaxmlbeans</artifactId> -->
+<!--             <version>2.5.1</version> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!--             <groupId>com.bea.core</groupId> -->
+<!--             <artifactId>com.bea.core.descriptor.settable.binding</artifactId> -->
+<!--             <version>1.7.0.0</version> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!--             <groupId>com.bea.core</groupId> -->
+<!--             <artifactId>com.bea.core.descriptor.wl.binding</artifactId> -->
+<!--             <version>1.4.0.0</version> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!--             <groupId>com.sun</groupId> -->
+<!--             <artifactId>glassfish.jaxws.rt</artifactId> -->
+<!--             <version>2.1.5</version> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+		<dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc14</artifactId>
+            <version>10.2.0.4.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+            <groupId>org.apache</groupId>
+            <artifactId>org.apache.openjpa</artifactId>
+            <version>1.3.0.0_1-1-1</version>
+			<scope>provided</scope>
+		</dependency>
+<!-- 		<dependency> -->
+<!--             <groupId>com.bea.core</groupId> -->
+<!--             <artifactId>com.bea.core.repackaged.springframework.pitchfork</artifactId> -->
+<!--             <version>1.0</version> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!--             <groupId>com.bea.core</groupId> -->
+<!--             <artifactId>com.bea.core.repackaged.jdt</artifactId> -->
+<!--             <version>3.5.3.0</version> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+<!--  		<dependency> -->
+<!--             <groupId>com.bea.core</groupId> -->
+<!--             <artifactId>com.bea.core.serp</artifactId> -->
+<!--             <version>1.14.4.0</version> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!--             <groupId>com.bea.core</groupId> -->
+<!--             <artifactId>com.bea.core.utils.compiler</artifactId> -->
+<!--             <version>1.2.0.0</version> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!--             <groupId>com.bea.core</groupId> -->
+<!--             <artifactId>com.bea.core.weblogic.web.api</artifactId> -->
+<!--             <version>1.4.0.0</version> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+		<dependency>
+            <groupId>weblogic</groupId>
+            <artifactId>wlfullclient</artifactId>
+            <version>12.2.1.3</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-applicationmanager-client-sdk</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-assembler-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-backup-restore-client-sdk</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-barcodedforms-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-bmc-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-convertpdf-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-distiller-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-docconverter-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-encryption-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-forms-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-output-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-livecycle-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-formdataintegration-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-generatepdf-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-jobmanager-client-sdk</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-pdfutility-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-reader-extensions-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-remoteevents-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-repository-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-rightsmanagement-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-signatures-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-taskmanager-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-truststore-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-usermanager-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-usermanager-util-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-utilities</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-workflow-client-sdk</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.livecycle</groupId>
+			<artifactId>adobe-workspacepersistence-client</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>axis</groupId>
+			<artifactId>axis</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.axis</groupId>
+			<artifactId>axis-jaxrpc</artifactId>
+			<version>1.4</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.axis</groupId>
+			<artifactId>axis-saaj</artifactId>
+			<version>1.4</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>axis</groupId>
+			<artifactId>axis-wsdl4j</artifactId>
+			<version>1.5.1</version>
+			<scope>provided</scope>
+		</dependency>		
+		<dependency>
+			<groupId>wsdl4j</groupId>
+			<artifactId>wsdl4j</artifactId>
+			<version>1.5.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcmail-jdk16</artifactId>
+			<version>1.45</version>
+		</dependency>
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk16</artifactId>
+			<version>1.45</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.20.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.20.0</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache-core</artifactId>
+			<version>2.6.2</version>
+		</dependency>
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+		<dependency>
+			<groupId>xalan</groupId>
+			<artifactId>xalan</artifactId>
+			<version>2.7.1</version>
+		</dependency>
+		<dependency>
+			<groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId>
+			<version>1.4.01</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>siteminder</groupId>
+			<artifactId>smjavaagentapi</artifactId>
+			<version>6.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>siteminder</groupId>
+			<artifactId>smjavaapi</artifactId>
+			<version>6.5.0</version>
+		</dependency>
+		<dependency>
+			<groupId>siteminder</groupId>
+			<artifactId>smjavasdk</artifactId>
+			<version>6.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>c3p0</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>0.9.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.8.0</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils-bean-collections</artifactId>
+			<version>1.8.0</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils-core</artifactId>
+			<version>1.8.0</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-discovery</groupId>
+			<artifactId>commons-discovery</artifactId>
+			<version>0.5</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.0.4</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+      		<plugin>
+        		<artifactId>maven-resources-plugin</artifactId>
+        		<version>2.7</version>
+        		<executions>
+          			<execution>
+            			<id>copy-resources</id>
+            			<phase>validate</phase>
+            			<goals>
+              				<goal>copy-resources</goal>
+            			</goals>
+            			<configuration>
+              				<outputDirectory>${basedir}/target/application</outputDirectory>
+              				<resources>          
+                				<resource>
+                  					<directory>src/main/application</directory>
+                  					<filtering>false</filtering>
+                				</resource>
+              				</resources>              
+            			</configuration>            
+          			</execution>
+        		</executions>
+      		</plugin>
+		    <plugin>
+		        <groupId>org.apache.maven.plugins</groupId>
+		        <artifactId>maven-dependency-plugin</artifactId>
+		        <version>2.10</version>
+		        <executions>
+		          <execution>
+		            <id>unpack</id>
+		            <phase>prepare-package</phase>
+		            <goals>
+		              <goal>unpack</goal>
+		            </goals>
+		            <configuration>
+		                <artifactItems>
+		                	<artifactItem>
+		                   		<groupId>gov.va.vba.framework</groupId>
+		                   		<artifactId>bep-base</artifactId>
+		                   		<version>${project.version}</version>
+		                   		<type>jar</type>
+		                   		<overWrite>true</overWrite>
+		                   		<outputDirectory>${project.build.directory}/application/APP-INF/classes</outputDirectory>
+		                   		<includes>**/*.class</includes>
+		                   		<excludes>
+		                   			gov/va/vba/framework/common/**/*.class,
+									gov/va/vba/framework/exceptions/**/*.class,
+		            				gov/va/vba/framework/services/**/*.class
+		                   		</excludes>
+		                	</artifactItem>
+		                	<artifactItem>
+		                   		<groupId>gov.va.vba.framework</groupId>
+		                   		<artifactId>bep-domain-core</artifactId>
+		                   		<version>${project.version}</version>
+		                   		<type>jar</type>
+		                   		<overWrite>true</overWrite>
+		                   		<outputDirectory>${project.build.directory}/application/APP-INF/classes</outputDirectory>
+		                   		<includes>
+		                   			**/*.class, 
+		                   			gov/va/vba/framework/domain/entities/jaxb/**/*.xml,	
+		                   			gov/va/vba/framework/domain/entities/jaxb/**/*.xsd
+		                   		</includes>
+		                   		<excludes>
+		                   		</excludes>
+		                	</artifactItem>
+		                	<artifactItem>
+		                   		<groupId>gov.va.vba.framework</groupId>
+		                   		<artifactId>bep-app-core</artifactId>
+		                   		<version>${project.version}</version>
+		                   		<type>jar</type>
+		                   		<overWrite>true</overWrite>
+		                   		<outputDirectory>${project.build.directory}/application/APP-INF/classes</outputDirectory>
+		                   		<includes>**/*.class, gov/va/vba/framework/logging/FrameworkLogger.properties</includes>
+		                   		<excludes>
+		                   		</excludes>
+		                	</artifactItem>
+		                	<artifactItem>
+		                   		<groupId>gov.va.vba.framework</groupId>
+		                   		<artifactId>bep-ejb-core</artifactId>
+		                   		<version>${project.version}</version>
+		                   		<type>jar</type>
+		                   		<overWrite>true</overWrite>
+		                   		<outputDirectory>${project.build.directory}/application/APP-INF/classes</outputDirectory>
+		                   		<includes>
+		                   			**/*.class
+		                   		</includes>
+		                   		<excludes>
+		            				gov/va/vba/framework/services/**/*.class
+		                   		</excludes>
+		                	</artifactItem>
+		                </artifactItems>
+		            	<includes>**/*.class,**/*.xml</includes>
+		            	<excludes>
+		            	</excludes>
+		            	<overWriteReleases>true</overWriteReleases>
+               			<overWriteSnapshots>true</overWriteSnapshots>
+               			<outputDirectory>${project.build.outputDirectory}/application/APP-INF/classes</outputDirectory>
+		            </configuration>
+		          </execution>
+		        </executions>
+		    </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ear-plugin</artifactId>
+				<version>2.8</version>
+				<configuration>
+					<earSourceDirectory>${basedir}/target/application</earSourceDirectory>
+					<defaultLibBundleDir>${enterprise.lib}</defaultLibBundleDir>
+					<duplicateArtifactsBreakTheBuild>true</duplicateArtifactsBreakTheBuild>
+            		<archive>
+              			<manifest>
+              		    	<addDefaultSpecificationEntries>false</addDefaultSpecificationEntries>
+                  			<addDefaultImplementationEntries>false</addDefaultImplementationEntries>
+               			</manifest>
+               			<manifestEntries>
+               				<Extension-Name>BGS-BEP-EJB-Share-Dependencies</Extension-Name>
+ 							<Specification-Version>1</Specification-Version>
+ 							<Implementation-Title>${project.groupId}</Implementation-Title>
+ 							<Implementation-Version>${project.version}</Implementation-Version>
+						</manifestEntries>
+           	 		</archive>
+					<modules>
+						<jarModule>
+							<groupId>gov.va.vba.framework</groupId>
+							<artifactId>framework</artifactId>
+							<bundleDir>APP-INF/lib</bundleDir>
+							<includeInApplicationXml>true</includeInApplicationXml>
+						</jarModule>
+					</modules>
+				</configuration>
+			</plugin>
+      		<plugin>
+        		<groupId>org.apache.maven.plugins</groupId>
+        		<artifactId>maven-install-plugin</artifactId>
+        		<version>2.5.2</version>
+   				<configuration>      
+   					<groupId>gov.va.vba.framework</groupId>
+   					<artifactId>bep-app</artifactId>
+   					<packaging>ear</packaging>      
+   					<file>${basedir}/target/${project.artifactId}-${project.version}.ear</file>
+   					<generatePom>true</generatePom>
+   				</configuration>
+   				<executions>
+   					<execution>
+   						<id>install-ear</id>
+   						<goals>
+   							<goal>install-file</goal>
+   						</goals>         
+   						<phase>install</phase>
+   					</execution>
+   				</executions>        		
+      		</plugin>
+		</plugins>
+		<pluginManagement>
+			<plugins>
+				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.apache.maven.plugins</groupId>
+										<artifactId>maven-ear-plugin</artifactId>
+										<versionRange>[2.8,)</versionRange>
+										<goals>
+											<goal>generate-application-xml</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<execute/>
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>

@@ -1,0 +1,124 @@
+<project name="bep-ear" default="init" xmlns:ivy="antlib:org.apache.ivy.ant">
+
+	<!--  
+  ================  
+  Build properties  
+  ================  
+  -->
+	<property name="maven.home" value="C:/Maven/apache-maven-3.1.1/" />
+	<condition property="maven.home" value="${env.MAVEN_HOME}">
+		<isset property="env.MAVEN_HOME" />
+	</condition>
+	
+	<property name="build.dir" location="build" />
+	<property name="ivy.reports.dir" location="${build.dir}/ivy-reports" />
+	<property name="ivy.install.version" value="2.4.0" />
+
+	<property name="ivy.home" value="${user.home}/.ant" />
+	<condition property="ivy.home" value="${env.IVY_HOME}">
+		<isset property="env.IVY_HOME" />
+	</condition>
+	<property name="ivy.jar.dir" value="${ivy.home}/lib" />
+	<property name="ivy.jar.file" value="${ivy.jar.dir}/ivy.jar" />
+	
+	<!--  
+  ================  
+  Build download-ivy  
+  ================  
+  -->
+	<target name="download-ivy" unless="offline">
+
+		<mkdir dir="${ivy.jar.dir}" />
+		<!-- download Ivy from web site so that it can be used even without any special installation -->
+		<get src="https://repo1.maven.org/maven2/org/apache/ivy/ivy/${ivy.install.version}/ivy-${ivy.install.version}.jar" dest="${ivy.jar.file}" usetimestamp="true" />
+	</target>
+
+	<!--  
+  ================  
+  Build init-ivy  
+  ================  
+  -->
+	<target name="init-ivy" depends="download-ivy">
+		<!-- try to load ivy here from ivy home, in case the user has not already dropped
+	              it into ant's lib dir (note that the latter copy will always take precedence).
+	              We will not fail as long as local lib dir exists (it may be empty) and
+	              ivy is in at least one of ant's lib dir or the local lib dir. -->
+		<path id="ivy.lib.path">
+			<fileset dir="${ivy.jar.dir}" includes="*.jar" />
+
+		</path>
+		<taskdef resource="org/apache/ivy/ant/antlib.xml" uri="antlib:org.apache.ivy.ant" classpathref="ivy.lib.path" />
+	</target>
+
+
+	<!--  
+  ===========  
+  Build setup  
+  ===========  
+  -->
+	<target name="init" depends="init-ivy">
+		<ivy:settings file="ivysettings.xml" />
+	</target>
+
+	<!--  
+  ===========  
+  Build package  
+  ===========  
+  -->
+	<target name="package" depends="init" description="--> retreive dependencies with ivy">
+		<ivy:retrieve pattern="${build.dir}/[artifact](-[revision])(-[classifier]).ear" />
+	</target>
+
+	<!--  
+  ===========  
+  Build clean  
+  ===========  
+  -->
+	<target name="clean" depends="init-ivy, clean-cache" description="--> clean the project">
+		<delete includeemptydirs="true">
+			<fileset dir="${build.dir}" erroronmissingdir="false">
+			</fileset>
+		</delete>
+	</target>
+
+	<!--  
+  ===========  
+  Build clean-cache  
+  ===========  
+  -->
+	<target name="clean-cache" description="--> clean the ivy cache">
+		<ivy:cleancache />
+	</target>
+	
+	
+	<!--  
+  ===========  
+  Build change-version  
+  ===========  
+  -->	
+	<target name="change-version" description="Builds the individual project">
+		<fail message="Arguments newVersion or oldVersion are not set.">
+		     <condition>
+		     	<or>
+		       		<not>
+		         		<isset property="newVersion"/>
+		       		</not>
+			       <not>
+			         <isset property="oldVersion"/>
+			       </not>
+		     	</or>
+		     </condition>
+		</fail>
+		<!--<exec dir="." executable="cmd" failonerror="true" failifexecutionfails="true">
+	        <arg value="/C"/>
+	        <arg value="${maven.home}/bin/mvn.bat"/>
+	        <arg line="versions:set -DnewVersion=${newVersion}" />
+		</exec>-->
+		<replace file="weblogic-deploy/pom.xml" token="${oldVersion}" value="${newVersion}" />
+		<replace file="weblogic-deploy-siteminder-emulator/pom.xml" token="${oldVersion}" value="${newVersion}" />
+		<replace file="weblogic-undeploy/pom.xml" token="${oldVersion}" value="${newVersion}" />
+		<replace file="weblogic-undeploy-siteminder-emulator/pom.xml" token="${oldVersion}" value="${newVersion}" />
+		<replace file="bep-app-envs/pom.xml" token="${oldVersion}" value="${newVersion}" />
+		<replace file="coverage/pom.xml" token="${oldVersion}" value="${newVersion}" />
+	</target>
+</project>

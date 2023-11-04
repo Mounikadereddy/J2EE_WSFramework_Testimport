@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://vonapps.vba.va.gov/" xmlns:tns="http://vonapps.vba.va.gov/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="ptcpnt_id" type="xs:string" />
+
+  <xs:element name="getVeteranDataResponse" type="tns:VeteranDataType" />
+
+  <xs:complexType name="getVeteranData">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="VeteranDataType">
+  	<xs:sequence>
+  		<xs:element name="Idenitifiers" type="tns:IdenitifiersType" maxOccurs="1" minOccurs="0">
+  		</xs:element>
+  		<xs:element name="Addresses" type="tns:AddressType" maxOccurs="1" minOccurs="0">
+  		</xs:element>
+  		<xs:element name="Gender" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Military_Service" type="tns:MilitaryServiceType" maxOccurs="1" minOccurs="0">
+  		</xs:element>
+  		<xs:element name="Birth_Information" type="tns:BirthInformationType" maxOccurs="1" minOccurs="0">
+  		</xs:element>
+  		<xs:element name="Marital_Status" type="tns:MaritalStatusType" maxOccurs="1" minOccurs="0">
+  		</xs:element>
+  		<xs:element minOccurs="0" maxOccurs="unbounded" name="Children" type="tns:ChildrenType">
+  		</xs:element>
+  		<xs:element minOccurs="0" maxOccurs="unbounded" name="Disability" type="tns:DisabilityType">
+  		</xs:element>
+  		<xs:element name="Income" type="tns:IncomeType" maxOccurs="1" minOccurs="0">
+  		</xs:element>
+  		<xs:element name="Nursing_Home" type="tns:NursingHomeType" maxOccurs="1" minOccurs="0">
+  		</xs:element>
+  		<xs:element minOccurs="0" name="Death_Information" type="tns:DeathInformationType">
+  		</xs:element>
+  	</xs:sequence>
+
+  </xs:complexType>
+
+  <xs:complexType name="IdenitifiersType">
+  	<xs:sequence>
+  		<xs:element name="Name" type="tns:NameType" maxOccurs="1" minOccurs="1">
+  		</xs:element>
+  		<xs:element name="Social_Security_Num" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+  		<xs:element name="File_Number" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+  		<xs:element minOccurs="0" maxOccurs="unbounded"
+  			name="Other_Name" type="tns:NameType">
+  		</xs:element>
+  	</xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="NameType">
+  	<xs:sequence>
+  		<xs:element name="First" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+  		<xs:element name="Middle" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Last" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+  	</xs:sequence>
+  	<xs:attribute name="form" type="xs:anySimpleType"></xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="PostalType">
+  	<xs:sequence>
+  		<xs:element name="Address_One" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element minOccurs="0" name="Address_Two" type="xs:string"></xs:element>
+  		<xs:element minOccurs="0" name="Address_Three" type="xs:string"></xs:element>
+  		<xs:element name="City_Name" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="State_Postal_Code" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="ZIP_Prefix" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="ZIP_Suffix" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  	</xs:sequence>
+  	<xs:attribute name="form" type="xs:anySimpleType"></xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="ChildNameType">
+  	<xs:sequence>
+  		<xs:element name="First" nillable="true">
+  			<xs:simpleType>
+  				<xs:restriction base="xs:string">
+  					<xs:length value="30"></xs:length>
+  				</xs:restriction>
+  			</xs:simpleType>
+  		</xs:element>
+  		<xs:element name="Middle" nillable="true">
+  			<xs:simpleType>
+  				<xs:restriction base="xs:string">
+  					<xs:length value="30"></xs:length>
+  				</xs:restriction>
+  			</xs:simpleType>
+  		</xs:element>
+  		<xs:element name="Last" nillable="true">
+  			<xs:simpleType>
+  				<xs:restriction base="xs:string">
+  					<xs:length value="30"></xs:length>
+  				</xs:restriction>
+  			</xs:simpleType>
+  		</xs:element>
+  	</xs:sequence>
+  	<xs:attribute name="form" type="xs:anySimpleType"></xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="AddressType">
+  	<xs:sequence>
+  		<xs:element name="Postal" type="tns:PostalType" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Phone_Numbers" type="tns:PhoneNumberType" maxOccurs="1" minOccurs="0">
+  		</xs:element>
+  		<xs:element name="Email" type="tns:EmailType" maxOccurs="1" minOccurs="0">
+  		</xs:element>
+  	</xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MilitaryServiceType">
+  	<xs:sequence>
+  		<xs:element name="VA_Office_Records_Location" maxOccurs="1" minOccurs="0">
+  			<xs:complexType>
+  				<xs:simpleContent>
+  					<xs:extension base="xs:string">
+  						<xs:attribute name="form" type="xs:anySimpleType"></xs:attribute>
+  					</xs:extension>
+  				</xs:simpleContent>
+  			</xs:complexType>
+  		</xs:element>
+  		<xs:element name="Military_Service_Number" maxOccurs="1" minOccurs="0">
+  			<xs:complexType>
+  				<xs:simpleContent>
+  					<xs:extension base="xs:string">
+  						<xs:attribute name="form" type="xs:anySimpleType"></xs:attribute>
+  					</xs:extension>
+  				</xs:simpleContent>
+  			</xs:complexType>
+  		</xs:element>
+  		<xs:element name="Service_Branch_Name" maxOccurs="1" minOccurs="0">
+  			<xs:complexType>
+  				<xs:simpleContent>
+  					<xs:extension base="xs:string">
+  						<xs:attribute name="form" type="xs:anySimpleType"></xs:attribute>
+  					</xs:extension>
+  				</xs:simpleContent>
+  			</xs:complexType>
+  		</xs:element>
+  		<xs:element name="Date_Entered_Active_Duty" type="xs:date" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Date_Left_Active_Duty" type="xs:date" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Separated_From_Service" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Pay_Grade_Type_Name" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Type_of_Separation_Or_Discharge" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element maxOccurs="unbounded" name="Military_Theaters_Served" type="xs:string" minOccurs="0"></xs:element>
+  	</xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BirthInformationType">
+  	<xs:sequence>
+  		<xs:element name="Birth_Date" type="xs:date" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="City_Name" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="State_Postal_Code" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Country_Code" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  	</xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MaritalStatusType">
+  	<xs:choice>
+  		<xs:element name="Married" type="tns:MarriedType">
+  		</xs:element>
+  		<xs:element name="Unmarried" type="xs:string"></xs:element>
+  	</xs:choice>
+  </xs:complexType>
+  <xs:complexType name="ChildrenType">
+  	<xs:sequence>
+  		<xs:element name="Child" type="tns:ChildType" maxOccurs="1" minOccurs="1">
+  		</xs:element>
+  	</xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DisabilityType">
+  	<xs:sequence>
+  		<xs:element name="VA_Disability_rating" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element minOccurs="0" maxOccurs="unbounded" name="Disability_Nature" type="xs:string"></xs:element>
+  		<xs:element minOccurs="0" maxOccurs="unbounded" name="Disability_Begin_Date" type="xs:date"></xs:element>
+  		<xs:element minOccurs="0" maxOccurs="unbounded" name="Treatment" type="tns:TreatmentType">
+  		</xs:element>
+  		<xs:element name="Service_Connected_Disability" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  	</xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IncomeType">
+  	<xs:sequence>
+  		<xs:element name="Monthly_Income" type="xs:double"
+  			maxOccurs="1" minOccurs="0">
+  		</xs:element>
+  		<xs:element name="Annual_Income" type="xs:double"
+  			maxOccurs="1" minOccurs="0">
+  		</xs:element>
+  		<xs:element name="Net_Worth" type="xs:long" maxOccurs="1" minOccurs="0"></xs:element>
+  	</xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="NursingHomeType">
+  	<xs:sequence>
+  		<xs:element name="Date_Entered" type="xs:date" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Current_Patient" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Nursing_Home_Name" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Postal" type="tns:PostalType" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Phone_Number" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  	</xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DeathInformationType">
+  	<xs:sequence>
+  		<xs:element name="Death_Date" type="xs:date" maxOccurs="1" minOccurs="1"></xs:element>
+  		<xs:element name="City_Name" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="State_Postal_Code" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Country_Code" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Burial_Date" type="xs:date" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Cemetry_Type" type="tns:CemetryType" maxOccurs="1" minOccurs="0">
+  		</xs:element>
+  	</xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PhoneNumberType">
+  	<xs:sequence>
+  		<xs:element minOccurs="1" maxOccurs="1" name="Day_Phone_Number" type="xs:string"></xs:element>
+  		<xs:element name="Evening_Phone_Number" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  	</xs:sequence>
+  	<xs:attribute name="form" type="xs:anySimpleType"></xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="EmailType">
+  	<xs:sequence>
+  		<xs:element maxOccurs="unbounded" name="Email_Address" nillable="true" type="xs:string"></xs:element>
+  	</xs:sequence>
+  	<xs:attribute name="form" type="xs:anySimpleType"></xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="ChildType">
+  	<xs:sequence>
+  		<xs:element name="Child_Name" type="tns:NameType" maxOccurs="1" minOccurs="1"></xs:element>
+  		<xs:element name="Social_Security_Num" maxOccurs="1" minOccurs="0">
+  			<xs:complexType>
+  				<xs:simpleContent>
+  					<xs:extension base="xs:string">
+  						<xs:attribute name="form" type="xs:anySimpleType"></xs:attribute>
+  					</xs:extension>
+  				</xs:simpleContent>
+  			</xs:complexType>
+  		</xs:element>
+  		<xs:element name="Birth_Date" type="xs:date" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Gender" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Postal" type="tns:PostalType" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Dependency_Status" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  	</xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CemetryType">
+  	<xs:simpleContent>
+  		<xs:extension base="xs:string">
+  			<xs:attribute name="National_Or_Federal_Govt" type="xs:boolean"></xs:attribute>
+  		</xs:extension>
+  	</xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TreatmentType">
+  	<xs:sequence>
+  		<xs:element name="Treatment_Date" type="xs:date" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Treatment_Physician" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Treatment_Facility" type="xs:string" maxOccurs="1" minOccurs="0"></xs:element>
+  		<xs:element name="Postal" type="tns:PostalType" maxOccurs="1" minOccurs="0"></xs:element>
+  	</xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MarriedType">
+  	<xs:sequence>
+  		<xs:element name="Spouse" type="tns:SpouseType">
+  		</xs:element>
+  	</xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SpouseType">
+  	<xs:sequence>
+  		<xs:element name="Spouse_Name" type="tns:NameType"></xs:element>
+  		<xs:element name="Social_Security_Num" nillable="true" type="xs:string">
+  		</xs:element>
+  		<xs:element name="File_Number" nillable="true" type="xs:string">
+  		</xs:element>
+  		<xs:element name="Birth_Date" nillable="true" type="xs:date">
+  		</xs:element>
+  		<xs:element name="Postal" type="tns:PostalType"></xs:element>
+  	</xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cssiamFilterConfig>
+
+<!--Applications mapped in the filter to a CSS application in Corporate Database (If not in this list request to authorize will be rejected)  				-->
+<!-- 		<bepHostedApp appId="WEAMS">																													-->
+<!-- 			<url>/weams/home.do</url>     This will be compare against the TARGET application to determine that application the user is trying to reach	-->
+<!-- 			<CSSId>WEAMS</CSSId>          This is the APPLCN_NM on the APPLCN Table																		-->  
+<!-- 		</bepHostedApp> 																																-->
+	
+	<bepHostedMappedApps>
+		<bepHostedApp appId="WEAMS">
+			<url>/weams/home.do</url>
+			<CSSId>WEAMS</CSSId>
+		</bepHostedApp>
+		<bepHostedApp appId="WSMS">
+			<url>/wsms/home.do</url>
+			<CSSId>WSMS</CSSId>
+		</bepHostedApp>
+		<bepHostedApp appId="FOCAS">
+			<url>/focas/home.do</url>
+			<CSSId>FOCAS</CSSId>
+		</bepHostedApp>
+		<bepHostedApp appId="QAWeb">
+			<url>QAWeb/onWelcomePage.do</url>
+			<CSSId>QAWEB</CSSId>
+		</bepHostedApp>
+		<!-- for testing -->
+		<bepHostedApp appId="WRNGAPP">
+			<url>wrongappname/home.do</url>
+			<CSSId>WRONGAPPNAME</CSSId>
+		</bepHostedApp>
+		<bepHostedApp appId="VBMS-R">
+			<url>vbmsr/home.do</url>
+			<CSSId>VBMS-R</CSSId>
+		</bepHostedApp>
+		<bepHostedApp appId="Bep Test Hosted App">
+			<url>/cssintg/bephostedapp/iam</url>
+			<CSSId>FRAMEWORK</CSSId>
+		</bepHostedApp>
+	</bepHostedMappedApps>
+
+<!--Environments mapped in the filter to determine if they are classified as testing or production for Test User Id profile override 	-->
+<!--If the environment is not listed here a request to authorize will be rejected 														-->
+<!-- 		<bepHostedEnv envId="NEWREL"> 																								-->
+<!--    			<url>bepnrel.vba.va.gov</url> 		Portion of the URL in the TARGET request to be mapped as a server				-->
+<!--    			<testEnv>false</testEnv> 			Test user override is allowed in this environment								-->
+<!-- 		</bepHostedEnv> 																											-->
+
+	
+	<bepHostedEnvs>
+		<bepHostedEnv envId="NEWREL">
+   			<url>bepnrel.vba.va.gov</url>
+   			<testEnv>false</testEnv>
+		</bepHostedEnv>
+		<bepHostedEnv envId="DEV">
+  			<url>bepdev.vba.va.gov</url>
+        	<testEnv>true</testEnv>
+		</bepHostedEnv>
+		<bepHostedEnv envId="PROD">
+   			<url>bepprod.vba.va.gov</url>
+   			<testEnv>false</testEnv>
+		</bepHostedEnv>
+		<bepHostedEnv envId="Local">
+   			<url>127.0.0.1:7001</url>
+   		    <testEnv>false</testEnv>
+		</bepHostedEnv>
+	</bepHostedEnvs>
+	
+<!-- IAM SiteMinder list of traits consider mandatory. If an element on this list is not present or has null or empty value in the request, request will be rejected -->
+<!-- The following headers are mandatory by default and no need to be listed: HTTP_ADSAMACCOUNTNAME, REMOTE_ADDR -->
+	<iamMandatoryTraits>
+		<iamTrait>HTTP_TRANSACTIONID</iamTrait>
+		<iamTrait>HTTP_ISSUEINSTANT</iamTrait>
+		<iamTrait>HTTP_ADDOMAIN</iamTrait>
+	</iamMandatoryTraits>
+	
+</cssiamFilterConfig>

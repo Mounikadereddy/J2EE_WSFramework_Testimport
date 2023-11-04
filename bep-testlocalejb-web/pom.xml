@@ -1,0 +1,105 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>gov.va.vba.framework</groupId>
+		<artifactId>framework-parent</artifactId>
+		<version>6.0.5-7</version>
+	</parent>
+	<groupId>gov.va.vba.framework</groupId>
+	<artifactId>bep-testlocalejb-web</artifactId>
+	<packaging>war</packaging>
+	<name>bep-testlocalejb-web</name>
+	<description>WS Framework war project</description>
+	<url>http://maven.apache.org</url>
+		
+ 
+<dependencies>
+		<dependency>
+			<groupId>gov.va.vba.framework</groupId>
+			<artifactId>bep-base</artifactId>
+			<version>6.0.5-7</version>
+			<scope>compile</scope>
+		</dependency>	
+		<dependency>
+			<groupId>gov.va.vba.framework</groupId>
+			<artifactId>bep-ejb-core</artifactId>
+			<version>6.0.5-7</version>
+			<scope>compile</scope>
+		</dependency>	
+		<dependency>
+			<groupId>weblogic</groupId>
+			<artifactId>wlfullclient</artifactId>
+			<version>12.2.1.3</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+		 	<groupId>gov.va.vba.benefits</groupId>
+		 	<artifactId>arch</artifactId>
+		 	<version>2.8.0</version>
+		 	<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>gov.va.vba.framework</groupId>
+			<artifactId>bep-domain-core</artifactId>
+			<version>6.0.5-7</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+  <build> 
+	<plugins>
+		<plugin>
+			<artifactId>maven-war-plugin</artifactId>
+			<configuration>
+				<packagingExcludes>
+					WEB-INF/lib/cal10n-api-0.7.4.jar,	
+					WEB-INF/lib/activation*.jar,
+					WEB-INF/lib/axis*.jar,
+					WEB-INF/lib/bep-base*.jar,
+					WEB-INF/lib/bep-ejb*.jar,
+					WEB-INF/lib/c3p0*.jar,
+					WEB-INF/lib/commons-discovery*.jar,
+					WEB-INF/lib/commons-lang*.jar,
+					WEB-INF/lib/ehcache-core*.jar,
+					WEB-INF/lib/jaxb*.jar,
+					WEB-INF/lib/jaxws*.jar,			
+					WEB-INF/lib/jsr250*.jar,			
+					WEB-INF/lib/log4j-*.jar,
+					WEB-INF/lib/mimepull*.jar,
+					WEB-INF/lib/resolver*.jar,
+					WEB-INF/lib/saaj*.jar,
+					WEB-INF/lib/servlet-api-*.jar,
+					WEB-INF/lib/serializer*.jar,
+					WEB-INF/lib/stax*.jar,
+					WEB-INF/lib/streambuffer*.jar,
+					WEB-INF/lib/wsdl4j*.jar,
+					WEB-INF/lib/xalan*.jar,
+					WEB-INF/lib/xercesImpl*.jar,
+					WEB-INF/lib/commons-beanutils-*.jar,
+					WEB-INF/lib/commons-logging-*.jar,
+					WEB-INF/lib/sjsxp-*.jar,
+					WEB-INF/lib/xml-apis*.jar
+				</packagingExcludes>
+			</configuration>
+		</plugin>
+		<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.7.2.201409121644</version>
+								  
+				<executions>
+					<execution>
+						<id>default-prepare-agent</id>
+						<goals><goal>prepare-agent</goal></goals>
+					</execution>
+					<execution>
+						<id>default-report</id>
+						<phase>prepare-package</phase>
+						<goals><goal>report</goal></goals>
+					</execution>
+				</executions>
+			</plugin>
+	</plugins>
+    <!-- <finalName>bep-testlocalejb-web</finalName>   -->
+  </build>
+</project>

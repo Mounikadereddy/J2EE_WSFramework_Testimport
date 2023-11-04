@@ -1,0 +1,18 @@
+$ /* VBA TP generic FML buffer */
+$ /* 1. Route Station (used for data-dependent routing) - 3 chars */
+$ /* 2. Reply destination ind  - 1 character. */
+$ /* 3. Client module name  - up to 15 chars  */
+$ /* 4. Prior service name  - up to 15 chars  */
+$ /* 5. User name           - up to 15 chars  */
+$ /* 6. Computer name       - up to 15 chars  */
+$ /* 7. Appl data - variable length -  */
+#
+#name                    rel-number   type       flags   comment
+#
+FML_STATION_TO_ROUTE_TO  200          carray     -
+FML_REPLY_DEST_IND       205          char       -
+FML_CLIENT_MODULE_NAME   210          carray     -
+FML_PRIOR_SERVICE_NAME   215          carray     -
+FML_USERID               220          carray     -
+FML_COMPUTER_NAME        225          carray     -
+FML_APPL_DATA            250          carray     -

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	
+	<description>Reference Implementation of VBA J2EE Web Framework</description>
+	<display-name>BEP Test EFF Service Emulation</display-name>
+	 	
+	<filter>  
+		<filter-name>TestServiceFilter</filter-name>  
+		<filter-class>gov.va.vba.framework.web.filter.TestEFFFilter</filter-class>  
+	</filter>	  
+	
+	<filter-mapping>  
+		<filter-name>TestServiceFilter</filter-name>  	  	
+		<url-pattern>/*</url-pattern>
+
+	</filter-mapping>
+	
+  	<servlet>
+	    <servlet-name>effservlet</servlet-name>
+	    <servlet-class>gov.va.vba.framework.web.servlet.TestEFFServlet</servlet-class>
+	    <load-on-startup>1</load-on-startup>
+  	</servlet>
+  		
+  	<servlet-mapping>
+    	<servlet-name>effservlet</servlet-name>
+    	<url-pattern>/*</url-pattern>
+  	</servlet-mapping>  	
+  	
+ 
+  	<!-- ____________________________START EJB REF's______________________________-->  
+   	<ejb-local-ref>
+		<ejb-ref-name>ejb/SecurityServiceV2Local</ejb-ref-name>
+		<ejb-ref-type>Session</ejb-ref-type>
+		<local>gov.va.vba.framework.services.CommonSecurityServiceLocalV2</local>
+		<ejb-link>SecurityServiceV2Local</ejb-link> 
+	</ejb-local-ref>		
+  	<!-- ____________________________END EJB REF's______________________________ -->
+
+  	
+	<jsp-config/>
+	
+</web-app>
+

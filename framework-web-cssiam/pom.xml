@@ -1,0 +1,117 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>gov.va.vba.framework</groupId>
+		<artifactId>framework-parent</artifactId>
+		<version>6.0.5-7</version>
+	</parent>
+	<groupId>gov.va.vba.framework</groupId>
+	<artifactId>framework-web-cssiam</artifactId>
+	<version>6.0.5-7</version>
+	<name>CSS IAM Security</name>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<adminUrl>t3://localhost:8081</adminUrl>
+		<target>AdminServer</target>
+		<user>weblogic</user>
+		<password>welcome1</password>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+	
+		<dependency>
+			<groupId>org.owasp.encoder</groupId>
+			<artifactId>encoder</artifactId>
+			<version>1.2</version>
+		</dependency>
+	
+		<dependency>
+			<groupId>gov.va.vba.framework</groupId>
+			<artifactId>bep-domain</artifactId>
+			<version>6.0.5-7</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>gov.va.vba.framework</groupId>
+			<artifactId>bep-app-client</artifactId>
+			<version>6.0.5-7</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>gov.va.vba.framework</groupId>
+			<artifactId>bep-admin</artifactId>
+			<version>6.0.5-7</version>
+		</dependency>
+				
+		<dependency>
+			<groupId>gov.va.vba.framework</groupId>
+			<artifactId>framework</artifactId>
+			<version>6.0.5-7</version>
+		</dependency>
+		
+		<!-- Servlet Dependency -->
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+			<version>4.4.3</version>
+		</dependency>
+		
+		
+		<!-- Testing Dependencies -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.10.19</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-core</artifactId>
+			<version>${powermock.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-module-junit4</artifactId>
+			<version>${powermock.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-api-mockito</artifactId>
+			<version>${powermock.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>

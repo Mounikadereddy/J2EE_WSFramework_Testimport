@@ -1,0 +1,840 @@
+/*To handle a problem with caching of the css on the server update version number in Header.Master.aspx */
+/*<link href="/CentralLogin/css/centrallogin.css?version=0.?" type="text/css" rel="stylesheet" />*/
+
+body {
+    font-family: 'Arial Regular', 'Arial';
+    font-size: 14px;
+}
+
+.info_header{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.info_panel_body{
+    border:none;
+    text-align:center; 
+    /*padding-bottom: 55px;*/
+    padding-bottom: 10%;
+}
+
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+/*small image*/
+.sm-image-container {
+    text-align: center;
+    /*background-color: pink;/*debug*/
+}
+
+.sm-image-inner-div {
+    display: inline-block;
+    width: 42vw;
+    height: 61vw;
+    max-width: 417px;
+    max-height: 604px;
+    background-image: url('/CentralLogin/img/cl-blue-shell-v.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sm-top-text-outer-div {
+    width: 80%;
+    height: 45%;
+    /* float: none; */
+    position: relative;
+    margin-left: 10%;
+}
+
+.sm-text-inner-div {
+    margin-top: 40%;
+}
+
+.sm-upper-white-text {
+    /* font-family: Arial, Helvetica, sans-serif !important; */
+    font-size: 21px;
+    color: white;
+    font-weight: 200;
+}
+
+.sm-lower-white-text {
+    /* font-family: Arial, Helvetica, sans-serif !important; */
+    font-size: 14px;
+    color: white;
+    font-weight: 200;
+}
+
+.sm-lower-white-text a{
+    color: white;
+}
+.sm-piv-div {
+    overflow: hidden;
+    width: auto;
+    height: 50%;
+    /* margin-left: 25%; */
+    /* padding: 5% 6% 0 0; */
+}
+
+.sm-piv-upper {
+    height: 80%;
+    /* margin-left: 0%; */
+    /*height: 36%;  controls how much vertical space the PIV image takes */
+    /*border: 1px solid red;/*debug*/
+}
+
+.sm-piv-lower {
+    padding: 0;
+    margin: 3% 0 0 0; /* this makes the link under the PIV image centered under the image */
+    /*background-color: pink;/*debug*/
+}
+
+.sm-piv-img {
+    max-width: 100%;
+    max-height: 100%;
+    /* margin-left: 12%; */
+}
+
+.sm-piv-lower a {
+    padding: 0;
+    /* margin: 6% 0 0 0; */
+    /* font-family: Arial, Helvetica, sans-serif !important; */
+    font-size: 9px;
+    color: white;
+    font-weight: 200;
+    /* margin-left: 18%; */
+    /* text-decoration: underline; */
+}
+
+/* custom styles here should be tweaked and out in your style sheets */
+/* other styles not here are either bootstrap or from accessva.css both included above */
+
+.big-image-container {
+    text-align: center;
+    /*background-color: pink;/*debug*/
+}
+
+.big-image-inner-div {
+    display: inline-block;
+    width: 79vw; /* keeps proper aspect ratio */
+    height: 42vw; /* keeps proper aspect ratio */
+    max-width: 794px;
+    max-height: 417px;
+    background-image: url('/CentralLogin/img/cl-blue-shell.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*border:1px solid red;/*debug*/
+}
+
+.left-text-outer-div {
+    width: 63%; /* this and the one in piv-div split the area left and right */
+    height: 100%;
+    float: left;
+    position: relative;
+    /*border:1px solid green;/*debug*/
+}
+
+.css-table-cell-fully-centered {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    float: none;
+}
+
+.css-table-max-width-and-height {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.cspselect-csp-logo-tall {
+    height: 48px;
+    margin: 0;
+}
+
+.left-text-inner-div {
+    margin: 5% 0 0 5%;
+    /*border:1px solid green;/*debug*/
+}
+
+.piv-div {
+    overflow: hidden;
+    width: 37%; /**/
+    height: 100%; /**/
+    padding: 5% 6% 0 0; /* this controls the placement of the right side "stuff" */
+    /*border:1px solid blue;/*debug*/
+    margin: 1% 0 0 20%;
+}
+
+.piv-upper {
+    height: 80%; /* controls how much vertical space the PIV image takes */
+    /*border: 1px solid red;/*debug*/
+}
+
+.piv-img {
+    max-width: 90%;
+    max-height: 90%;
+    margin-left: 20%;
+}
+
+.piv-lower {
+    padding: 0;
+    margin: -4% 0 0 0; /* this makes the link under the PIV image centered under the image */
+    /*background-color: pink;/*debug*/
+    /* border: solid; */
+}
+
+.piv-lower a {
+    /* padding: 0; */
+    /* margin: 0 0 0 15%; */
+    /* font-family: Arial, Helvetica, sans-serif !important; */
+    font-size: 12px;
+    color: white;
+    /* margin-left: 15%; */
+    /* text-decoration: underline; */
+}
+
+.upper-white-text {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 38px;
+    color: white;
+}
+
+.lower-white-text {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 20px;
+    color: white;
+}
+.lower-white-text a{  
+    color: white; 
+    /*font-size: 20px;*/
+}
+
+/* Master Template */
+/* styles borrowed from va access */
+.application-button-image {
+    display: inline; /* restore default value which changed to block by img-responsive, responsiveness seems ok, when it is block the focus outline does not work for keyboard only users' needs */
+    margin: 0 auto 0 auto; /* center the image left/right in the column */
+    padding: 0 0 0 0; /* 8px right keeps them from ever touching */
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 10px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 2px; /* reserve bottom and right space to use top and left to button press shift the image */
+    border-right-width: 2px;
+}
+
+    .application-button-image:hover {
+        background: #d0d0d0;
+    }
+
+/* menue breadcrumb */
+.i5breadcrumb {
+    margin-bottom: 0px !important;
+    */;
+}
+
+.breadcrumb {
+    /*background-color: #00467f;*/
+    background: linear-gradient(to left, #1677BD, #00467F);
+  /*background: linear-gradient(to left, #00467F, #1677BD);*/
+  /*background: -webkit-linear-gradient(left, red , yellow); /* For Safari 5.1 to 6.0 */
+  /*background: -o-linear-gradient(right, red, yellow); /* For Opera 11.1 to 12.0 */
+  /*background: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 to 15 */
+  /*background: linear-gradient(to right, red , yellow); /* Standard syntax */
+
+    margin: -2px -15px 0px -16px;
+    /*height:36px;*/
+    /*border: 2px solid green;/*debug*/
+}
+
+.breadcrumb li {
+    font-size: 18px;
+    /*border: 1px solid white;/*debug*/
+    margin-right: 4px;
+    font-weight: bold;
+}
+
+.breadcrumb a {
+    color: white;
+}
+
+    .breadcrumb a:hover {
+        color: white;
+        /*border: 1px solid blue;/*debug*/
+    }
+
+.breadcrumb > .active {
+    color: white;
+}
+
+.breadcrumb > li + li:before {
+    color: rgba(204, 204, 204, 1);
+    content: "|\00a0";
+}
+
+@media (max-width: 370px) {
+    /* trying to never wrap the now small breadcrumb even at small sizes */
+    .breadcrumb {
+        /*background-color: black !important; /*debug*/
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+        .breadcrumb > li + li:before {
+            color: rgba(204, 204, 204, 1);
+            content: "|";
+        }
+
+        .breadcrumb li {
+            font-size: 13px;
+            margin-right: -2px;
+        }
+}
+
+@media (max-width: 300px) {
+    /* even crazy small */
+    .breadcrumb {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+        .breadcrumb li {
+            font-size: 11px;
+            margin-right: -5px;
+        }
+}
+/*end of breadcrumbs*/
+
+/*header*/
+.mstr-header-logo-row {
+    /*background-image: url('/CentralLogin/img/cl-dark-blue.png');*/
+    background-color: #05263F;
+    /*background-size: cover;
+    background-repeat: no-repeat;*/
+}
+
+.mstr-va-links {
+    margin-bottom: 1%;
+    color: #0000FF;
+    text-align: center;
+}
+
+.mstr-va-link-text-p {
+    white-space: nowrap;
+}
+
+    .mstr-va-link-text-p a {
+        text-decoration: underline;
+        /*font-size: smaller;*/
+    }
+
+.mstr-legal-warning-row {
+    /*font-size: smaller;*/
+    text-align: left;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+.mstr-footer-div {
+    margin: -20px;
+    background: #05263f;
+    height: 400px;
+	color: #010c29;
+}
+
+.mstr-footer-row {
+    /*background-image: url('/CentralLogin/img/cl-dark-blue.png');*/
+    background-color: #05263F;
+    height: 400px;
+}
+
+.mstr-warning {
+    color: #990000;
+    text-align: right;
+}
+
+
+/*Modal common*/
+/* For modal dialogs backdrop opacity set to 1 (no see through) so it works with 508 */
+.modal-backdrop.in {
+    opacity:0.5 !important;
+}
+
+.modal-dialog-sized {
+    max-width: 528px; 
+    max-height: 528px;
+}
+
+.modal-header-blue {
+    background-color: #1677BD;
+    height: 41px;
+    padding: 10px;
+    /*padding-bottom: 12px;*/
+}
+
+.modal-header-va-blue {
+    background-color: #05263F;
+    /*height: 69px;*/
+    padding: 0;
+    /*padding-bottom: 15px;*/
+}
+
+.modal-header-title {
+    color: #FFFFFF; 
+    text-align: center;
+    white-space: nowrap;
+}
+
+.modal-btn-x {
+    position: absolute;
+    margin: 0;
+    top: -10px;
+    right: -10px;
+    opacity: 0.9;
+}
+
+.col-margin-top{
+    margin-top: 10px;
+}
+
+.modal-footer-padding {
+    padding-top: 0px;
+    border-top: none;
+}
+/*Modal contact us*/
+.contact-body{
+    text-align: left;
+    font-size: 15px;
+}
+.contact-email{
+    text-decoration: underline;
+    color: #0000FF;
+} 
+
+/*Modal Other Sign In Modal*/
+.other-sign-in-body {
+   margin-left: 15%;
+   margin-right: 15%;
+   text-align: center;
+}
+
+/*Modal Va Network Sign In Modal*/
+.va-network-sign-in-title {
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.va-network-sign-in-creds {
+    text-align: left;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.va-network-sign-in-row-padded {
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+}
+
+.va-network-sign-in-col-wide {
+    width: 100%;
+}
+
+.va-network-sign-in-btn-right-w {
+    float: right;
+    color: white;
+}
+
+/*Modal Buttons*/
+.cspselect-button-text-div {
+    color: black;
+    float: right;
+    text-align: center;
+    margin: 5px 0 0 1px;
+    width: 64%;
+    height: 55px;
+    padding: 0px;
+    border-left: 1px solid #a1a1a1;
+}
+
+.cspselect-button-responsive-column {
+    display: block;
+    float: left;
+    margin: 4px 8px 4px 0px;
+    /* width: 80%; */
+    background-color: #e9f0ff;
+    /* min-height: 120px; */
+    padding: 0px;
+    /* padding: 13px 0 3px 0; */
+}
+
+.cspselect-csp-button {
+    /*me*/
+    display: flex;
+    align-items: center;
+    /* min-height: 82px; */
+    border: 1px solid;
+    /*background-color: #e9f0ff;*/
+    /*access va*/
+    font: bold 13px Verdana, Geneva, sans-serif;
+    background-color: #e9f0ff;
+    border-radius: 0px !important;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 1px solid #0a92da;
+}
+
+.cspselect-button-logo-div {
+    float: left;
+    text-align: center;
+    height: 66px;
+    padding: 7px 0 8px 0;
+    width: 35%;
+}
+
+.widget-confirm-redirect-cancel-button {
+    background-color: #ffffff;
+    width: 83px !important;
+    max-width: 83px !important;
+    min-width: 83px !important;
+    border: 1px solid #7f7f7f;
+    border-radius: 0px;
+    height:30px;
+}
+
+.widget-confirm-redirect-next-button {
+    background-color: #1677bd;
+    width: 83px !important;
+    max-width: 83px !important;
+    min-width: 83px !important;
+    border: 1px solid #0071a5;
+    border-radius: 0px;
+    height:30px;
+}
+
+/************************************/
+/* SPECIAL 508 COMPLIANCE ITEMS     */
+/************************************/
+
+/*button:focus { border: 1px solid yellow !important; }/*debug*/
+
+/*:focus { border: 1px solid red !important; }/*debug*/
+
+#skiptocontent a {
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    color: white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-bottom-right-radius: 8px;
+    background: transparent;
+    -webkit-transition: top 1s ease-out, background 1s linear;
+    transition: top 1s ease-out, background 1s linear;
+    z-index: 100;
+}
+
+    #skiptocontent a:focus {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background: #BF1722;
+        outline: 0;
+        -webkit-transition: top .1s ease-in, background .5s linear;
+        transition: top .1s ease-in, background .5s linear;
+    }
+    
+    
+    #networkLoginName{
+	border:1px solid #5E5E5E;
+	}
+	
+	.btn-default {
+    border-color: #5E5E5E;
+	}
+
+	.form-control {
+	border:1px solid #5E5E5E;
+	}
+
+	#testUserId, #stationId{
+	border:1px solid #5E5E5E;
+	}
+
+/*              MEDEA POINTS            */
+
+/* breakpoints below are for example only...they may need some fine tuning or different breaks */
+/* I just grouped them together for simplicity here */
+@media only screen and (max-width : 850px) {
+    .piv-lower a {
+        font-size: 11px;
+        /* margin-left: 5%; */
+    }
+
+    .upper-white-text {
+        font-size: 30px;
+    }
+
+    .lower-white-text {
+        font-size: 16px;
+    }
+
+    .mstr-va-links {
+        margin-bottom: 2%;
+    }
+}
+
+@media only screen and (max-width : 750px) {
+    .piv-lower a {
+        font-size: 10px;
+    }
+
+    .piv-upper {
+        height: 81%; /* without this the words under shift down -- placement of "View Other Sign-in Options" is not perfect */
+    }
+
+    .upper-white-text {
+        font-size: 26px;
+    }
+
+    .lower-white-text {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width : 650px) {
+
+    .sm-piv-lower a {
+        font-size: 8px;
+    }
+
+    .sm-piv-upper {
+        height: 80%; /* probably will switch to vertical before this happens */
+    }
+
+    .sm-upper-white-text {
+        font-size: 19px;
+        /* color:  black; */
+    }
+
+    .sm-lower-white-text {
+        font-size: 13px;
+    }
+
+    .mstr-va-links {
+        margin-bottom: 3%;
+    }
+}
+
+@media only screen and (max-width : 550px) {
+
+    .sm-piv-lower a {
+        font-size: 11px;
+    }
+
+    .sm-piv-upper {
+        height: 80%;
+    }
+
+    .sm-upper-white-text {
+        font-size: 15px;
+        /* color:  black; */
+    }
+
+    .sm-lower-white-text {
+        font-size: 9px;
+    }
+
+    .sm-piv-lower a {
+        padding: 0;
+        font-size: 7px;
+        color: white;
+    }
+}
+
+@media only screen and (max-width : 450px) {
+
+    /*.sm-piv-lower a {
+        font-size: 7px;
+    }*/
+
+    .sm-piv-upper {
+        height: 80%;
+    }
+
+    .sm-upper-white-text {
+        font-size: 12px;
+    }
+
+     .sm-lower-white-text {
+         font-size: 7px;
+         margin-bottom : 5%;
+     }
+
+    .sm-lower-white-text a {
+        font-size: 7px;
+    }
+ 
+    .mstr-va-links {
+        margin-bottom: 4%;
+    }
+}
+
+@media only screen and (max-width : 400px) {
+    .sm-upper-white-text {
+        font-size: 9px;
+    }
+
+    .sm-piv-lower a {
+        font-size: 5px;
+    }
+
+    .mstr-legal-warning-row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .sm-text-inner-div {
+        margin-top: 35%;
+    }
+
+}
+
+/* Access VA style guide css */ 
+.template-footer-align {
+	text-align: center;
+}
+
+.template-footer-row2 {
+	margin-top: 5px;
+}
+
+ul.template-link-list { /* template-link-list stuff based on vets.gov bottom links */
+	text-align: center;
+	padding: 0;
+	width: 100%;
+	border-bottom: none !important;
+	display: block;
+	margin: 5px 0 0 0;
+	/*background-color: white !important;/*debug*/
+	/*border: 1px solid pink !important;/*debug*/
+}
+
+.template-footer-row1 ul.template-link-list a {
+	display: inline-block;
+	padding: 0;
+	/*background-color: blue !important;/*debug*/
+}
+
+.template-footer-row1 ul.template-link-list li {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	text-align: center;
+	/*background-color: white !important;/*debug*/
+	/*border: 1px solid yellow !important;/*debug*/
+}
+
+.template-footer-row1 ul.template-link-list:after { /* content after the whole ul tag */
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.template-footer-row1 ul.template-link-list li:after {
+	margin: 0 20px 0 20px;
+	content: "|";
+	padding: 0 .15em;
+	/*border: 1px solid red !important;/*debug*/
+}
+
+.template-footer-row1 ul.template-link-list li:last-of-type:after {
+	margin: 0;
+	padding: 0;
+	content: "";
+}
+
+@media (max-width: 350px) {
+	.template-footer-row1 ul.template-link-list li:after {
+		margin: 0 8px 0 8px;
+	}
+}
+
+.style-guide-body-text-smallest-white { /* not in the style guide but will code it like it is to be analagous*/
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 10px !important;
+	font-weight: normal !important;
+	color: white !important;
+}
+
+.style-guide-footer-hyperlink {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    color: #bdd5ec !important;
+}
+
+.tpm-traits-table{
+    table, th, td {
+          border: 1px solid black;
+    };                                    
+    width : 100%;
+    text-align : left;
+}
+
+/* render error messages */
+.red-error-text {
+	color: #990000;
+}
+
+/*.tpm-traits-table{
+    table{
+    .td{
+          border: solid 1px black;
+      }
+
+    .float-left{
+        float:left;
+        border-style:solid;
+        border-width:2px;
+        border-color:black;
+        border-collapse: collapse;
+    }
+}*/
+
+.table-fixed tbody {
+  max-height: 200px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.table-fixed thead,
+.table-fixed tbody,
+.table-fixed tr,
+.table-fixed td,
+.table-fixed th {
+  display: block;
+}
+
+.table-fixed tr:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.table-fixed tbody td,
+.table-fixed thead > tr > th {
+  float: left;
+}

@@ -1,0 +1,319 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>gov.va.vba.framework</groupId>
+		<artifactId>framework-parent</artifactId>
+		<version>6.0.5-7</version>
+	</parent>
+	<artifactId>bep-ejb-core</artifactId>
+	<packaging>jar</packaging>
+	<properties>
+		<jacoco.skip>false</jacoco.skip> 
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>gov.va.vba.framework</groupId>
+			<artifactId>bep-admin</artifactId>
+			<version>6.0.5-7</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>gov.va.vba.framework</groupId>
+			<artifactId>bep-base</artifactId>
+			<version>6.0.5-7</version>
+			<scope>provided</scope>
+		</dependency>	
+		<dependency>
+			<groupId>gov.va.vba.framework</groupId>
+			<artifactId>framework-core</artifactId>
+			<version>6.0.5-7</version>
+			<scope>provided</scope>
+		</dependency>	
+		<dependency>
+			<groupId>gov.va.vba.framework</groupId>
+			<artifactId>bep-domain-core</artifactId>
+			<version>6.0.5-7</version>
+			<scope>provided</scope>
+		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.bea.core</groupId> -->
+<!-- 			<artifactId>com.bea.core.xml.beaxmlbeans</artifactId> -->
+<!-- 			<version>2.5.1</version> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.bea.core</groupId> -->
+<!-- 			<artifactId>com.bea.core.descriptor.settable.binding</artifactId> -->
+<!-- 			<version>1.7.0.0</version> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.bea.core</groupId> -->
+<!-- 			<artifactId>com.bea.core.descriptor.wl.binding</artifactId> -->
+<!-- 			<version>1.4.0.0</version> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.sun</groupId> -->
+<!-- 			<artifactId>glassfish.jaxws.rt</artifactId> -->
+<!-- 			<version>2.1.5</version> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+		<dependency>
+			<groupId>org.apache</groupId>
+			<artifactId>org.apache.openjpa</artifactId>
+			<version>1.3.0.0_1-1-1</version>
+			<scope>provided</scope>
+		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.bea.core</groupId> -->
+<!-- 			<artifactId>com.bea.core.repackaged.springframework.pitchfork</artifactId> -->
+<!-- 			<version>1.0</version> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.bea.core</groupId> -->
+<!-- 			<artifactId>com.bea.core.repackaged.jdt</artifactId> -->
+<!-- 			<version>3.5.3.0</version> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.bea.core</groupId> -->
+<!-- 			<artifactId>com.bea.core.serp</artifactId> -->
+<!-- 			<version>1.14.4.0</version> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.bea.core</groupId> -->
+<!-- 			<artifactId>com.bea.core.utils.compiler</artifactId> -->
+<!-- 			<version>1.2.0.0</version> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.bea.core</groupId> -->
+<!-- 			<artifactId>com.bea.core.weblogic.web.api</artifactId> -->
+<!-- 			<version>1.4.0.0</version> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+		<dependency>
+			<groupId>weblogic</groupId>
+			<artifactId>wlfullclient</artifactId>
+			<version>12.2.1.3</version>
+			<scope>provided</scope>
+		</dependency>
+				
+		<!-- Test Dependencies -->
+		
+		<dependency>
+		 	<groupId>gov.va.vba.benefits</groupId>
+		 	<artifactId>arch</artifactId>
+		 	<version>2.8.0</version>
+		 	<scope>test</scope>
+		</dependency>
+    	<dependency>
+        	<groupId>org.codehaus.plexus</groupId>
+        	<artifactId>plexus-utils</artifactId>
+        	<version>1.5.2</version>
+    	</dependency>
+<!--     	<dependency> -->
+<!--        		<groupId>com.oracle.weblogic</groupId> -->
+<!--        		<artifactId>weblogic-server-pom</artifactId> -->
+<!--        		<version>12.1.3-0-0</version> -->
+<!--        		<type>pom</type> -->
+<!--        		<scope>provided</scope> -->
+<!--       	</dependency> -->
+   	</dependencies>
+	<build>
+		<plugins>
+		
+		
+<!-- 			<plugin> -->
+<!-- 				<artifactId>maven-antrun-plugin</artifactId> -->
+<!-- 				<executions> -->
+<!-- 					<execution> -->
+<!-- 						<phase>process-classes</phase> -->
+<!-- 						<configuration> -->
+<!-- 							<tasks> -->
+<!-- 								<taskdef name="wlappc" classname="weblogic.ant.taskdefs.j2ee.Appc" classpathref="maven.compile.classpath"/> -->
+<!-- 								<wlappc source="${project.build.outputDirectory}"		  -->
+<!-- 										keepgenerated="false" -->
+<!-- 								 		verbose="yes" -->
+<!-- 										nowarn="true" -->
+<!-- 										idlVerbose="false" -->
+<!-- 										debug="true" -->
+<!-- 										optimize="true" -->
+<!-- 										deprecation="true" -->
+<!-- 										forcegeneration="true" -->
+<!-- 										classpathref="maven.compile.classpath" -->
+<!-- 										> -->
+<!-- 								</wlappc> -->
+<!-- 							</tasks> -->
+<!-- 						</configuration> -->
+<!-- 						<goals> -->
+<!-- 							<goal>run</goal> -->
+<!-- 						</goals> -->
+<!-- 					</execution> -->
+<!-- 				</executions> -->
+<!-- 			</plugin> -->
+
+
+     	<plugin>
+        <!-- This is the configuration for the weblogic-maven-plugin
+        -->
+        	<groupId>com.oracle.weblogic</groupId>
+				<artifactId>weblogic-maven-plugin</artifactId>
+        		<version>12.1.3-0-0</version>
+        		<executions>
+          		<!-- Execute the appc goal during the package phase -->
+          			<execution>
+            			<id>wls-appc</id>
+            			<phase>process-classes</phase>
+            			<goals>
+              				<goal>appc</goal>
+            			</goals>
+            			<configuration>
+<!-- 							<source>${project.build.directory}/${project.name}.${project.packaging}</source> -->
+							<source>${project.build.outputDirectory}</source>							
+            			</configuration>
+          			</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.5</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>test-jar</goal>
+						</goals>
+					</execution>
+				</executions>				
+            	<configuration>
+            	     <forceCreation>true</forceCreation>
+                     <finalName>${project.artifactId}-${project.version}</finalName>
+               		<archive>
+                 		<manifest>
+                 		    <addDefaultSpecificationEntries>false</addDefaultSpecificationEntries>
+                     		<addDefaultImplementationEntries>false</addDefaultImplementationEntries>
+                  		</manifest>
+                  		<manifestEntries>
+    						<Implementation-Title>${project.groupId}</Implementation-Title>
+    						<Implementation-Version>${project.version}</Implementation-Version>
+    						<Implementation-Vendor> ${project.artifactId}-${project.version}.jar</Implementation-Vendor>
+  						</manifestEntries>
+              	 	</archive>
+              	 	<includes>
+            			<include>**/framework/*</include>
+            			<include>**/framework/auditing/*</include>
+            			<include>**/framework/esb/connectors/client/*</include>
+            			<include>**/framework/esb/transformers/*</include>
+            			<include>**/framework/services/*.*</include>
+            			<include>**/framework/services/ejb/*</include>
+            			<include>**/framework/services/ejb/local/*</include>
+            			<include>**/framework/services/mail/*</include>
+            			<include>_WL_GENERATED</include>
+            			<include>META-INF/**</include>
+          			</includes>
+          			<excludes>
+          				<exclude>.dmignore</exclude>
+          				<exclude>.dm</exclude>
+          			</excludes>
+            	</configuration>
+			</plugin>	
+      		<plugin>
+        		<groupId>org.apache.maven.plugins</groupId>
+        		<artifactId>maven-install-plugin</artifactId>
+        		<version>2.5.2</version>
+    			<executions>
+   					<execution>
+   						<id>install-${project.artifactId}-jar</id>
+   						<goals>
+   							<goal>install-file</goal>
+   						</goals>         
+   						<phase>install</phase>
+   						<configuration>      
+   							<groupId>gov.va.vba.framework</groupId>
+   							<artifactId>${project.artifactId}</artifactId>
+   							<version>${project.version}</version>
+   							<packaging>jar</packaging>      
+   							<file>${basedir}/target/${project.artifactId}-${project.version}.jar</file>
+   							<generatePom>true</generatePom>
+   						</configuration>  						
+   					</execution>
+   					<execution>
+   						<id>install-${project.artifactId}-tests-jar</id>
+   						<goals>
+   							<goal>install-file</goal>
+   						</goals>         
+   						<phase>install</phase>
+    					<configuration>      
+   							<groupId>gov.va.vba.framework</groupId>
+   							<artifactId>${project.artifactId}-tests</artifactId>
+   							<version>${project.version}</version>
+   							<packaging>jar</packaging>      
+   							<file>${basedir}/target/${project.artifactId}-${project.version}-tests.jar</file>
+   							<generatePom>false</generatePom>
+   						</configuration>  						
+   					</execution>
+   				</executions>        		
+      		</plugin>
+      		<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>2.7</version>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+
+			<!-- TEST PLUGINS -->
+			
+			<plugin>
+					<groupId>org.jacoco</groupId>
+					<artifactId>jacoco-maven-plugin</artifactId>
+					<version>0.7.5.201505241946</version>
+					<executions>
+						<execution>
+							<id>default-prepare-agent</id>
+							<goals>
+								<goal>prepare-agent</goal>
+							</goals>
+							<configuration> 
+                				<!-- Sets the path to the file which contains the execution data. -->
+                				<destFile>${jacoco.execs}/module-${project.artifactId}.exec</destFile>
+								<propertyName>surefire.argLine</propertyName> 
+							</configuration>
+						</execution>
+					</executions>
+					<configuration>
+						<excludes>
+							<!-- Exclude classes generated -->
+							<!-- claim-development jaxb generated classes -->
+							<exclude>generated/*.class</exclude>
+						</excludes>
+					</configuration>
+			</plugin>
+				
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.12.4</version>
+				<configuration>
+					<additionalClasspathElements>
+						<additionalClasspathElement>${basedir}/src/test/resources/conf</additionalClasspathElement>
+						<additionalClasspathElement>${basedir}/src/test/resources/data</additionalClasspathElement>
+					</additionalClasspathElements>
+					<includes>
+        		    	<include>**/*Test.java</include>
+          			</includes>
+		          	<excludes>
+        		    	<exclude>**/Correspondence*.java</exclude>
+          			</excludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

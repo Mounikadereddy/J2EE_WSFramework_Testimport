@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!-- -->
+<definitions 
+  name="VonappService"
+  targetNamespace="http://vba.va.gov/bep/framework/VonappWSProvider"
+  xmlns="http://schemas.xmlsoap.org/wsdl/"
+  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:types="http://vba.va.gov/bep/framework/VonappWSProvider/types"
+  xmlns:tns="http://vba.va.gov/bep/framework/VonappWSProvider">
+  
+  <types>
+    <xsd:schema
+        targetNamespace="http://vba.va.gov/bep/framework/VonappWSProvider/types"
+        attributeFormDefault="qualified"
+        elementFormDefault="qualified">
+
+      <xsd:element name="ParticipantRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="argument" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ParticipantResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="argument" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </types>
+
+  <message name="ParticipantRequest">
+    <part name="parameters" element="types:ParticipantRequest"/>
+  </message>
+  
+  <message name="ParticipantResponse">
+    <part name="parameters" element="types:ParticipantResponse"/>
+  </message>  
+
+  <portType name="ParticipantInfo">
+    <operation name="getParticipant">
+      <input message="tns:ParticipantRequest"/>
+      <output message="tns:ParticipantResponse"/>
+    </operation>  
+  </portType>
+  
+  <binding name="VonappService" type="tns:ParticipantInfo">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="getParticipant">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>      
+  </binding>
+  
+  <service name="VonappService">
+    <port name="VonappPort" binding="tns:VonappService">
+      <soap:address location="http://localhost:7002/framework/webservices/VonappService"/>
+    </port>
+  </service>
+  
+</definitions>

@@ -1,0 +1,80 @@
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<struts-config>
+  <!--============================================== Form Bean Definitions  -->
+  <form-beans>
+  	<!-- Locale form bean -->
+    <form-bean name="typeForm" type="org.apache.struts.action.DynaActionForm">
+    	<form-property name="requesttype" type="java.lang.String"/>
+    </form-bean>
+    <form-bean name="loginForm" type="org.apache.struts.action.DynaActionForm">
+    	<form-property name="testuserid" type="java.lang.String"/>
+    	<form-property name="userid" type="java.lang.String"/>
+    	<form-property name="station" type="java.lang.String"/>
+		<form-property name="appName" type="java.lang.String"/>
+		<form-property name="ipAddr" type="java.lang.String"/>
+		<form-property name="sessionId" type="java.lang.String"/>			
+		<form-property name="smusrmsg" type="java.lang.String"/>			
+		<form-property name="location" type="java.lang.String"/>			
+		<form-property name="cookies" type="java.lang.String"/>			
+		<form-property name="headers" type="java.lang.String"/>			
+		<form-property name="reply" type="java.lang.String"/>
+		<form-property name="testtype" type="java.lang.String"/>			
+    </form-bean>
+  </form-beans>
+
+  <!-- ======================================== Global Forward Definitions  -->
+  <global-forwards>
+    <forward name="home" path="/siteMinderEmulator.jsp"/>
+   </global-forwards>
+
+  <!-- ========================================= Action Mapping Definitions -->
+  <action-mappings>
+    <action path="/welcome" forward="/siteMinderEmulator.jsp"/>
+
+    <action path="/siteMinderEmulator" type="gov.va.vba.framework.web.actions.SiteMinderEmulatorAction" 
+    		name="typeForm" scope="request" validate="false" input="/siteMinderEmulator.jsp" >    		
+      	<forward name="saml" path="/siteMinderEmulatorSAMLFirst.jsp"/>
+      	<forward name="nonsaml" path="/siteMinderEmulatorNonSAML.jsp"/>
+      	<forward name="done" path="/siteMinderEmulator.jsp"/>
+    </action>
+    
+    <action path="/siteMinderEmulatorNonSAML" type="gov.va.vba.framework.web.actions.SiteMinderEmulatorNonSAMLAction" 
+    		name="loginForm" scope="request" validate="false" input="/siteMinderEmulatorNonSAML.jsp" >    		
+      	<forward name="success" path="/siteMinderEmulatorNonSAML.jsp"/>
+     	<forward name="done" path="/siteMinderEmulator.jsp"/>
+    </action>
+    
+    <action path="/siteMinderEmulatorSAMLFirst" type="gov.va.vba.framework.web.actions.SiteMinderEmulatorSAMLFirstAction" 
+    		name="loginForm" scope="request" validate="false" input="/siteMinderEmulatorSAMLFirst.jsp" >    		
+      	<forward name="success" path="/siteMinderEmulatorSAMLSecond.jsp"/>
+      	<forward name="done" path="/siteMinderEmulator.jsp"/>
+    </action>
+      
+    <action path="/siteMinderEmulatorSAMLSecond" type="gov.va.vba.framework.web.actions.SiteMinderEmulatorSAMLSecondAction" 
+    		name="loginForm" scope="request" validate="false" input="/siteMinderEmulatorSAMLSecond.jsp" >    		
+      	<forward name="success" path="/siteMinderEmulatorSAMLSecond.jsp"/>
+      	<forward name="done" path="/siteMinderEmulatorSAMLFirst.jsp"/>
+    </action>
+   
+  </action-mappings>
+  
+  <!-- ============================================= Controller Definition  -->
+  <controller inputForward="true" />
+  
+  <!-- ===================================== Message Resources Definitions  -->
+  <message-resources parameter="org.apache.struts.webapp.validator.MessageResources" />
+  <message-resources key="other" parameter="org.apache.struts.webapp.validator.OtherMessageResources" />
+  <message-resources key="different" parameter="org.apache.struts.webapp.validator.DifferentMessageResources" />
+  
+  <!-- ============================================ Plug Ins Configuration  -->
+  <!-- 
+       Add multiple validator resource files by setting the pathnames property 
+       with a comma delimitted list of resource files to load. 
+    -->
+  <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+    <set-property property="pathnames" value="/WEB-INF/validator-rules.xml,/WEB-INF/validator/validation.xml" />
+    <set-property property="stopOnFirstError" value="true" />
+  </plug-in>
+</struts-config>
